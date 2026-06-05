@@ -9,11 +9,11 @@ export default function HomePage() {
         Cognition v1.2 · Distyl AI
       </div>
 
-      <h1 className="text-4xl font-bold leading-tight tracking-tight text-text-default sm:text-5xl">
+      <h1 className="text-3xl font-bold leading-tight tracking-tight text-text-default sm:text-4xl">
         The design system that makes everything <span className="text-text-primary">look and behave like Distyl</span>.
       </h1>
 
-      <p className="mt-5 max-w-2xl text-lg leading-8 text-text-subtle">
+      <p className="mt-4 max-w-2xl text-base leading-7 text-text-subtle sm:text-lg">
         Cognition is the single source of truth for color, spacing, radius,
         typography, and component semantics across every Distyl frontend. Tokens
         carry brand and dark mode automatically — components never reach past the
@@ -62,7 +62,7 @@ export default function HomePage() {
       </div>
 
       {/* At a glance */}
-      <h2 className="mt-16 mb-4 text-2xl font-bold tracking-tight text-text-default">
+      <h2 className="mt-16 mb-4 text-xl font-bold tracking-tight text-text-default">
         At a glance
       </h2>
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
@@ -76,7 +76,7 @@ export default function HomePage() {
             key={s.label}
             className="rounded-lg border border-border-default p-5"
           >
-            <div className="font-mono text-xl font-bold text-text-primary">
+            <div className="font-mono text-xl font-bold text-text-default">
               {s.stat}
             </div>
             <div className="mt-1 text-xs text-text-subtle">{s.label}</div>
@@ -85,7 +85,7 @@ export default function HomePage() {
       </div>
 
       {/* What's inside */}
-      <h2 className="mt-16 mb-4 text-2xl font-bold tracking-tight text-text-default">
+      <h2 className="mt-16 mb-4 text-xl font-bold tracking-tight text-text-default">
         What's inside
       </h2>
       <div className="divide-y divide-border-subtle rounded-lg border border-border-default">

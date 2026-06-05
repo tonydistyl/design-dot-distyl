@@ -36,7 +36,7 @@ export default async function GuidelinesPage() {
       {/* Component quick-reference */}
       <h2
         id="component-semantics"
-        className="mt-12 mb-4 scroll-mt-8 border-b border-border-default pb-2 text-2xl font-bold tracking-tight text-text-default"
+        className="mt-12 mb-4 scroll-mt-8 border-b border-border-default pb-2 text-xl font-bold tracking-tight text-text-default"
       >
         Component semantics
       </h2>
@@ -64,7 +64,7 @@ export default async function GuidelinesPage() {
             {componentRules.map((r) => (
               <tr key={r.c}>
                 <td className="border-b border-border-subtle px-4 py-2.5">
-                  <span className="font-mono font-bold text-text-primary">
+                  <span className="font-mono font-bold text-text-default">
                     {r.c}
                   </span>
                 </td>
@@ -112,13 +112,13 @@ className="bg-background-default text-text-default"`}
       {/* Full spec */}
       <h2
         id="full-specification"
-        className="mt-14 mb-4 scroll-mt-8 border-b border-border-default pb-2 text-2xl font-bold tracking-tight text-text-default"
+        className="mt-14 mb-4 scroll-mt-8 border-b border-border-default pb-2 text-xl font-bold tracking-tight text-text-default"
       >
         Full specification
       </h2>
       <p className="mb-2 text-sm text-text-subtle">
         The complete Cognition rules document, verbatim. Drop it in as{" "}
-        <code className="rounded-sm border border-border-subtle bg-background-secondary px-1.5 py-0.5 font-mono text-xs text-text-primary">
+        <code className="rounded-sm border border-border-subtle bg-background-secondary px-1.5 py-0.5 font-mono text-xs text-text-default">
           CLAUDE.md
         </code>{" "}
         to make any AI coding tool generate Cognition-compliant code.

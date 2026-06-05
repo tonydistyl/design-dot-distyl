@@ -128,7 +128,7 @@ export function Sidebar() {
                       className={[
                         "block rounded-md px-3 py-2 text-sm transition-colors",
                         active
-                          ? "bg-background-accent font-bold text-text-primary"
+                          ? "bg-background-secondary font-bold text-text-default"
                           : "text-text-subtle hover:bg-background-secondary hover:text-text-default",
                       ].join(" ")}
                     >
@@ -148,7 +148,7 @@ export function Sidebar() {
                                 className={[
                                   "block rounded-sm px-2 py-1 text-[13px] transition-colors",
                                   current
-                                    ? "font-bold text-text-primary"
+                                    ? "font-bold text-text-default"
                                     : "text-text-subtle hover:text-text-default",
                                 ].join(" ")}
                               >

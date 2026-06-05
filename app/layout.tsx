@@ -46,7 +46,7 @@ export default function RootLayout({
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
-      <body className="min-h-screen bg-background-default text-text-default">
+      <body className="min-h-screen bg-background-default font-sans text-text-default antialiased">
         <div className="mx-auto flex min-h-screen w-full max-w-[1400px]">
           <Sidebar />
           <div className="flex min-w-0 flex-1 flex-col">

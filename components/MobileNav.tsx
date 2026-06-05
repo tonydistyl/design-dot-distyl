@@ -35,7 +35,7 @@ export function MobileNav() {
               className={[
                 "whitespace-nowrap rounded-md px-3 py-1.5 text-sm transition-colors",
                 active
-                  ? "bg-background-accent font-bold text-text-primary"
+                  ? "bg-background-secondary font-bold text-text-default"
                   : "text-text-subtle hover:bg-background-secondary",
               ].join(" ")}
             >

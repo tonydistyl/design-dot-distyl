@@ -47,7 +47,7 @@ export default function TokensPage() {
       {/* Color groups */}
       {colorGroups.map((group) => (
         <section key={group.id} id={group.id} className="scroll-mt-8">
-          <h2 className="mt-14 mb-1 border-b border-border-default pb-2 text-2xl font-bold tracking-tight text-text-default">
+          <h2 className="mt-14 mb-1 border-b border-border-default pb-2 text-xl font-bold tracking-tight text-text-default">
             {group.title}
           </h2>
           <p className="mb-6 text-sm text-text-subtle">{group.description}</p>
@@ -67,7 +67,7 @@ export default function TokensPage() {
                   <div className="truncate font-mono text-sm font-bold text-text-default">
                     {t.name}
                   </div>
-                  <div className="mt-0.5 truncate font-mono text-xs text-text-primary">
+                  <div className="mt-0.5 truncate font-mono text-xs text-text-subtle">
                     {t.utility}
                   </div>
                   <p className="mt-1 text-xs leading-5 text-text-subtle">
@@ -91,11 +91,11 @@ export default function TokensPage() {
 
       {/* Radius */}
       <section id="radius" className="scroll-mt-8">
-        <h2 className="mt-14 mb-1 border-b border-border-default pb-2 text-2xl font-bold tracking-tight text-text-default">
+        <h2 className="mt-14 mb-1 border-b border-border-default pb-2 text-xl font-bold tracking-tight text-text-default">
           Radius
         </h2>
         <p className="mb-6 text-sm text-text-subtle">
-          Six steps. <code className="font-mono text-text-primary">rounded-md</code>{" "}
+          Six steps. <code className="font-mono text-text-default">rounded-md</code>{" "}
           (8px) is the default.
         </p>
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
@@ -124,7 +124,7 @@ export default function TokensPage() {
 
       {/* Spacing */}
       <section id="spacing" className="scroll-mt-8">
-        <h2 className="mt-14 mb-1 border-b border-border-default pb-2 text-2xl font-bold tracking-tight text-text-default">
+        <h2 className="mt-14 mb-1 border-b border-border-default pb-2 text-xl font-bold tracking-tight text-text-default">
           Spacing
         </h2>
         <p className="mb-6 text-sm text-text-subtle">
@@ -151,7 +151,7 @@ export default function TokensPage() {
 
       {/* Typography */}
       <section id="typography" className="scroll-mt-8">
-        <h2 className="mt-14 mb-1 border-b border-border-default pb-2 text-2xl font-bold tracking-tight text-text-default">
+        <h2 className="mt-14 mb-1 border-b border-border-default pb-2 text-xl font-bold tracking-tight text-text-default">
           Typography
         </h2>
         <p className="mb-6 text-sm text-text-subtle">
@@ -208,7 +208,7 @@ export default function TokensPage() {
 
       <footer className="mt-16 border-t border-border-default pt-6 text-sm text-text-subtle">
         Values mirror{" "}
-        <code className="font-mono text-text-primary">cognition-tokens.css</code>
+        <code className="font-mono text-text-default">cognition-tokens.css</code>
         . Adding a token is a MINOR bump; changing a value is a PATCH or MINOR.
       </footer>
     </div>

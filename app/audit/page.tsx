@@ -108,21 +108,21 @@ export default async function AuditPage() {
         <p className="text-sm leading-6 text-text-default">
           <strong className="font-bold">Bottom line:</strong> the codebase is not
           yet ready to receive Cognition v1.2 values. The brand purple{" "}
-          <code className="font-mono text-text-primary">#5D4EE7</code> is already
+          <code className="font-mono text-text-default">#5D4EE7</code> is already
           present, so a clean rename plus a dark-mode reshape preserves brand
           exactly — but the rename is full-stack.
         </p>
       </div>
 
       {/* Detailed findings — collapsed by default */}
-      <h2 className="mt-12 mb-4 text-2xl font-bold tracking-tight text-text-default">
+      <h2 className="mt-12 mb-4 text-xl font-bold tracking-tight text-text-default">
         Detailed findings
       </h2>
       <AuditSections sections={sections} />
 
       <footer className="mt-12 border-t border-border-default pt-6 text-sm text-text-subtle">
         Audit run 2026-06-04 · three-subagent parallel sweep · raw JSON in{" "}
-        <code className="font-mono text-text-primary">audit-output/</code>.
+        <code className="font-mono text-text-default">audit-output/</code>.
       </footer>
     </div>
   );

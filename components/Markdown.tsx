@@ -32,14 +32,14 @@ export function Markdown({ content }: { content: string }) {
         remarkPlugins={[remarkGfm]}
         components={{
           h1: ({ children }) => (
-            <h1 className="mt-0 mb-3 text-3xl font-bold tracking-tight text-text-default">
+            <h1 className="mt-0 mb-3 text-2xl font-bold tracking-tight text-text-default">
               {children}
             </h1>
           ),
           h2: ({ children }) => (
             <h2
               id={slug(nodeText(children))}
-              className="mt-12 mb-4 scroll-mt-8 border-b border-border-default pb-2 text-2xl font-bold tracking-tight text-text-default"
+              className="mt-12 mb-4 scroll-mt-8 border-b border-border-default pb-2 text-xl font-bold tracking-tight text-text-default"
             >
               {children}
             </h2>
@@ -47,7 +47,7 @@ export function Markdown({ content }: { content: string }) {
           h3: ({ children }) => (
             <h3
               id={slug(nodeText(children))}
-              className="mt-8 mb-3 scroll-mt-8 text-lg font-bold text-text-default"
+              className="mt-8 mb-3 scroll-mt-8 text-base font-bold text-text-default"
             >
               {children}
             </h3>
@@ -94,7 +94,7 @@ export function Markdown({ content }: { content: string }) {
               );
             }
             return (
-              <code className="rounded-sm border border-border-subtle bg-background-secondary px-1.5 py-0.5 font-mono text-[0.85em] text-text-primary">
+              <code className="rounded-sm border border-border-subtle bg-background-secondary px-1.5 py-0.5 font-mono text-[0.85em] text-text-default">
                 {children}
               </code>
             );
