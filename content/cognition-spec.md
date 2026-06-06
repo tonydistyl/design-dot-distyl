@@ -98,7 +98,7 @@ weights: 400 / 500 / 600 / 700
 | Small   | 14px | Medium (500)   |
 | Caption | 12px | Regular (400)  |
 
-Nav section labels and page eyebrows use Caption (12px regular).
+Nav section labels and page eyebrows use Caption (12px regular). Headings (H1–H4) use a tightened line-height of 1.2; body and supporting text use 1.5.
 
 ---
 

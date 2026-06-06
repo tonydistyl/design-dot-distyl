@@ -4,10 +4,9 @@ export default function HomePage() {
   return (
     <div>
       {/* Hero */}
-      <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-border-default bg-background-subtle px-3 py-1 text-xs font-bold tracking-wide text-text-subtle">
-        <span className="inline-block h-2 w-2 rounded-full bg-feedback-info" />
+      <p className="mb-2 text-xs font-normal text-text-subtle">
         Cognition v1.2 · Distyl AI
-      </div>
+      </p>
 
       <h1 className="text-h1 tracking-[-0.025em] text-text-default">
         The design system that makes everything <span className="text-text-primary">look and behave like Distyl</span>.
