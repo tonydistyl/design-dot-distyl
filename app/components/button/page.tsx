@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Button } from "@/components/ui/button";
+import { CodeBlock, CopyButton } from "@/components/CodeBlock";
 
 export const metadata: Metadata = {
   title: "Button",
@@ -36,21 +37,23 @@ const variants = [
   },
 ] as const;
 
-function Snippet({ children }: { children: string }) {
-  return (
-    <pre className="overflow-x-auto rounded-md border border-border-subtle bg-background-subtle px-3 py-2">
-      <code className="font-mono text-xs text-text-default">{children}</code>
-    </pre>
-  );
-}
+const doCode = `// Triggers a mutation or event
+<Button onClick={save}>Save changes</Button>
+<Button variant="destructive" onClick={remove}>
+  Delete
+</Button>`;
 
-function CodeBlock({ children }: { children: string }) {
-  return (
-    <pre className="overflow-x-auto rounded-lg border border-border-default bg-background-subtle p-4">
-      <code className="text-code text-text-default">{children}</code>
-    </pre>
-  );
-}
+const dontCode = `// Button used as a category label (audit: ActionPill)
+<Button variant="outline" size="sm" className="rounded-full">
+  Engineering
+</Button>
+// → use <Tag> for categories, <Badge> for status`;
+
+const installCode = `import { Button } from "@/components/ui/button";
+
+export function SaveChanges() {
+  return <Button onClick={handleSave}>Save changes</Button>;
+}`;
 
 export default function ButtonPage() {
   return (
@@ -87,7 +90,11 @@ export default function ButtonPage() {
                 <Button variant={v.variant}>{v.label}</Button>
               </div>
               <div className="border-t border-border-default p-3">
-                <Snippet>{v.code}</Snippet>
+                <CodeBlock
+                  code={v.code}
+                  size="sm"
+                  className="rounded-md border border-border-subtle bg-background-subtle"
+                />
               </div>
             </div>
           ))}
@@ -103,7 +110,11 @@ export default function ButtonPage() {
               <Button disabled>Disabled</Button>
             </div>
             <div className="border-t border-border-default p-3">
-              <Snippet>{`<Button disabled>Disabled</Button>`}</Snippet>
+              <CodeBlock
+                code={`<Button disabled>Disabled</Button>`}
+                size="sm"
+                className="rounded-md border border-border-subtle bg-background-subtle"
+              />
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
@@ -113,7 +124,11 @@ export default function ButtonPage() {
               </Button>
             </div>
             <div className="border-t border-border-default p-3">
-              <Snippet>{`<Button loading loadingText="Saving…">Save</Button>`}</Snippet>
+              <CodeBlock
+                code={`<Button loading loadingText="Saving…">Save</Button>`}
+                size="sm"
+                className="rounded-md border border-border-subtle bg-background-subtle"
+              />
             </div>
           </div>
         </div>
@@ -126,30 +141,30 @@ export default function ButtonPage() {
 
       {/* Do / Don't */}
       <section id="do-dont" className="scroll-mt-8">
-        <h2 className="mt-12 mb-4 text-h2 text-text-default">Do &amp; Don&apos;t</h2>
+        <h2 className="mt-12 mb-4 text-h2 text-text-default">
+          Do &amp; Don&apos;t
+        </h2>
         <div className="grid gap-4 sm:grid-cols-2">
-          <div className="rounded-lg border border-border-success bg-background-success p-5">
+          <div className="relative rounded-lg border border-border-success bg-background-success p-5">
+            <CopyButton value={doCode} className="absolute right-2 top-2" />
             <div className="mb-2 text-sm font-bold text-text-success">
               Do — an action
             </div>
-            <pre className="overflow-x-auto">
-              <code className="font-mono text-xs leading-6 text-text-default">{`// Triggers a mutation or event
-<Button onClick={save}>Save changes</Button>
-<Button variant="destructive" onClick={remove}>
-  Delete
-</Button>`}</code>
+            <pre className="overflow-x-auto pr-10">
+              <code className="font-mono text-xs leading-6 text-text-default">
+                {doCode}
+              </code>
             </pre>
           </div>
-          <div className="rounded-lg border border-border-danger bg-background-danger p-5">
+          <div className="relative rounded-lg border border-border-danger bg-background-danger p-5">
+            <CopyButton value={dontCode} className="absolute right-2 top-2" />
             <div className="mb-2 text-sm font-bold text-text-danger">
               Don&apos;t — a label
             </div>
-            <pre className="overflow-x-auto">
-              <code className="font-mono text-xs leading-6 text-text-default">{`// Button used as a category label (audit: ActionPill)
-<Button variant="outline" size="sm" className="rounded-full">
-  Engineering
-</Button>
-// → use <Tag> for categories, <Badge> for status`}</code>
+            <pre className="overflow-x-auto pr-10">
+              <code className="font-mono text-xs leading-6 text-text-default">
+                {dontCode}
+              </code>
             </pre>
           </div>
         </div>
@@ -158,11 +173,10 @@ export default function ButtonPage() {
       {/* Copy-paste */}
       <section id="copy-paste" className="scroll-mt-8">
         <h2 className="mt-12 mb-4 text-h2 text-text-default">Copy-paste</h2>
-        <CodeBlock>{`import { Button } from "@/components/ui/button";
-
-export function SaveChanges() {
-  return <Button onClick={handleSave}>Save changes</Button>;
-}`}</CodeBlock>
+        <CodeBlock
+          code={installCode}
+          className="rounded-lg border border-border-default bg-background-subtle"
+        />
         <p className="mt-2 text-small">
           Drop-in ready. Variants and Cognition tokens are baked into the
           component — no <code className="font-mono">className</code> needed for
