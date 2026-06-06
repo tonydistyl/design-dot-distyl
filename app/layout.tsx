@@ -4,6 +4,7 @@ import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 import { Sidebar } from "@/components/Sidebar";
 import { MobileNav } from "@/components/MobileNav";
+import { TooltipProvider } from "@/components/ui/tooltip";
 
 export const metadata: Metadata = {
   title: {
@@ -34,15 +35,17 @@ export default function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
       <body className="min-h-screen bg-background-default font-sans text-text-default antialiased">
-        <div className="flex min-h-screen w-full max-w-[1400px]">
-          <Sidebar />
-          <div className="flex min-w-0 flex-1 flex-col">
-            <MobileNav />
-            <main className="min-w-0 flex-1 px-6 py-10 sm:px-10 lg:px-16">
-              <div className="mx-auto w-full max-w-3xl">{children}</div>
-            </main>
+        <TooltipProvider>
+          <div className="flex min-h-screen w-full max-w-[1400px]">
+            <Sidebar />
+            <div className="flex min-w-0 flex-1 flex-col">
+              <MobileNav />
+              <main className="min-w-0 flex-1 px-6 py-10 sm:px-10 lg:px-16">
+                <div className="mx-auto w-full max-w-3xl">{children}</div>
+              </main>
+            </div>
           </div>
-        </div>
+        </TooltipProvider>
       </body>
     </html>
   );

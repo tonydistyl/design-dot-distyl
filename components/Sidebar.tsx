@@ -41,6 +41,22 @@ const nav: NavGroup[] = [
     ],
   },
   {
+    section: "Components",
+    items: [
+      {
+        href: "/components/button",
+        label: "Button",
+        sections: [
+          { id: "preview", label: "Preview" },
+          { id: "variants", label: "Variants" },
+          { id: "states", label: "States" },
+          { id: "do-dont", label: "Do & Don't" },
+          { id: "copy-paste", label: "Copy-paste" },
+        ],
+      },
+    ],
+  },
+  {
     section: "Status",
     items: [
       {
