@@ -45,17 +45,7 @@ const nav: NavGroup[] = [
     items: [
       { href: "/components/button", label: "Button" },
       { href: "/components/badge", label: "Badge" },
-      {
-        href: "/components/card",
-        label: "Card",
-        sections: [
-          { id: "preview", label: "Preview" },
-          { id: "anatomy", label: "Anatomy" },
-          { id: "examples", label: "Examples" },
-          { id: "do-dont", label: "Don't & Do" },
-          { id: "copy-paste", label: "Copy-paste" },
-        ],
-      },
+      { href: "/components/card", label: "Card" },
       { href: "/components/tag", label: "Tag" },
     ],
   },

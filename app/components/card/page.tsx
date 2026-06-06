@@ -158,13 +158,7 @@ export default function CardPage() {
         <div className="grid items-start gap-6 lg:grid-cols-2">
           {/* Featured event card with media + badge */}
           <Card className="w-full">
-            <div
-              className="aspect-[16/10] w-full"
-              style={{
-                backgroundImage:
-                  "linear-gradient(135deg, var(--color-background-primary), var(--color-background-accent))",
-              }}
-            />
+            <div className="aspect-[16/10] w-full bg-background-secondary" />
             <CardHeader className="flex-row items-start justify-between space-y-0">
               <div className="flex flex-col gap-1">
                 <CardTitle>Design systems meetup</CardTitle>
@@ -211,10 +205,10 @@ export default function CardPage() {
         </p>
       </section>
 
-      {/* Don't / Do */}
+      {/* Do / Don't */}
       <section id="do-dont" className="scroll-mt-8">
         <h2 className="mt-12 mb-4 text-h2 text-text-default">
-          Don&apos;t &amp; Do
+          Do &amp; Don&apos;t
         </h2>
         <div className="grid gap-4 sm:grid-cols-2">
           <div className="rounded-lg border border-border-danger bg-background-danger p-5">
