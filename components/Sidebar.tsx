@@ -102,7 +102,7 @@ export function Sidebar() {
     <aside className="sticky top-0 hidden h-screen w-64 shrink-0 flex-col overflow-y-auto border-r border-border-default bg-background-subtle px-6 py-8 md:flex">
       <Link href="/" className="group mb-10 block">
         <div className="flex items-center gap-2">
-          <span className="inline-block h-6 w-6 rounded-md bg-background-primary" />
+          <span className="inline-block h-6 w-6 rounded-full bg-background-primary" />
           <span className="text-lg font-bold tracking-tight text-text-default">
             design<span className="text-text-primary">.distyl</span>
           </span>

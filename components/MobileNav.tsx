@@ -18,7 +18,7 @@ export function MobileNav() {
     <header className="sticky top-0 z-10 border-b border-border-default bg-background-subtle/95 px-4 py-3 backdrop-blur md:hidden">
       <div className="flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <span className="inline-block h-5 w-5 rounded-md bg-background-primary" />
+          <span className="inline-block h-5 w-5 rounded-full bg-background-primary" />
           <span className="font-bold tracking-tight">
             design<span className="text-text-primary">.distyl</span>
           </span>
