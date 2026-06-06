@@ -68,8 +68,8 @@ radius.lg = 12px     radius.xl = 16px    radius.full = 9999px
 
 ### Typography
 ```
-font-family: Lato (all body copy, UI labels, inputs)
-font-family: Roboto Mono (code blocks, technical values only)
+font-family: Geist (all body copy, UI labels, inputs)
+font-family: Geist Mono (code blocks, technical values only)
 
 sizes: 12px / 14px / 16px / 18px / 20px / 24px / 30px / 36px
 weights: 400 / 500 / 600 / 700

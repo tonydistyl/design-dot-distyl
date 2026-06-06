@@ -19,10 +19,10 @@ export default function TokensPage() {
       <p className="mb-2 text-xs font-bold uppercase tracking-wide text-text-subtle">
         Foundations
       </p>
-      <h1 className="text-3xl font-bold tracking-tight text-text-default">
+      <h1 className="text-h1 text-text-default">
         Tokens
       </h1>
-      <p className="mt-3 max-w-2xl text-lg leading-8 text-text-subtle">
+      <p className="mt-3 max-w-2xl text-large">
         The canonical Cognition v1.2 token set. Swatches below render from the
         live CSS variables — toggle the theme and they remap automatically.
         Never hardcode a hex value; always reference the token utility.
@@ -47,10 +47,10 @@ export default function TokensPage() {
       {/* Color groups */}
       {colorGroups.map((group) => (
         <section key={group.id} id={group.id} className="scroll-mt-8">
-          <h2 className="mt-14 mb-1 border-b border-border-default pb-2 text-xl font-bold tracking-tight text-text-default">
+          <h2 className="mt-14 mb-1 border-b border-border-default pb-2 text-h2 text-text-default">
             {group.title}
           </h2>
-          <p className="mb-6 text-sm text-text-subtle">{group.description}</p>
+          <p className="mb-6 text-small">{group.description}</p>
 
           <div className="grid gap-4 sm:grid-cols-2">
             {group.tokens.map((t) => (
@@ -91,10 +91,10 @@ export default function TokensPage() {
 
       {/* Radius */}
       <section id="radius" className="scroll-mt-8">
-        <h2 className="mt-14 mb-1 border-b border-border-default pb-2 text-xl font-bold tracking-tight text-text-default">
+        <h2 className="mt-14 mb-1 border-b border-border-default pb-2 text-h2 text-text-default">
           Radius
         </h2>
-        <p className="mb-6 text-sm text-text-subtle">
+        <p className="mb-6 text-small">
           Six steps. <code className="font-mono text-text-default">rounded-md</code>{" "}
           (8px) is the default.
         </p>
@@ -124,10 +124,10 @@ export default function TokensPage() {
 
       {/* Spacing */}
       <section id="spacing" className="scroll-mt-8">
-        <h2 className="mt-14 mb-1 border-b border-border-default pb-2 text-xl font-bold tracking-tight text-text-default">
+        <h2 className="mt-14 mb-1 border-b border-border-default pb-2 text-h2 text-text-default">
           Spacing
         </h2>
-        <p className="mb-6 text-sm text-text-subtle">
+        <p className="mb-6 text-small">
           4px base unit. Never use arbitrary px values in inline styles.
         </p>
         <div className="space-y-2 rounded-lg border border-border-default bg-background-subtle p-5">
@@ -151,10 +151,10 @@ export default function TokensPage() {
 
       {/* Typography */}
       <section id="typography" className="scroll-mt-8">
-        <h2 className="mt-14 mb-1 border-b border-border-default pb-2 text-xl font-bold tracking-tight text-text-default">
+        <h2 className="mt-14 mb-1 border-b border-border-default pb-2 text-h2 text-text-default">
           Typography
         </h2>
-        <p className="mb-6 text-sm text-text-subtle">
+        <p className="mb-6 text-small">
           <strong className="font-bold text-text-default">Geist</strong> for all
           UI and body copy.{" "}
           <strong className="font-bold text-text-default">Geist Mono</strong>{" "}

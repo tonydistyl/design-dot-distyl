@@ -9,11 +9,11 @@ export default function HomePage() {
         Cognition v1.2 · Distyl AI
       </div>
 
-      <h1 className="text-3xl font-bold leading-tight tracking-tight text-text-default sm:text-4xl">
+      <h1 className="text-h1 text-text-default">
         The design system that makes everything <span className="text-text-primary">look and behave like Distyl</span>.
       </h1>
 
-      <p className="mt-4 max-w-2xl text-base leading-7 text-text-subtle sm:text-lg">
+      <p className="mt-4 max-w-2xl text-large">
         Cognition is the single source of truth for color, spacing, radius,
         typography, and component semantics across every Distyl frontend. Tokens
         carry brand and dark mode automatically — components never reach past the
@@ -55,14 +55,14 @@ export default function HomePage() {
             key={p.title}
             className="rounded-lg border border-border-default bg-background-subtle p-5"
           >
-            <h3 className="text-base font-bold text-text-default">{p.title}</h3>
-            <p className="mt-2 text-sm leading-6 text-text-subtle">{p.body}</p>
+            <h3 className="text-h4 text-text-default">{p.title}</h3>
+            <p className="mt-2 text-small">{p.body}</p>
           </div>
         ))}
       </div>
 
       {/* At a glance */}
-      <h2 className="mt-16 mb-4 text-xl font-bold tracking-tight text-text-default">
+      <h2 className="mt-16 mb-4 text-h2 text-text-default">
         At a glance
       </h2>
       <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
@@ -85,7 +85,7 @@ export default function HomePage() {
       </div>
 
       {/* What's inside */}
-      <h2 className="mt-16 mb-4 text-xl font-bold tracking-tight text-text-default">
+      <h2 className="mt-16 mb-4 text-h2 text-text-default">
         What's inside
       </h2>
       <div className="divide-y divide-border-subtle rounded-lg border border-border-default">
@@ -112,8 +112,8 @@ export default function HomePage() {
             className="flex items-start justify-between gap-4 p-5 transition-colors hover:bg-background-subtle"
           >
             <div>
-              <div className="font-bold text-text-default">{item.title}</div>
-              <p className="mt-1 text-sm text-text-subtle">{item.body}</p>
+              <div className="text-h4 text-text-default">{item.title}</div>
+              <p className="mt-1 text-small">{item.body}</p>
             </div>
             <span aria-hidden className="mt-1 text-text-subtle">
               →
@@ -122,7 +122,7 @@ export default function HomePage() {
         ))}
       </div>
 
-      <footer className="mt-16 border-t border-border-default pt-6 text-sm text-text-subtle">
+      <footer className="mt-16 border-t border-border-default pt-6 text-small">
         Cognition v1.2 · February 2026 · Owned by Tony Yates · Questions in{" "}
         <span className="text-text-primary">#design</span>
       </footer>

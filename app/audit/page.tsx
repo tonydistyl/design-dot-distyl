@@ -60,10 +60,10 @@ export default async function AuditPage() {
       <p className="mb-2 text-xs font-bold uppercase tracking-wide text-text-subtle">
         Status
       </p>
-      <h1 className="text-3xl font-bold tracking-tight text-text-default">
+      <h1 className="text-h1 text-text-default">
         Codebase Audit
       </h1>
-      <p className="mt-3 max-w-2xl text-lg leading-8 text-text-subtle">
+      <p className="mt-3 max-w-2xl text-large">
         Where the three Distyl repos stand against Cognition v1.2 today. Run as a
         three-subagent parallel sweep against the canonical token set and
         hard-rule checklist.
@@ -105,7 +105,7 @@ export default async function AuditPage() {
 
       {/* Bottom line — the stop */}
       <div className="mt-6 rounded-lg border border-border-primary bg-background-accent p-5">
-        <p className="text-sm leading-6 text-text-default">
+        <p className="text-body">
           <strong className="font-bold">Bottom line:</strong> the codebase is not
           yet ready to receive Cognition v1.2 values. The brand purple{" "}
           <code className="font-mono text-text-default">#5D4EE7</code> is already
@@ -115,12 +115,12 @@ export default async function AuditPage() {
       </div>
 
       {/* Detailed findings — collapsed by default */}
-      <h2 className="mt-12 mb-4 text-xl font-bold tracking-tight text-text-default">
+      <h2 className="mt-12 mb-4 text-h2 text-text-default">
         Detailed findings
       </h2>
       <AuditSections sections={sections} />
 
-      <footer className="mt-12 border-t border-border-default pt-6 text-sm text-text-subtle">
+      <footer className="mt-12 border-t border-border-default pt-6 text-small">
         Audit run 2026-06-04 · three-subagent parallel sweep · raw JSON in{" "}
         <code className="font-mono text-text-default">audit-output/</code>.
       </footer>

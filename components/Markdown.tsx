@@ -32,14 +32,14 @@ export function Markdown({ content }: { content: string }) {
         remarkPlugins={[remarkGfm]}
         components={{
           h1: ({ children }) => (
-            <h1 className="mt-0 mb-3 text-2xl font-bold tracking-tight text-text-default">
+            <h1 className="mt-0 mb-3 text-h2 text-text-default">
               {children}
             </h1>
           ),
           h2: ({ children }) => (
             <h2
               id={slug(nodeText(children))}
-              className="mt-12 mb-4 scroll-mt-8 border-b border-border-default pb-2 text-xl font-bold tracking-tight text-text-default"
+              className="mt-12 mb-4 scroll-mt-8 border-b border-border-default pb-2 text-h3 text-text-default"
             >
               {children}
             </h2>
@@ -47,13 +47,13 @@ export function Markdown({ content }: { content: string }) {
           h3: ({ children }) => (
             <h3
               id={slug(nodeText(children))}
-              className="mt-8 mb-3 scroll-mt-8 text-base font-bold text-text-default"
+              className="mt-8 mb-3 scroll-mt-8 text-h4 text-text-default"
             >
               {children}
             </h3>
           ),
           p: ({ children }) => (
-            <p className="my-4 leading-7 text-text-default">{children}</p>
+            <p className="my-4 text-body">{children}</p>
           ),
           a: ({ children, href }) => (
             <a
@@ -64,23 +64,23 @@ export function Markdown({ content }: { content: string }) {
             </a>
           ),
           ul: ({ children }) => (
-            <ul className="my-4 list-disc space-y-2 pl-6 text-text-default marker:text-text-subtle">
+            <ul className="my-4 list-disc pl-6 text-list text-text-default marker:text-text-subtle">
               {children}
             </ul>
           ),
           ol: ({ children }) => (
-            <ol className="my-4 list-decimal space-y-2 pl-6 text-text-default marker:text-text-subtle">
+            <ol className="my-4 list-decimal pl-6 text-list text-text-default marker:text-text-subtle">
               {children}
             </ol>
           ),
-          li: ({ children }) => <li className="leading-7">{children}</li>,
+          li: ({ children }) => <li>{children}</li>,
           strong: ({ children }) => (
             <strong className="font-bold text-text-default">{children}</strong>
           ),
           em: ({ children }) => <em className="italic">{children}</em>,
           hr: () => <hr className="my-10 border-border-default" />,
           blockquote: ({ children }) => (
-            <blockquote className="my-6 border-l-4 border-border-primary bg-background-accent px-4 py-2 text-text-default">
+            <blockquote className="my-6 border-l-4 border-border-primary bg-background-accent px-4 py-2 text-blockquote text-text-default">
               {children}
             </blockquote>
           ),
@@ -88,19 +88,19 @@ export function Markdown({ content }: { content: string }) {
             const isBlock = className?.includes("language-");
             if (isBlock) {
               return (
-                <code className="font-mono text-sm text-text-default">
+                <code className="text-code text-text-default">
                   {children}
                 </code>
               );
             }
             return (
-              <code className="rounded-sm border border-border-subtle bg-background-secondary px-1.5 py-0.5 font-mono text-[0.85em] text-text-default">
+              <code className="rounded-sm border border-border-subtle bg-background-secondary px-1.5 py-0.5 text-inline-code text-text-default">
                 {children}
               </code>
             );
           },
           pre: ({ children }) => (
-            <pre className="my-6 overflow-x-auto rounded-lg border border-border-default bg-background-subtle p-4 text-sm leading-6">
+            <pre className="my-6 overflow-x-auto rounded-lg border border-border-default bg-background-subtle p-4">
               {children}
             </pre>
           ),

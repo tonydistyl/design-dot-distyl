@@ -24,10 +24,10 @@ export default async function GuidelinesPage() {
       <p className="mb-2 text-xs font-bold uppercase tracking-wide text-text-subtle">
         Foundations
       </p>
-      <h1 className="text-3xl font-bold tracking-tight text-text-default">
+      <h1 className="text-h1 text-text-default">
         Guidelines
       </h1>
-      <p className="mt-3 max-w-2xl text-lg leading-8 text-text-subtle">
+      <p className="mt-3 max-w-2xl text-large">
         The rules every Distyl frontend follows. Use the semantic token for
         intent, the correct component for the job, and let the token layer handle
         dark mode.
@@ -36,11 +36,11 @@ export default async function GuidelinesPage() {
       {/* Component quick-reference */}
       <h2
         id="component-semantics"
-        className="mt-12 mb-4 scroll-mt-8 border-b border-border-default pb-2 text-xl font-bold tracking-tight text-text-default"
+        className="mt-12 mb-4 scroll-mt-8 border-b border-border-default pb-2 text-h2 text-text-default"
       >
         Component semantics
       </h2>
-      <p className="mb-5 text-sm text-text-subtle">
+      <p className="mb-5 text-small">
         Every interactive element must be the semantically correct component.
         Using the wrong element is a bug, not a style choice.
       </p>
@@ -112,11 +112,11 @@ className="bg-background-default text-text-default"`}
       {/* Full spec */}
       <h2
         id="full-specification"
-        className="mt-14 mb-4 scroll-mt-8 border-b border-border-default pb-2 text-xl font-bold tracking-tight text-text-default"
+        className="mt-14 mb-4 scroll-mt-8 border-b border-border-default pb-2 text-h2 text-text-default"
       >
         Full specification
       </h2>
-      <p className="mb-2 text-sm text-text-subtle">
+      <p className="mb-2 text-small">
         The complete Cognition rules document, verbatim. Drop it in as{" "}
         <code className="rounded-sm border border-border-subtle bg-background-secondary px-1.5 py-0.5 font-mono text-xs text-text-default">
           CLAUDE.md

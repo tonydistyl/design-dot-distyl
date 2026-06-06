@@ -34,7 +34,7 @@ export function AuditSections({ sections }: { sections: AuditSection[] }) {
   return (
     <div>
       <div className="mb-3 flex items-center justify-between">
-        <p className="text-sm text-text-subtle">
+        <p className="text-small">
           {sections.length} sections · detailed findings
         </p>
         <button
@@ -61,7 +61,7 @@ export function AuditSections({ sections }: { sections: AuditSection[] }) {
                   }
                   className="flex w-full items-center justify-between gap-4 px-5 py-4 text-left transition-colors hover:bg-background-subtle"
                 >
-                  <span className="text-base font-bold text-text-default">
+                  <span className="text-h3 text-text-default">
                     {s.title}
                   </span>
                   <svg
