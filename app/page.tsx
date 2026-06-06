@@ -70,7 +70,7 @@ export default function HomePage() {
         ].map((s) => (
           <div
             key={s.label}
-            className="rounded-lg border border-border-default p-5"
+            className="rounded-lg border border-border-default bg-background-subtle p-5"
           >
             <div className="font-mono text-xl font-bold text-text-default">
               {s.stat}

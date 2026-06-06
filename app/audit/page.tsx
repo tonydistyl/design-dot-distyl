@@ -103,10 +103,10 @@ export default async function AuditPage() {
         ))}
       </div>
 
-      {/* Bottom line — the stop */}
+      {/* BLUF — the stop */}
       <div className="mt-6 rounded-lg border border-border-primary bg-background-accent p-5">
         <p className="text-body">
-          <strong className="font-bold">Bottom line:</strong> the codebase is not
+          <strong className="font-bold">BLUF:</strong> the codebase is not
           yet ready to receive Cognition v1.2 values. The brand purple{" "}
           <code className="font-mono text-text-default">#5D4EE7</code> is already
           present, so a clean rename plus a dark-mode reshape preserves brand
