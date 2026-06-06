@@ -166,9 +166,9 @@ export function Sidebar() {
 
       <div className="mt-8 border-t border-border-default pt-6">
         <ThemeToggle />
-        <p className="mt-4 text-xs font-normal text-text-subtle">Cognition v1.2</p>
-        <p className="mt-2 text-xs text-text-subtle">
-          Design at Distyl AI ·{" "}
+        <div className="mt-4 flex flex-col gap-1 text-xs text-text-subtle">
+          <span>Cognition v1.2</span>
+          <span>Design at Distyl AI</span>
           <a
             href="https://distylai.slack.com/archives/C0A22RR2N6P"
             target="_blank"
@@ -176,8 +176,7 @@ export function Sidebar() {
             className="text-text-default transition-colors hover:text-text-primary"
           >
             #research-and-design
-          </a>{" "}
-          ·{" "}
+          </a>
           <a
             href="https://distylai.slack.com/archives/C079VBDTJLA"
             target="_blank"
@@ -186,7 +185,7 @@ export function Sidebar() {
           >
             #engineering-fe
           </a>
-        </p>
+        </div>
       </div>
     </aside>
   );
