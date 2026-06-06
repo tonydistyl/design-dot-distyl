@@ -47,6 +47,7 @@ const nav: NavGroup[] = [
       { href: "/components/badge", label: "Badge" },
       { href: "/components/card", label: "Card" },
       { href: "/components/input", label: "Input" },
+      { href: "/components/empty-state", label: "Empty State" },
       { href: "/components/tag", label: "Tag" },
     ],
   },
