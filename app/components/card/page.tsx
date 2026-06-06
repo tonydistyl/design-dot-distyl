@@ -9,7 +9,7 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { CodeBlock, CopyButton } from "@/components/CodeBlock";
+import { CodeBlock } from "@/components/CodeBlock";
 
 export const metadata: Metadata = {
   title: "Card",
@@ -87,7 +87,7 @@ export default function CardPage() {
 
       {/* Preview */}
       <section id="preview" className="scroll-mt-8">
-        <h2 className="mt-12 mb-4 text-h2 text-text-default">Preview</h2>
+        <h3 className="mt-12 mb-4 text-h3 text-text-default">Preview</h3>
         <div className="flex items-center justify-center rounded-lg border border-border-default bg-background-subtle p-10">
           <Card className="w-full max-w-sm">
             <CardHeader className="flex-row items-start justify-between space-y-0">
@@ -122,7 +122,7 @@ export default function CardPage() {
 
       {/* Anatomy */}
       <section id="anatomy" className="scroll-mt-8">
-        <h2 className="mt-12 mb-4 text-h2 text-text-default">Anatomy</h2>
+        <h3 className="mt-12 mb-4 text-h3 text-text-default">Anatomy</h3>
         <div className="grid gap-6 lg:grid-cols-2">
           <div className="flex items-start justify-center rounded-lg border border-border-default bg-background-subtle p-8">
             <Card className="w-full max-w-sm">
@@ -154,7 +154,7 @@ export default function CardPage() {
 
       {/* Examples */}
       <section id="examples" className="scroll-mt-8">
-        <h2 className="mt-12 mb-4 text-h2 text-text-default">Examples</h2>
+        <h3 className="mt-12 mb-4 text-h3 text-text-default">Examples</h3>
         <div className="grid items-start gap-6 lg:grid-cols-2">
           {/* Featured event card with media + badge */}
           <Card className="w-full">
@@ -205,11 +205,11 @@ export default function CardPage() {
         </p>
       </section>
 
-      {/* Do / Don't */}
+      {/* Don't and Do */}
       <section id="do-dont" className="scroll-mt-8">
-        <h2 className="mt-12 mb-4 text-h2 text-text-default">
-          Do &amp; Don&apos;t
-        </h2>
+        <h3 className="mt-12 mb-4 text-h3 text-text-default">
+          Don&apos;t and Do
+        </h3>
         <div className="grid gap-4 sm:grid-cols-2">
           <div className="rounded-lg border border-border-danger bg-background-danger p-5">
             <div className="mb-2 text-sm font-bold text-text-danger">
@@ -224,10 +224,7 @@ export default function CardPage() {
             </p>
           </div>
           <div className="rounded-lg border border-border-success bg-background-success p-5">
-            <div className="mb-2 flex items-center justify-between">
-              <span className="text-sm font-bold text-text-success">Do</span>
-              <CopyButton value={doCode} />
-            </div>
+            <div className="mb-2 text-sm font-bold text-text-success">Do</div>
             <pre className="overflow-x-auto">
               <code className="font-mono text-xs leading-6 text-text-default">
                 {doCode}

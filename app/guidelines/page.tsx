@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Markdown } from "@/components/Markdown";
-import { CopyButton } from "@/components/CodeBlock";
 import { loadContent } from "@/lib/content";
 
 const semanticsDoCode = `className="bg-background-subtle text-text-subtle"
@@ -40,12 +39,12 @@ export default async function GuidelinesPage() {
       </p>
 
       {/* Component quick-reference */}
-      <h2
+      <h3
         id="component-semantics"
-        className="mt-12 mb-4 scroll-mt-8 border-b border-border-default pb-2 text-h2 text-text-default"
+        className="mt-12 mb-4 scroll-mt-8 border-b border-border-default pb-2 text-h3 text-text-default"
       >
         Component semantics
-      </h2>
+      </h3>
       <p className="mb-5 text-small">
         Every interactive element must be the semantically correct component.
         Using the wrong element is a bug, not a style choice.
@@ -100,10 +99,7 @@ export default async function GuidelinesPage() {
           </p>
         </div>
         <div className="rounded-lg border border-border-success bg-background-success p-5">
-          <div className="mb-2 flex items-center justify-between">
-            <span className="text-sm font-bold text-text-success">Do</span>
-            <CopyButton value={semanticsDoCode} />
-          </div>
+          <div className="mb-2 text-sm font-bold text-text-success">Do</div>
           <pre className="overflow-x-auto font-mono text-xs leading-6 text-text-default">
             {semanticsDoCode}
           </pre>
@@ -111,12 +107,12 @@ export default async function GuidelinesPage() {
       </div>
 
       {/* Full spec */}
-      <h2
+      <h3
         id="full-specification"
-        className="mt-14 mb-4 scroll-mt-8 border-b border-border-default pb-2 text-h2 text-text-default"
+        className="mt-14 mb-4 scroll-mt-8 border-b border-border-default pb-2 text-h3 text-text-default"
       >
         Full specification
-      </h2>
+      </h3>
       <p className="mb-2 text-small">
         The complete Cognition rules document, verbatim. Drop it in as{" "}
         <code className="rounded-sm border border-border-subtle bg-background-secondary px-1.5 py-0.5 font-mono text-xs text-text-default">

@@ -115,9 +115,9 @@ export default async function AuditPage() {
       </div>
 
       {/* Detailed findings — collapsed by default */}
-      <h2 className="mt-12 mb-4 text-h2 text-text-default">
+      <h3 className="mt-12 mb-4 text-h3 text-text-default">
         Detailed findings
-      </h2>
+      </h3>
       <AuditSections sections={sections} />
 
       <footer className="mt-12 border-t border-border-default pt-6 text-small">

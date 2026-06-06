@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Badge } from "@/components/ui/badge";
-import { CodeBlock, CopyButton } from "@/components/CodeBlock";
+import { CodeBlock } from "@/components/CodeBlock";
 
 export const metadata: Metadata = {
   title: "Badge",
@@ -49,7 +49,7 @@ export default function BadgePage() {
 
       {/* Preview */}
       <section id="preview" className="scroll-mt-8">
-        <h2 className="mt-12 mb-4 text-h2 text-text-default">Preview</h2>
+        <h3 className="mt-12 mb-4 text-h3 text-text-default">Preview</h3>
         <div className="flex items-center justify-center rounded-lg border border-border-default bg-background-subtle p-10">
           <Badge color="success">Active</Badge>
         </div>
@@ -61,7 +61,7 @@ export default function BadgePage() {
 
       {/* Variants */}
       <section id="variants" className="scroll-mt-8">
-        <h2 className="mt-12 mb-4 text-h2 text-text-default">Variants</h2>
+        <h3 className="mt-12 mb-4 text-h3 text-text-default">Variants</h3>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {colors.map((c) => (
             <div
@@ -88,11 +88,11 @@ export default function BadgePage() {
         </p>
       </section>
 
-      {/* Don't / Do */}
+      {/* Don't and Do */}
       <section id="do-dont" className="scroll-mt-8">
-        <h2 className="mt-12 mb-4 text-h2 text-text-default">
-          Don&apos;t &amp; Do
-        </h2>
+        <h3 className="mt-12 mb-4 text-h3 text-text-default">
+          Don&apos;t and Do
+        </h3>
         <div className="grid gap-4 sm:grid-cols-2">
           <div className="rounded-lg border border-border-danger bg-background-danger p-5">
             <div className="mb-2 text-sm font-bold text-text-danger">
@@ -104,10 +104,7 @@ export default function BadgePage() {
             </p>
           </div>
           <div className="rounded-lg border border-border-success bg-background-success p-5">
-            <div className="mb-2 flex items-center justify-between">
-              <span className="text-sm font-bold text-text-success">Do</span>
-              <CopyButton value={doCode} />
-            </div>
+            <div className="mb-2 text-sm font-bold text-text-success">Do</div>
             <pre className="overflow-x-auto">
               <code className="font-mono text-xs leading-6 text-text-default">
                 {doCode}

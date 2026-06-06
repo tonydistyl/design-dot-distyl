@@ -177,7 +177,6 @@ export function Sidebar() {
         <ThemeToggle />
         <div className="mt-4 flex flex-col gap-1 text-xs text-text-subtle">
           <span>Cognition v1.2</span>
-          <span>Design at Distyl AI</span>
           <a
             href="https://distylai.slack.com/archives/C0A22RR2N6P"
             target="_blank"

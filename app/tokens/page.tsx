@@ -47,9 +47,9 @@ export default function TokensPage() {
       {/* Color groups */}
       {colorGroups.map((group) => (
         <section key={group.id} id={group.id} className="scroll-mt-8">
-          <h2 className="mt-14 mb-1 border-b border-border-default pb-2 text-h2 text-text-default">
+          <h3 className="mt-14 mb-1 border-b border-border-default pb-2 text-h3 text-text-default">
             {group.title}
-          </h2>
+          </h3>
           <p className="mb-6 text-small">{group.description}</p>
 
           <div className="grid gap-4 sm:grid-cols-2">
@@ -98,9 +98,9 @@ export default function TokensPage() {
 
       {/* Radius */}
       <section id="radius" className="scroll-mt-8">
-        <h2 className="mt-14 mb-1 border-b border-border-default pb-2 text-h2 text-text-default">
+        <h3 className="mt-14 mb-1 border-b border-border-default pb-2 text-h3 text-text-default">
           Radius
-        </h2>
+        </h3>
         <p className="mb-6 text-small">
           Six steps. <code className="font-mono text-text-default">rounded-md</code>{" "}
           (8px) is the default.
@@ -131,9 +131,9 @@ export default function TokensPage() {
 
       {/* Spacing */}
       <section id="spacing" className="scroll-mt-8">
-        <h2 className="mt-14 mb-1 border-b border-border-default pb-2 text-h2 text-text-default">
+        <h3 className="mt-14 mb-1 border-b border-border-default pb-2 text-h3 text-text-default">
           Spacing
-        </h2>
+        </h3>
         <p className="mb-6 text-small">
           4px base unit. Never use arbitrary px values in inline styles.
         </p>
@@ -158,9 +158,9 @@ export default function TokensPage() {
 
       {/* Typography */}
       <section id="typography" className="scroll-mt-8">
-        <h2 className="mt-14 mb-1 border-b border-border-default pb-2 text-h2 text-text-default">
+        <h3 className="mt-14 mb-1 border-b border-border-default pb-2 text-h3 text-text-default">
           Typography
-        </h2>
+        </h3>
         <p className="mb-6 text-small">
           <strong className="font-bold text-text-default">Geist</strong> for all
           UI and body copy.{" "}
