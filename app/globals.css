@@ -1,157 +1,54 @@
 @import "tailwindcss";
 
-/* ──────────────────────────────────────────────────────────────────────────
-   Cognition v1.2 — Distyl AI Design System
-   --------------------------------------------------------------------------
-   Source values live on `--cog-*` and are remapped under [data-theme="dark"]
-   on <html>. The canonical spec names `--color-*` are exposed as live aliases
-   (so the deployed CSS literally contains the spec variables), and the same
-   `--color-*` names are registered with Tailwind via `@theme inline` so the
-   utilities (bg-background-default, text-text-subtle, …) resolve to the live
-   variable and remap with the theme. Dark mode is entirely token-driven — no
-   `dark:` classes anywhere in the app.
-   ────────────────────────────────────────────────────────────────────────── */
-
-:root {
-  /* ── Source values (light) ── */
-  --cog-background-primary: #5d4ee7;
-  --cog-background-accent: #efedfd;
-  --cog-background-default: #ffffff;
-  --cog-background-subtle: #f9fafb;
-  --cog-background-secondary: #f3f4f6;
-  --cog-background-inverse: #0f1117;
-  --cog-background-danger: #fef2f2;
-  --cog-background-success: #f0fdf4;
-  --cog-background-warning: #fffbeb;
-
-  --cog-text-default: #0f1117;
-  --cog-text-subtle: #6b7280;
-  --cog-text-inverse: #ffffff;
-  --cog-text-primary: #5d4ee7;
-  --cog-text-disabled: #d1d5db;
-  --cog-text-danger: #dc2626;
-  --cog-text-success: #15803d;
-  --cog-text-warning: #b45309;
-
-  --cog-border-default: #e5e7eb;
-  --cog-border-subtle: #f3f4f6;
-  --cog-border-strong: #9ca3af;
-  --cog-border-primary: #5d4ee7;
-  --cog-border-danger: #ef4444;
-  --cog-border-success: #16a34a;
-
-  --cog-feedback-danger: #ef4444;
-  --cog-feedback-success: #15803d;
-  --cog-feedback-warning: #f59e0b;
-  --cog-feedback-info: #5d4ee7;
-
-  /* ── Canonical spec aliases (these are the names in cognition-tokens.css) ── */
-  --color-background-primary: var(--cog-background-primary);
-  --color-background-accent: var(--cog-background-accent);
-  --color-background-default: var(--cog-background-default);
-  --color-background-subtle: var(--cog-background-subtle);
-  --color-background-secondary: var(--cog-background-secondary);
-  --color-background-inverse: var(--cog-background-inverse);
-  --color-background-danger: var(--cog-background-danger);
-  --color-background-success: var(--cog-background-success);
-  --color-background-warning: var(--cog-background-warning);
-
-  --color-text-default: var(--cog-text-default);
-  --color-text-subtle: var(--cog-text-subtle);
-  --color-text-inverse: var(--cog-text-inverse);
-  --color-text-primary: var(--cog-text-primary);
-  --color-text-disabled: var(--cog-text-disabled);
-  --color-text-danger: var(--cog-text-danger);
-  --color-text-success: var(--cog-text-success);
-  --color-text-warning: var(--cog-text-warning);
-
-  --color-border-default: var(--cog-border-default);
-  --color-border-subtle: var(--cog-border-subtle);
-  --color-border-strong: var(--cog-border-strong);
-  --color-border-primary: var(--cog-border-primary);
-  --color-border-danger: var(--cog-border-danger);
-  --color-border-success: var(--cog-border-success);
-
-  --color-feedback-danger: var(--cog-feedback-danger);
-  --color-feedback-success: var(--cog-feedback-success);
-  --color-feedback-warning: var(--cog-feedback-warning);
-  --color-feedback-info: var(--cog-feedback-info);
-}
-
-[data-theme="dark"] {
-  --cog-background-primary: #7c6ff7;
-  --cog-background-accent: #06041b;
-  --cog-background-default: #0f1117;
-  --cog-background-subtle: #141820;
-  --cog-background-secondary: #1f2937;
-  --cog-background-inverse: #f9fafb;
-  --cog-background-danger: #450a0a;
-  --cog-background-success: #052e16;
-  --cog-background-warning: #431407;
-
-  --cog-text-default: #f9fafb;
-  --cog-text-subtle: #9ca3af;
-  --cog-text-inverse: #0f1117;
-  --cog-text-primary: #7c6ff7;
-  --cog-text-disabled: #4b5563;
-  --cog-text-danger: #f87171;
-  --cog-text-success: #4ade80;
-  --cog-text-warning: #fbbf24;
-
-  --cog-border-default: #374151;
-  --cog-border-subtle: #1f2937;
-  --cog-border-strong: #6b7280;
-  --cog-border-primary: #7c6ff7;
-  --cog-border-danger: #f87171;
-  --cog-border-success: #4ade80;
-
-  --cog-feedback-danger: #f87171;
-  --cog-feedback-success: #4ade80;
-  --cog-feedback-warning: #fbbf24;
-  --cog-feedback-info: #7c6ff7;
-}
-
-/* Register the live token aliases with Tailwind. `inline` => utilities embed
-   the var() reference (so they follow [data-theme]) instead of a static value. */
-@theme inline {
-  --color-background-primary: var(--cog-background-primary);
-  --color-background-accent: var(--cog-background-accent);
-  --color-background-default: var(--cog-background-default);
-  --color-background-subtle: var(--cog-background-subtle);
-  --color-background-secondary: var(--cog-background-secondary);
-  --color-background-inverse: var(--cog-background-inverse);
-  --color-background-danger: var(--cog-background-danger);
-  --color-background-success: var(--cog-background-success);
-  --color-background-warning: var(--cog-background-warning);
-
-  --color-text-default: var(--cog-text-default);
-  --color-text-subtle: var(--cog-text-subtle);
-  --color-text-inverse: var(--cog-text-inverse);
-  --color-text-primary: var(--cog-text-primary);
-  --color-text-disabled: var(--cog-text-disabled);
-  --color-text-danger: var(--cog-text-danger);
-  --color-text-success: var(--cog-text-success);
-  --color-text-warning: var(--cog-text-warning);
-
-  --color-border-default: var(--cog-border-default);
-  --color-border-subtle: var(--cog-border-subtle);
-  --color-border-strong: var(--cog-border-strong);
-  --color-border-primary: var(--cog-border-primary);
-  --color-border-danger: var(--cog-border-danger);
-  --color-border-success: var(--cog-border-success);
-
-  --color-feedback-danger: var(--cog-feedback-danger);
-  --color-feedback-success: var(--cog-feedback-success);
-  --color-feedback-warning: var(--cog-feedback-warning);
-  --color-feedback-info: var(--cog-feedback-info);
-
-  --font-sans: var(--font-lato);
-  --font-mono: var(--font-roboto-mono);
-}
-
-/* Radius is theme-independent — register canonical Cognition values directly
-   (overrides Tailwind's defaults so rounded-sm/md/lg/xl match the spec). */
+/* Cognition v1.2 — Distyl AI Design System */
+/* Drop into globals.css at the app root */
+/*
+   Tailwind v4 note: color / radius / font tokens live in @theme so the
+   utilities (bg-*, text-*, border-*, rounded-*, font-*) are generated. The
+   light values below are canonical; dark mode remaps the same CSS variables
+   under [data-theme="dark"]. Token names and values are unchanged from spec.
+*/
 @theme {
+  /* Typography — Font Family */
+  --font-sans: var(--font-geist-sans), "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), "Geist Mono", ui-monospace, monospace;
+
+  /* Backgrounds */
+  --color-background-primary: #5D4EE7;
+  --color-background-accent: #EFEDFD;
+  --color-background-default: #FFFFFF;
+  --color-background-subtle: #F9FAFB;
+  --color-background-secondary: #F3F4F6;
+  --color-background-inverse: #0F1117;
+  --color-background-danger: #FEF2F2;
+  --color-background-success: #F0FDF4;
+  --color-background-warning: #FFFBEB;
+
+  /* Text */
+  --color-text-default: #0F1117;
+  --color-text-subtle: #6B7280;
+  --color-text-inverse: #FFFFFF;
+  --color-text-primary: #5D4EE7;
+  --color-text-disabled: #D1D5DB;
+  --color-text-danger: #DC2626;
+  --color-text-success: #15803D;
+  --color-text-warning: #B45309;
+
+  /* Borders */
+  --color-border-default: #E5E7EB;
+  --color-border-subtle: #F3F4F6;
+  --color-border-strong: #9CA3AF;
+  --color-border-primary: #5D4EE7;
+  --color-border-danger: #EF4444;
+  --color-border-success: #16A34A;
+
+  /* Feedback */
+  --color-feedback-danger: #EF4444;
+  --color-feedback-success: #15803D;
+  --color-feedback-warning: #F59E0B;
+  --color-feedback-info: #5D4EE7;
+
+  /* Radius */
   --radius-none: 0px;
   --radius-sm: 4px;
   --radius-md: 8px;
@@ -160,6 +57,161 @@
   --radius-full: 9999px;
 }
 
+:root {
+  /* Typography — Font Size (Tailwind scale) */
+  --font-size-xs:   0.75rem;    /* 12px */
+  --font-size-sm:   0.875rem;   /* 14px */
+  --font-size-base: 1rem;       /* 16px */
+  --font-size-lg:   1.125rem;   /* 18px */
+  --font-size-xl:   1.25rem;    /* 20px */
+  --font-size-2xl:  1.5rem;     /* 24px */
+  --font-size-3xl:  1.875rem;   /* 30px */
+  --font-size-4xl:  2.25rem;    /* 36px */
+  --font-size-5xl:  3rem;       /* 48px */
+
+  /* Typography — Font Weight */
+  --font-weight-normal:    400;
+  --font-weight-medium:    500;
+  --font-weight-semibold:  600;
+  --font-weight-bold:      700;
+  --font-weight-extrabold: 800;
+
+  /* Typography — Line Height */
+  --line-height-none:    1;
+  --line-height-tight:   1.25;
+  --line-height-snug:    1.375;
+  --line-height-normal:  1.5;
+  --line-height-relaxed: 1.625;
+  --line-height-loose:   2;
+
+  /* Typography — Letter Spacing */
+  --letter-spacing-tight:   -0.05em;
+  --letter-spacing-normal:   0em;
+  --letter-spacing-wide:     0.025em;
+  --letter-spacing-wider:    0.05em;
+  --letter-spacing-widest:   0.1em;
+
+  /* Typography — Named Text Styles
+     Source of truth: Cognition Component Library (Figma)
+     Format: text-{size}/leading-{height}/{weight}
+  */
+
+  /* H1 — text-5xl/leading-normal/extrabold */
+  --text-h1-size:        var(--font-size-5xl);
+  --text-h1-weight:      var(--font-weight-extrabold);
+  --text-h1-line-height: var(--line-height-normal);
+  --text-h1-font:        var(--font-sans);
+
+  /* H2 — text-3xl/leading-normal/semibold */
+  --text-h2-size:        var(--font-size-3xl);
+  --text-h2-weight:      var(--font-weight-semibold);
+  --text-h2-line-height: var(--line-height-normal);
+  --text-h2-font:        var(--font-sans);
+
+  /* H3 — text-2xl/leading-normal/semibold */
+  --text-h3-size:        var(--font-size-2xl);
+  --text-h3-weight:      var(--font-weight-semibold);
+  --text-h3-line-height: var(--line-height-normal);
+  --text-h3-font:        var(--font-sans);
+
+  /* H4 — text-xl/leading-normal/semibold */
+  --text-h4-size:        var(--font-size-xl);
+  --text-h4-weight:      var(--font-weight-semibold);
+  --text-h4-line-height: var(--line-height-normal);
+  --text-h4-font:        var(--font-sans);
+
+  /* P (Body) — text-base/leading-normal/normal */
+  --text-body-size:        var(--font-size-base);
+  --text-body-weight:      var(--font-weight-normal);
+  --text-body-line-height: var(--line-height-normal);
+  --text-body-font:        var(--font-sans);
+  --text-body-color:       var(--color-text-default);
+
+  /* Lead — text-lg/leading-normal/semibold */
+  --text-lead-size:        var(--font-size-lg);
+  --text-lead-weight:      var(--font-weight-semibold);
+  --text-lead-line-height: var(--line-height-normal);
+  --text-lead-font:        var(--font-sans);
+
+  /* Large — text-xl/leading-normal/normal */
+  --text-large-size:        var(--font-size-xl);
+  --text-large-weight:      var(--font-weight-normal);
+  --text-large-line-height: var(--line-height-normal);
+  --text-large-font:        var(--font-sans);
+  --text-large-color:       var(--color-text-subtle);
+
+  /* Small / Muted — text-sm/leading-normal/medium */
+  --text-small-size:        var(--font-size-sm);
+  --text-small-weight:      var(--font-weight-medium);
+  --text-small-line-height: var(--line-height-normal);
+  --text-small-font:        var(--font-sans);
+  --text-small-color:       var(--color-text-subtle);
+
+  /* Blockquote — text-base/leading-normal/italic */
+  --text-blockquote-size:        var(--font-size-base);
+  --text-blockquote-weight:      var(--font-weight-normal);
+  --text-blockquote-line-height: var(--line-height-normal);
+  --text-blockquote-style:       italic;
+  --text-blockquote-font:        var(--font-sans);
+
+  /* List — text-base/leading-normal/normal, 8px list spacing */
+  --text-list-size:        var(--font-size-base);
+  --text-list-weight:      var(--font-weight-normal);
+  --text-list-line-height: var(--line-height-normal);
+  --text-list-spacing:     8px;
+  --text-list-font:        var(--font-sans);
+
+  /* InlineCode — text-sm/leading-normal/normal, mono */
+  --text-inline-code-size:        var(--font-size-sm);
+  --text-inline-code-weight:      var(--font-weight-normal);
+  --text-inline-code-line-height: var(--line-height-normal);
+  --text-inline-code-font:        var(--font-mono);
+
+  /* Code block — text-base/leading-normal/normal, mono */
+  --text-code-size:        var(--font-size-base);
+  --text-code-weight:      var(--font-weight-normal);
+  --text-code-line-height: var(--line-height-normal);
+  --text-code-font:        var(--font-mono);
+}
+
+[data-theme="dark"] {
+  /* Backgrounds */
+  --color-background-primary: #7C6FF7;
+  --color-background-accent: #06041B;
+  --color-background-default: #0F1117;
+  --color-background-subtle: #141820;
+  --color-background-secondary: #1F2937;
+  --color-background-inverse: #F9FAFB;
+  --color-background-danger: #450A0A;
+  --color-background-success: #052E16;
+  --color-background-warning: #431407;
+
+  /* Text */
+  --color-text-default: #F9FAFB;
+  --color-text-subtle: #9CA3AF;
+  --color-text-inverse: #0F1117;
+  --color-text-primary: #7C6FF7;
+  --color-text-disabled: #4B5563;
+  --color-text-danger: #F87171;
+  --color-text-success: #4ADE80;
+  --color-text-warning: #FBBF24;
+
+  /* Borders */
+  --color-border-default: #374151;
+  --color-border-subtle: #1F2937;
+  --color-border-strong: #6B7280;
+  --color-border-primary: #7C6FF7;
+  --color-border-danger: #F87171;
+  --color-border-success: #4ADE80;
+
+  /* Feedback */
+  --color-feedback-danger: #F87171;
+  --color-feedback-success: #4ADE80;
+  --color-feedback-warning: #FBBF24;
+  --color-feedback-info: #7C6FF7;
+}
+
+/* Base element styling (the spec drop-in assumes the app provides this). */
 html {
   scroll-behavior: smooth;
 }
@@ -167,7 +219,7 @@ html {
 body {
   background-color: var(--color-background-default);
   color: var(--color-text-default);
-  font-family: var(--font-lato), ui-sans-serif, system-ui, sans-serif;
+  font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }

@@ -69,7 +69,7 @@ export default function HomePage() {
         {[
           { stat: "32", label: "Canonical tokens" },
           { stat: "#5D4EE7", label: "Brand purple" },
-          { stat: "Lato", label: "UI typeface" },
+          { stat: "Geist", label: "UI typeface" },
           { stat: "4px", label: "Spacing base unit" },
         ].map((s) => (
           <div

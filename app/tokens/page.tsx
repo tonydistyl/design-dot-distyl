@@ -155,9 +155,9 @@ export default function TokensPage() {
           Typography
         </h2>
         <p className="mb-6 text-sm text-text-subtle">
-          <strong className="font-bold text-text-default">Lato</strong> for all
+          <strong className="font-bold text-text-default">Geist</strong> for all
           UI and body copy.{" "}
-          <strong className="font-bold text-text-default">Roboto Mono</strong>{" "}
+          <strong className="font-bold text-text-default">Geist Mono</strong>{" "}
           for code and technical values only.
         </p>
 
@@ -201,7 +201,7 @@ export default function TokensPage() {
 
         <div className="mt-4 rounded-lg border border-border-default bg-background-inverse p-5">
           <code className="font-mono text-sm text-text-inverse">
-            font-family: Roboto Mono — 0123456789 {`{ }`} =&gt; const x = 42;
+            font-family: Geist Mono — 0123456789 {`{ }`} =&gt; const x = 42;
           </code>
         </div>
       </section>
