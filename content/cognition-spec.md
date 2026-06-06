@@ -1,6 +1,6 @@
 # Cognition Design System
 
-**Distyl AI · v1.2 · June 2026**
+**Distyl AI · v1.2.1 · June 2026**
 
 This file defines the design and component conventions for all Distyl frontend work. It applies to new implementations, new features, and any surface where AI tooling (Claude Code, Cursor, Copilot) is generating or modifying UI code. Follow these rules exactly. No exceptions without a proposal.
 
@@ -84,6 +84,21 @@ font-family: Geist Mono (code blocks, technical values only)
 sizes: 12px / 14px / 16px / 18px / 20px / 24px / 30px / 36px
 weights: 400 / 500 / 600 / 700
 ```
+
+**Type scale.** The heading scale starts at H1 — there is no Display level.
+
+| Level   | Size | Weight         |
+| ------- | ---- | -------------- |
+| H1      | 36px | Bold (700)     |
+| H2      | 30px | Semibold (600) |
+| H3      | 24px | Semibold (600) |
+| H4      | 20px | Semibold (600) |
+| Lead    | 18px | Semibold (600) |
+| Body    | 16px | Regular (400)  |
+| Small   | 14px | Medium (500)   |
+| Caption | 12px | Regular (400)  |
+
+Nav section labels and page eyebrows use Caption (12px regular).
 
 ---
 
