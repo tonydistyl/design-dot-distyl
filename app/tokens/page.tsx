@@ -105,7 +105,7 @@ export default function TokensPage() {
               className="flex flex-col items-center gap-3 rounded-lg border border-border-default bg-background-subtle p-5"
             >
               <div
-                className="h-16 w-16 border-2 border-border-default bg-background-accent"
+                className="h-16 w-16 border-2 border-border-default bg-background-secondary"
                 style={{ borderRadius: r.value }}
                 aria-hidden
               />
