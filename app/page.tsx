@@ -38,11 +38,11 @@ export default function HomePage() {
       <div className="mt-16 grid gap-4 sm:grid-cols-3">
         {[
           {
-            title: "Semantic, not literal",
+            title: "Semantic, not literal values",
             body: "Use bg-background-subtle, not bg-gray-100. Names describe intent, so values can change underneath without touching components.",
           },
           {
-            title: "Dark mode at the token layer",
+            title: "Token layer, not dark classes",
             body: "Themes remap [data-theme=\"dark\"] on <html>. No dark: classes anywhere — the token layer does all the work.",
           },
           {
