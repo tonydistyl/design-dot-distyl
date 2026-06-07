@@ -59,6 +59,7 @@ const nav: NavGroup[] = [
       { href: "/components/tabs", label: "Tabs" },
       { href: "/components/tag", label: "Tag" },
       { href: "/components/textarea", label: "Textarea" },
+      { href: "/components/tooltip", label: "Tooltip" },
     ],
   },
   {
