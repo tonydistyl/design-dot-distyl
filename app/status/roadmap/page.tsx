@@ -45,7 +45,7 @@ const epics: Epic[] = [
       "Replace all .dark selectors in base.css and impls/demos/App.css",
       "Update theme provider to set dataset.theme instead of toggling .dark class",
       "Remove 26 raw dark: Tailwind classes from impl code",
-      "Fix alert.tsx and tabs.tsx shadcn primitives first — they propagate",
+      "Fix alert.tsx and tabs.tsx shadcn primitives first. They propagate",
     ],
   },
   {
@@ -117,7 +117,7 @@ export default function RoadmapPage() {
         system to full Cognition v1.2 compliance.
       </p>
 
-      <div className="mt-4 max-w-2xl rounded-lg border border-border-primary bg-background-accent p-4">
+      <div className="mt-4 max-w-2xl rounded-lg border border-border-default bg-background-accent p-4">
         <p className="text-small text-text-default">
           Epics 1 and 2 are rebrand blockers. Everything after is rolling
           cleanup. A brand color swap becomes a single CSS file change once these
