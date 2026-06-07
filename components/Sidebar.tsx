@@ -55,6 +55,7 @@ const nav: NavGroup[] = [
   {
     section: "Status",
     items: [
+      { href: "/status/roadmap", label: "Roadmap" },
       {
         href: "/audit",
         label: "Codebase Audit",
