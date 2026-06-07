@@ -351,14 +351,17 @@ body {
     stroke-dashoffset: 400;
   }
   .chase-1 {
-    animation: chase 2s linear infinite;
+    animation: chase 2s ease-in-out infinite;
   }
   .chase-2 {
-    animation: chase 2s linear infinite 0.4s;
+    animation: chase 2s ease-in-out infinite 0.4s;
   }
 }
 
 @keyframes chase {
+  from {
+    stroke-dashoffset: 400;
+  }
   to {
     stroke-dashoffset: 0;
   }
