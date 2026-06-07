@@ -1,0 +1,66 @@
+"use client";
+
+import { useRef, useState } from "react";
+import { Send } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Textarea } from "@/components/ui/textarea";
+
+interface ChatInputProps {
+  onSend: (message: string) => void;
+  disabled?: boolean;
+  placeholder?: string;
+}
+
+export function ChatInput({ onSend, disabled, placeholder }: ChatInputProps) {
+  const [value, setValue] = useState("");
+  const ref = useRef<HTMLTextAreaElement>(null);
+
+  const send = () => {
+    const text = value.trim();
+    if (!text || disabled) return;
+    onSend(text);
+    setValue("");
+    if (ref.current) ref.current.style.height = "auto";
+  };
+
+  return (
+    <div>
+      <div className="flex items-end gap-2 rounded-xl border border-border-default bg-background-subtle px-4 py-2 transition-colors focus-within:border-border-primary">
+        <Textarea
+          ref={ref}
+          value={value}
+          rows={1}
+          disabled={disabled}
+          placeholder={placeholder}
+          onChange={(e) => setValue(e.target.value)}
+          onInput={(e) => {
+            e.currentTarget.style.height = "auto";
+            e.currentTarget.style.height = e.currentTarget.scrollHeight + "px";
+          }}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" && !e.shiftKey) {
+              e.preventDefault();
+              send();
+            }
+          }}
+          // Seamless inside the framed wrapper: strip the Textarea's own
+          // border/bg/shadow/ring so the wrapper owns the focus state.
+          className="min-h-0 max-h-[120px] resize-none border-0 bg-transparent px-0 py-1.5 shadow-none focus-visible:border-0 focus-visible:ring-0"
+        />
+        <Button
+          type="button"
+          size="sm"
+          onClick={send}
+          disabled={disabled || !value.trim()}
+          className="shrink-0"
+        >
+          <Send size={14} aria-hidden />
+          <span className="sr-only">Send message</span>
+        </Button>
+      </div>
+      <p className="mt-2 text-center text-xs text-text-subtle">
+        Enter to send · Shift+Enter for newline
+      </p>
+    </div>
+  );
+}
