@@ -43,12 +43,13 @@ const nav: NavGroup[] = [
   {
     section: "Components",
     items: [
-      { href: "/components/button", label: "Button" },
+      { href: "/components/alert", label: "Alert" },
       { href: "/components/badge", label: "Badge" },
+      { href: "/components/button", label: "Button" },
       { href: "/components/card", label: "Card" },
-      { href: "/components/input", label: "Input" },
       { href: "/components/dialog", label: "Dialog" },
       { href: "/components/empty-state", label: "Empty State" },
+      { href: "/components/input", label: "Input" },
       { href: "/components/tag", label: "Tag" },
     ],
   },
