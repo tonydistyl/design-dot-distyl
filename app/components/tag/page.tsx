@@ -26,7 +26,7 @@ export default function TagPage() {
         actions, navigation, or status.
       </p>
 
-      <div className="mt-4 rounded-lg border border-border-primary bg-background-accent p-4">
+      <div className="mt-4 rounded-lg border border-border-default bg-background-accent p-4">
         <p className="text-small text-text-default">
           <span className="font-bold">Proposed.</span> fe-distillery has no
           first-class <code className="font-mono">Tag</code> yet — only the
