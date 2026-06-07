@@ -50,6 +50,7 @@ const nav: NavGroup[] = [
       { href: "/components/dialog", label: "Dialog" },
       { href: "/components/empty-state", label: "Empty State" },
       { href: "/components/input", label: "Input" },
+      { href: "/components/tabs", label: "Tabs" },
       { href: "/components/tag", label: "Tag" },
     ],
   },
