@@ -187,8 +187,7 @@ export default function DialogPage() {
         <code className="font-mono text-text-default">DialogDescription</code>,{" "}
         <code className="font-mono text-text-default">DialogFooter</code>,{" "}
         <code className="font-mono text-text-default">DialogClose</code>. The raw
-        utilities are replaced with Cognition tokens and the Figma sectioned
-        layout.
+        utilities are replaced with Cognition tokens and the sectioned layout.
       </footer>
     </div>
   );

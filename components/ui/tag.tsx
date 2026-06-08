@@ -3,8 +3,8 @@ import * as React from "react";
 
 import { cn } from "@/lib/utils";
 
-// NOTE: fe-distillery has no first-class Tag primitive (only the
-// shadcn-io/tags multi-select combobox). This is the proposed canonical Tag
+// NOTE: fe-distillery has no first-class Tag primitive (only a third-party
+// tags multi-select combobox). This is the proposed canonical Tag
 // per the Cognition v1.2 spec — a non-interactive label/category/keyword,
 // built on the tag.* semantic tokens (background.secondary / text.default /
 // border.default). No variants or sizes exist in any source API, so it ships

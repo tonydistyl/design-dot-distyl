@@ -10,8 +10,7 @@ import { cn } from "@/lib/utils";
 // [data-theme="dark"] with no dark: classes (the fix for card.tsx's raw
 // bg-card / text-card-foreground / text-muted-foreground utilities).
 //
-// `size` ("default" | "sm") is the Cognition addition the Figma playground
-// documents: it tightens padding and the title size. It is propagated to the
+// `size` ("default" | "sm") is a Cognition addition that tightens padding and the title size. It is propagated to the
 // sub-parts through context so the header/content/footer stay padding-aware
 // without each call site having to repeat it.
 

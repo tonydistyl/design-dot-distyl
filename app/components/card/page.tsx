@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 };
 
 // Illustrative input — the design system has no Input component yet, so the
-// playground renders the field shells with tokens to match the Figma preview.
+// playground renders the field shells with tokens to match the Cognition Input.
 function FieldShell({ label, value }: { label: string; value: string }) {
   return (
     <div className="flex flex-col gap-2">

@@ -82,8 +82,8 @@ export default function EmptyStatePage() {
         <p className="text-small text-text-default">
           <span className="font-bold">Proposed.</span> fe-distillery has no
           first-class empty-state component yet. This documents the canonical{" "}
-          <code className="font-mono">Empty</code> the audit recommends — its
-          parts mirror shadcn&apos;s Empty family.
+          <code className="font-mono">Empty</code> the audit recommends — a
+          header, media, title, description, and content composition.
         </p>
       </div>
 
@@ -237,8 +237,8 @@ export default function EmptyStatePage() {
 
       <footer className="mt-16 border-t border-border-default pt-6 text-small">
         Proposed canonical component — fe-distillery has no empty-state primitive
-        yet. The parts mirror shadcn&apos;s{" "}
-        <code className="font-mono text-text-default">Empty</code> family (
+        yet. The parts compose as{" "}
+        <code className="font-mono text-text-default">Empty</code> (
         <code className="font-mono text-text-default">EmptyHeader</code>,{" "}
         <code className="font-mono text-text-default">EmptyMedia</code>,{" "}
         <code className="font-mono text-text-default">EmptyTitle</code>,{" "}

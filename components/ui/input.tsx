@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 // bg-transparent / placeholder:text-muted-foreground / focus-visible:ring-ring
 // utilities are mapped to Cognition v1.2 semantic tokens, so the field themes
 // via [data-theme="dark"] with no dark: classes. States (focus, disabled,
-// invalid, file) match the Cognition Input in Figma.
+// invalid, file) match the Cognition Input.
 const Input = React.forwardRef<HTMLInputElement, React.ComponentProps<"input">>(
   ({ className, type, ...props }, ref) => {
     return (

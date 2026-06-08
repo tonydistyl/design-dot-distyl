@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
 // DialogTrigger, DialogPortal, DialogClose, DialogOverlay, DialogContent,
 // DialogHeader, DialogFooter, DialogTitle, DialogDescription). The fix: the raw
 // bg-background / border / bg-black\80 / focus:ring-ring utilities are mapped to
-// Cognition v1.2 tokens, and the sectioned layout follows the Cognition Figma
+// Cognition v1.2 tokens, and the sectioned layout follows the Cognition
 // Dialog — header/footer own their padding and the footer carries the top
 // border + subtle tint (like Card). Themes via [data-theme="dark"], no dark:.
 
@@ -59,7 +59,7 @@ const DialogContent = React.forwardRef<
 DialogContent.displayName = DialogPrimitive.Content.displayName;
 
 // Header and footer own their padding so the footer can be full-bleed with a
-// top border + subtle tint, matching the Cognition Figma Dialog. Body content
+// top border + subtle tint, matching the Cognition Dialog. Body content
 // sits between them — wrap it in `px-4 pb-4` (see the docs examples).
 const DialogHeader = ({
   className,

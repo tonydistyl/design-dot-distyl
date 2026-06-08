@@ -102,8 +102,9 @@ export default function DropdownMenuPage() {
               Don&apos;t import{" "}
               <code className="font-mono">@radix-ui/react-dropdown-menu</code>{" "}
               directly and restyle it inline — that&apos;s how unstyled,
-              off-token menus creep in. Use the shadcn wrapper. And don&apos;t
-              use it for primary navigation; that&apos;s a nav or a Select.
+              off-token menus creep in. Use the Cognition wrapper. And
+              don&apos;t use it for primary navigation; that&apos;s a nav or a
+              Select.
             </p>
           </div>
           <div className="rounded-lg border border-border-success bg-background-success p-5">

@@ -12,8 +12,8 @@ import { cn } from "@/lib/utils";
 // border-input, dark:data-[state=active]:bg-input/30) and raw palette colors
 // (primary-50, gray-600) — here every color is a Cognition v1.2 token, so the
 // tabs theme via [data-theme="dark"] with no dark: classes.
-//   secondary = segmented pill (the Figma "Default")
-//   underline = bottom-border line (the Figma "Line")
+//   secondary = segmented pill
+//   underline = bottom-border line
 
 const Tabs = TabsPrimitive.Root;
 

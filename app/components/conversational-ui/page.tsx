@@ -96,10 +96,9 @@ export default function ConversationalUIPage() {
       <div className="mt-4 rounded-lg border border-border-default bg-background-accent p-4">
         <p className="text-small text-text-default">
           <span className="font-bold">Proposed.</span> fe-distillery has no
-          first-class chat component, is not in the design library nor has a
-          Figma counterpart yet. It documents the canonical pattern for AI chat
-          surfaces across Distyl products like Platform, Tower, and future
-          implementations.
+          first-class chat component yet. It documents the canonical pattern for
+          AI chat surfaces across Distyl products like Platform, Tower, and
+          future implementations.
         </p>
       </div>
 

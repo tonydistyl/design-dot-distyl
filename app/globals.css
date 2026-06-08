@@ -96,7 +96,7 @@
   --letter-spacing-widest:   0.1em;
 
   /* Typography — Named Text Styles
-     Source of truth: Cognition Component Library (Figma)
+     Source of truth: Cognition v1.2
      Format: text-{size}/leading-{height}/{weight}
   */
 
@@ -236,7 +236,7 @@ body {
 /* ──────────────────────────────────────────────────────────────────────────
    Named text styles — the canonical Cognition typography roles.
    Each class is composed entirely from the --text-* tokens above, so the
-   Figma source of truth drives every heading, paragraph, and code block.
+   the Cognition spec drives every heading, paragraph, and code block.
    Layout/color utilities (mt-*, border-b, text-text-danger, …) still compose.
    ────────────────────────────────────────────────────────────────────────── */
 @layer components {

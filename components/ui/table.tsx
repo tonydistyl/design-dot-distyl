@@ -2,7 +2,7 @@ import * as React from "react";
 
 import { cn } from "@/lib/utils";
 
-// Mirrors fe-distillery/components/ui/table.tsx (the shadcn Table primitive set
+// Mirrors fe-distillery/components/ui/table.tsx (the Table primitive set
 // the platform DataTable renders through). Visual classes mapped to Cognition
 // v1.2 tokens: bg-muted/50 → bg-background-subtle, hover:bg-muted/50 →
 // hover:bg-background-subtle, data-[state=selected]:bg-primary/5 →

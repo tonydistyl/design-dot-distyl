@@ -29,10 +29,9 @@ export default function TagPage() {
       <div className="mt-4 rounded-lg border border-border-default bg-background-accent p-4">
         <p className="text-small text-text-default">
           <span className="font-bold">Proposed.</span> fe-distillery has no
-          first-class <code className="font-mono">Tag</code> yet — only the
-          <code className="font-mono"> shadcn-io/tags</code> multi-select
-          combobox. This documents the canonical Tag the audit recommends
-          building.
+          first-class <code className="font-mono">Tag</code> yet — only a
+          third-party tags multi-select combobox. This documents the canonical
+          Tag the audit recommends building.
         </p>
       </div>
 

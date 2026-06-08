@@ -45,7 +45,7 @@ const epics: Epic[] = [
       "Replace all .dark selectors in base.css and impls/demos/App.css",
       "Update theme provider to set dataset.theme instead of toggling .dark class",
       "Remove 26 raw dark: Tailwind classes from impl code",
-      "Fix alert.tsx and tabs.tsx shadcn primitives first. They propagate",
+      "Fix alert.tsx and tabs.tsx primitives first. They propagate",
     ],
   },
   {
@@ -69,7 +69,7 @@ const epics: Epic[] = [
       "Rewrite badge.tsx — replace 30+ raw Tailwind utilities with semantic tokens",
       "Rewrite toast.tsx — remove text-red-300/50 and similar",
       "Introduce canonical Tag primitive",
-      "Move 4 direct @radix-ui imports onto shadcn wrappers",
+      "Move 4 direct @radix-ui imports onto the shared ui/ wrappers",
     ],
   },
   {
