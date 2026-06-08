@@ -52,7 +52,7 @@ export default function TokensPage() {
           </h3>
           <p className="mb-6 text-small">{group.description}</p>
 
-          <div className="grid gap-4 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             {group.tokens.map((t) => (
               <div
                 key={t.cssVar}
@@ -218,6 +218,20 @@ export default function TokensPage() {
             font-family: Geist Mono — 0123456789 {`{ }`} =&gt; const x = 42;
           </code>
         </div>
+
+        <p className="mt-4 text-small">
+          Geist is self-hosted via the{" "}
+          <code className="font-mono text-text-default">geist</code> package
+          (Vercel&apos;s official build), not the Google font.{" "}
+          <a
+            href="https://vercel.com/font"
+            target="_blank"
+            rel="noreferrer"
+            className="font-medium text-text-primary underline-offset-4 hover:underline"
+          >
+            Download Geist →
+          </a>
+        </p>
       </section>
 
       <footer className="mt-16 border-t border-border-default pt-6 text-sm text-text-subtle">

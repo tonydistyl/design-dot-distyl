@@ -40,7 +40,7 @@ export default function RootLayout({
             <Sidebar />
             <div className="flex min-w-0 flex-1 flex-col">
               <MobileNav />
-              <main className="min-w-0 flex-1 px-6 py-10 sm:px-10 lg:px-16">
+              <main className="min-w-0 flex-1 px-4 py-10 md:px-10 lg:px-16">
                 <div className="mx-auto w-full max-w-3xl">{children}</div>
               </main>
             </div>

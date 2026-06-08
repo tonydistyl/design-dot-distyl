@@ -69,7 +69,7 @@ export default function TextareaPage() {
       {/* States */}
       <section id="states" className="scroll-mt-8">
         <h3 className="mt-12 mb-4 text-h3 text-text-default">States</h3>
-        <div className="grid gap-4 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
           {states.map((s) => (
             <div
               key={s.key}
@@ -96,7 +96,7 @@ export default function TextareaPage() {
       {/* Don't and Do */}
       <section id="do-dont" className="scroll-mt-8">
         <h3 className="mt-12 mb-4 text-h3 text-text-default">Don&apos;t and Do</h3>
-        <div className="grid gap-4 sm:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div className="rounded-lg border border-border-danger bg-background-danger p-5">
             <div className="mb-2 text-sm font-bold text-text-danger">
               Don&apos;t

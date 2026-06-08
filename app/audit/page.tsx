@@ -71,7 +71,7 @@ export default async function AuditPage() {
 
       {/* Meta strip */}
       {meta.length > 0 && (
-        <dl className="mt-6 grid gap-x-6 gap-y-2 rounded-lg border border-border-default bg-background-subtle p-4 text-sm sm:grid-cols-[auto_1fr]">
+        <dl className="mt-6 grid grid-cols-1 gap-x-6 gap-y-2 rounded-lg border border-border-default bg-background-subtle p-4 text-sm sm:grid-cols-[auto_1fr]">
           {meta.map((line) => {
             const idx = line.indexOf(":");
             const label = idx > -1 ? line.slice(0, idx) : line;

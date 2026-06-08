@@ -35,7 +35,7 @@ export default function HomePage() {
       </div>
 
       {/* Principles */}
-      <div className="mt-16 grid gap-4 sm:grid-cols-3">
+      <div className="mt-16 grid grid-cols-1 gap-4 sm:grid-cols-3">
         {[
           {
             title: "Semantic, not literal values",

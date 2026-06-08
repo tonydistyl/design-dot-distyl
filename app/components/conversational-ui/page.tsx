@@ -93,12 +93,13 @@ export default function ConversationalUIPage() {
         that supports a full turn-based AI exchange.
       </p>
 
-      <div className="mt-4 rounded-lg border border-border-default bg-background-subtle p-4">
+      <div className="mt-4 rounded-lg border border-border-default bg-background-accent p-4">
         <p className="text-small text-text-default">
-          <span className="font-semibold">Distyl-specific.</span> This component
-          is not in the shadcn library and has no Figma counterpart yet. It
-          documents the canonical pattern for AI chat surfaces across Distyl
-          products — Platform, Tower, and future implementations.
+          <span className="font-bold">Proposed.</span> fe-distillery has no
+          first-class chat component, is not in the design library nor has a
+          Figma counterpart yet. It documents the canonical pattern for AI chat
+          surfaces across Distyl products like Platform, Tower, and future
+          implementations.
         </p>
       </div>
 
@@ -167,7 +168,7 @@ export default function ConversationalUIPage() {
         <h3 className="mt-12 mb-4 text-h3 text-text-default">
           Don&apos;t and Do
         </h3>
-        <div className="grid gap-4 sm:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div className="rounded-lg border border-border-danger bg-background-danger p-5">
             <div className="mb-2 text-sm font-bold text-text-danger">
               Don&apos;t

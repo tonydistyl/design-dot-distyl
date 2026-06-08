@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { Download } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import { Markdown } from "@/components/Markdown";
 import { loadContent } from "@/lib/content";
 
@@ -89,7 +91,7 @@ export default async function GuidelinesPage() {
       </div>
 
       {/* Don't / Do */}
-      <div className="mt-6 grid gap-4 sm:grid-cols-2">
+      <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2">
         <div className="rounded-lg border border-border-danger bg-background-danger p-5">
           <div className="mb-2 text-sm font-bold text-text-danger">Don&apos;t</div>
           <p className="text-small text-text-default">
@@ -113,13 +115,14 @@ export default async function GuidelinesPage() {
       >
         Full specification
       </h3>
-      <p className="mb-2 text-small">
-        The complete Cognition rules document, verbatim. Drop it in as{" "}
-        <code className="rounded-sm border border-border-subtle bg-background-secondary px-1.5 py-0.5 font-mono text-xs text-text-default">
-          CLAUDE.md
-        </code>{" "}
-        to make any AI coding tool generate Cognition-compliant code.
-      </p>
+      <div className="mb-6">
+        <Button asChild variant="outline">
+          <a href="#" download>
+            <Download size={14} aria-hidden />
+            Download CLAUDE.md
+          </a>
+        </Button>
+      </div>
       <Markdown content={spec} />
     </div>
   );

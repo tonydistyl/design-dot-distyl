@@ -123,7 +123,7 @@ export default function CardPage() {
       {/* Anatomy */}
       <section id="anatomy" className="scroll-mt-8">
         <h3 className="mt-12 mb-4 text-h3 text-text-default">Anatomy</h3>
-        <div className="grid gap-6 lg:grid-cols-2">
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
           <div className="flex items-start justify-center rounded-lg border border-border-default bg-background-subtle p-8">
             <Card className="w-full max-w-sm">
               <CardHeader>
@@ -155,7 +155,7 @@ export default function CardPage() {
       {/* Examples */}
       <section id="examples" className="scroll-mt-8">
         <h3 className="mt-12 mb-4 text-h3 text-text-default">Examples</h3>
-        <div className="grid items-start gap-6 lg:grid-cols-2">
+        <div className="grid grid-cols-1 items-start gap-6 lg:grid-cols-2">
           {/* Featured event card with media + badge */}
           <Card className="w-full">
             <div className="aspect-[16/10] w-full bg-background-secondary" />
@@ -210,7 +210,7 @@ export default function CardPage() {
         <h3 className="mt-12 mb-4 text-h3 text-text-default">
           Don&apos;t and Do
         </h3>
-        <div className="grid gap-4 sm:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div className="rounded-lg border border-border-danger bg-background-danger p-5">
             <div className="mb-2 text-sm font-bold text-text-danger">
               Don&apos;t

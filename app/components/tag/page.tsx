@@ -47,7 +47,7 @@ export default function TagPage() {
       {/* Variants */}
       <section id="variants" className="scroll-mt-8">
         <h3 className="mt-12 mb-4 text-h3 text-text-default">Variants</h3>
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
           <div className="overflow-hidden rounded-lg border border-border-default">
             <div className="flex items-center justify-center bg-background-subtle p-8">
               <Tag>Default</Tag>
@@ -72,7 +72,7 @@ export default function TagPage() {
         <h3 className="mt-12 mb-4 text-h3 text-text-default">
           Don&apos;t and Do
         </h3>
-        <div className="grid gap-4 sm:grid-cols-2">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div className="rounded-lg border border-border-danger bg-background-danger p-5">
             <div className="mb-2 text-sm font-bold text-text-danger">
               Don&apos;t
