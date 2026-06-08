@@ -77,10 +77,10 @@ export default function TooltipPage() {
               Don&apos;t
             </div>
             <p className="text-small text-text-default">
-              Don&apos;t paint the tooltip surface brand purple (the Figma shows
-              it that way) — a tooltip is an inverse chip, not a brand element.
-              And don&apos;t hide essential info or actions in one; it&apos;s
-              hover-only and invisible on touch.
+              Don&apos;t paint the tooltip surface brand purple — a tooltip is a
+              high-contrast inverse chip, not a brand element. And don&apos;t
+              hide essential info or actions in one; it&apos;s hover-only and
+              invisible on touch.
             </p>
           </div>
           <div className="rounded-lg border border-border-success bg-background-success p-5">
@@ -117,9 +117,9 @@ export default function TooltipPage() {
         </code>
         . The surface is intentionally{" "}
         <code className="font-mono text-text-default">background-inverse</code> /{" "}
-        <code className="font-mono text-text-default">text-inverse</code> — the
-        Figma&apos;s brand-purple background is overridden, since purple is not
-        the correct token for a tooltip.
+        <code className="font-mono text-text-default">text-inverse</code> — a
+        high-contrast chip, deliberately not brand purple, which is not the
+        correct token for a tooltip surface.
       </footer>
     </div>
   );

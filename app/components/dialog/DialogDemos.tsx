@@ -103,18 +103,19 @@ export function TextDialog() {
         </DialogHeader>
         <div className="max-h-[50vh] space-y-4 overflow-y-auto px-4 pb-4 text-sm text-text-default">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-            interdum hendrerit ex vitae sodales. Donec id leo ipsum. Phasellus
-            volutpat aliquet mauris, et blandit nulla laoreet vitae.
+            By using the Distyl platform you agree to these terms. Access is
+            granted to authorized users within your organization for internal
+            business use only.
           </p>
           <p>
-            Quisque ante dui, porta eu felis nec, scelerisque pharetra turpis.
-            Phasellus volutpat aliquet mauris, et blandit nulla laoreet vitae.
-            Donec id leo ipsum.
+            Data you submit is processed solely to provide the service. We do
+            not train foundation models on your data, and we retain it only as
+            long as your workspace is active or as required by law.
           </p>
           <p>
-            Vivamus interdum hendrerit ex vitae sodales. Lorem ipsum dolor sit
-            amet, consectetur adipiscing elit. Quisque ante dui, porta eu felis.
+            We may update these terms as the product evolves. Material changes
+            will be communicated in advance, and continued use after an update
+            constitutes acceptance.
           </p>
         </div>
         <DialogFooter>
