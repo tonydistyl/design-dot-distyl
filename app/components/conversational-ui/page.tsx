@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
-import { ChatShell } from "@/components/ConversationalUI";
+import { ChatShell, LoadingBubble } from "@/components/ConversationalUI";
 import { CodeBlock } from "@/components/CodeBlock";
+import {
+  ChatInputDemo,
+  EmptyStateDemo,
+  MessageBubbleDemo,
+  StatesDemo,
+  VariantShell,
+} from "./ConversationalUIDemos";
 
 export const metadata: Metadata = {
   title: "Conversational UI",
@@ -81,6 +88,117 @@ export function ContextPanel() {
   );
 }`;
 
+const chatInputProps = [
+  {
+    name: "onSend",
+    type: "(message: string) => void",
+    def: "required",
+    desc: "Called with the trimmed message string on Enter or button click.",
+  },
+  {
+    name: "disabled",
+    type: "boolean",
+    def: "false",
+    desc: "Disables the Textarea and send Button. Set while a response is loading.",
+  },
+  {
+    name: "placeholder",
+    type: "string",
+    def: '"Ask the context view…"',
+    desc: "Input placeholder text.",
+  },
+];
+
+const messageBubbleProps = [
+  {
+    name: "role",
+    type: '"user" | "assistant"',
+    def: "required",
+    desc: "Determines alignment, background, and content rendering.",
+  },
+  {
+    name: "content",
+    type: "string",
+    def: "required",
+    desc: "Message text. Assistant role parses inline code and fenced code blocks.",
+  },
+];
+
+const emptyStateProps = [
+  {
+    name: "onChipClick",
+    type: "(text: string) => void",
+    def: "required",
+    desc: "Called with the chip label when a prompt chip is clicked. Wire to ChatShell's handleSend or your own send handler.",
+  },
+];
+
+const chatInputCode = `import { ChatInput } from "@/components/ConversationalUI";
+
+export function MyInput() {
+  return (
+    <ChatInput
+      onSend={(message) => console.log(message)}
+      placeholder="Ask something…"
+    />
+  );
+}`;
+
+const messageBubbleCode =
+  'import { MessageBubble } from "@/components/ConversationalUI";\n\n' +
+  "// User turn\n" +
+  '<MessageBubble role="user" content="What are the risk signals?" />\n\n' +
+  "// Assistant turn — parses markdown and code blocks automatically\n" +
+  "<MessageBubble\n" +
+  '  role="assistant"\n' +
+  '  content="Here\'s the query:\\n\\n```typescript\\nentities.filter(e => e.riskScore > 0.7)\\n```"\n' +
+  "/>";
+
+const loadingBubbleCode = `import { LoadingBubble } from "@/components/ConversationalUI";
+
+// Render while awaiting response
+{loading && <LoadingBubble />}`;
+
+const emptyStateCode = `import { EmptyState } from "@/components/ConversationalUI";
+
+<EmptyState
+  onChipClick={(text) => handleSend(text)}
+/>`;
+
+function PropsTable({
+  rows,
+}: {
+  rows: { name: string; type: string; def: string; desc: string }[];
+}) {
+  return (
+    <div className="mt-4 overflow-x-auto rounded-lg border border-border-default">
+      <div className="min-w-[640px]">
+        <div className="grid grid-cols-[1.2fr_2fr_1.2fr_3fr] gap-4 border-b border-border-default bg-background-subtle px-4 py-2 text-xs font-medium text-text-subtle">
+          <div>Prop</div>
+          <div>Type</div>
+          <div>Default</div>
+          <div>Description</div>
+        </div>
+        <div className="divide-y divide-border-default">
+          {rows.map((r) => (
+            <div
+              key={r.name}
+              className="grid grid-cols-[1.2fr_2fr_1.2fr_3fr] gap-4 px-4 py-3"
+            >
+              <div className="font-mono text-sm text-text-default">
+                {r.name}
+              </div>
+              <div className="font-mono text-xs text-text-subtle">{r.type}</div>
+              <div className="font-mono text-xs text-text-subtle">{r.def}</div>
+              <div className="text-sm text-text-subtle">{r.desc}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function ConversationalUIPage() {
   return (
     <div>
@@ -93,12 +211,12 @@ export default function ConversationalUIPage() {
         that supports a full turn-based AI exchange.
       </p>
 
-      <div className="mt-4 rounded-lg border border-border-default bg-background-accent p-4">
+      <div className="mt-4 rounded-lg border border-border-default bg-background-subtle p-4">
         <p className="text-small text-text-default">
-          <span className="font-bold">Proposed.</span> fe-distillery has no
-          first-class chat component yet. It documents the canonical pattern for
-          AI chat surfaces across Distyl products like Platform, Tower, and
-          future implementations.
+          <span className="font-semibold">Distyl-specific.</span> This component
+          has no external library counterpart or design-tool source yet. It is
+          the canonical pattern for AI chat surfaces across Distyl products —
+          Platform, Tower, and future implementations.
         </p>
       </div>
 
@@ -113,6 +231,26 @@ export default function ConversationalUIPage() {
           the token layer remaps automatically. No{" "}
           <code className="font-mono">dark:</code> classes anywhere in this
           component.
+        </p>
+      </section>
+
+      {/* Variants */}
+      <section id="variants" className="scroll-mt-8">
+        <h3 className="mt-12 mb-4 text-h3 text-text-default">Variants</h3>
+        <VariantShell />
+      </section>
+
+      {/* States */}
+      <section id="states" className="scroll-mt-8">
+        <h3 className="mt-12 mb-4 text-h3 text-text-default">States</h3>
+        <StatesDemo />
+        <p className="mt-3 text-small">
+          The error state renders via{" "}
+          <code className="font-mono">MessageBubble</code> with{" "}
+          <code className="font-mono">role=&quot;assistant&quot;</code> — the
+          component does not have a separate error variant. The error string is
+          set by the catch block in{" "}
+          <code className="font-mono">ChatShell</code>.
         </p>
       </section>
 
@@ -160,6 +298,77 @@ export default function ConversationalUIPage() {
             </div>
           ))}
         </div>
+      </section>
+
+      {/* Sub-components */}
+      <section id="sub-components" className="scroll-mt-8">
+        <h3 className="mt-12 mb-4 text-h3 text-text-default">Sub-components</h3>
+
+        <h4 className="mt-10 mb-1 font-mono text-base font-semibold text-text-default">
+          ChatInput
+        </h4>
+        <p className="mb-4 text-sm text-text-subtle">
+          Auto-resizing message input with keyboard shortcuts. Composes Textarea
+          and Button.
+        </p>
+        <div className="rounded-lg border border-border-default bg-background-subtle p-6">
+          <ChatInputDemo />
+        </div>
+        <PropsTable rows={chatInputProps} />
+        <CodeBlock
+          code={chatInputCode}
+          className="mt-4 rounded-lg border border-border-default bg-background-subtle"
+        />
+
+        <h4 className="mt-10 mb-1 font-mono text-base font-semibold text-text-default">
+          MessageBubble
+        </h4>
+        <p className="mb-4 text-sm text-text-subtle">
+          Renders a single conversation turn. User turns are plain text.
+          Assistant turns parse markdown and fenced code blocks.
+        </p>
+        <div className="flex flex-col gap-5 rounded-lg border border-border-default bg-background-subtle p-6">
+          <MessageBubbleDemo />
+        </div>
+        <PropsTable rows={messageBubbleProps} />
+        <CodeBlock
+          code={messageBubbleCode}
+          className="mt-4 rounded-lg border border-border-default bg-background-subtle"
+        />
+
+        <h4 className="mt-10 mb-1 font-mono text-base font-semibold text-text-default">
+          LoadingBubble
+        </h4>
+        <p className="mb-4 text-sm text-text-subtle">
+          Assistant thinking state. Uses the Distyl Spinner. No props — render it
+          while awaiting a response.
+        </p>
+        <div className="rounded-lg border border-border-default bg-background-subtle p-6">
+          <LoadingBubble />
+        </div>
+        <p className="mt-3 text-small text-text-subtle">
+          No props. Render <code className="font-mono">LoadingBubble</code> while{" "}
+          <code className="font-mono">loading === true</code> and remove it when
+          the reply arrives.
+        </p>
+        <CodeBlock
+          code={loadingBubbleCode}
+          className="mt-4 rounded-lg border border-border-default bg-background-subtle"
+        />
+
+        <h4 className="mt-10 mb-1 font-mono text-base font-semibold text-text-default">
+          EmptyState
+        </h4>
+        <p className="mb-4 text-sm text-text-subtle">
+          Zero-message state with prompt chips. Shown when the message list is
+          empty. Chips call onChipClick with the chip text.
+        </p>
+        <EmptyStateDemo />
+        <PropsTable rows={emptyStateProps} />
+        <CodeBlock
+          code={emptyStateCode}
+          className="mt-4 rounded-lg border border-border-default bg-background-subtle"
+        />
       </section>
 
       {/* Don't and Do */}
