@@ -11,32 +11,6 @@ export const nav: NavGroup[] = [
     items: [{ href: "/", label: "Introduction" }],
   },
   {
-    section: "Foundations",
-    items: [
-      {
-        href: "/tokens",
-        label: "Tokens",
-        sections: [
-          { id: "background", label: "Backgrounds" },
-          { id: "text", label: "Text" },
-          { id: "border", label: "Borders" },
-          { id: "feedback", label: "Feedback" },
-          { id: "radius", label: "Radius" },
-          { id: "spacing", label: "Spacing" },
-          { id: "typography", label: "Typography" },
-        ],
-      },
-      {
-        href: "/guidelines",
-        label: "Guidelines",
-        sections: [
-          { id: "component-semantics", label: "Component semantics" },
-          { id: "full-specification", label: "Full specification" },
-        ],
-      },
-    ],
-  },
-  {
     section: "Components",
     items: [
       { href: "/components/alert", label: "Alert" },
@@ -60,6 +34,32 @@ export const nav: NavGroup[] = [
       { href: "/components/tag", label: "Tag" },
       { href: "/components/textarea", label: "Textarea" },
       { href: "/components/tooltip", label: "Tooltip" },
+    ],
+  },
+  {
+    section: "Foundations",
+    items: [
+      {
+        href: "/tokens",
+        label: "Tokens",
+        sections: [
+          { id: "background", label: "Backgrounds" },
+          { id: "text", label: "Text" },
+          { id: "border", label: "Borders" },
+          { id: "feedback", label: "Feedback" },
+          { id: "radius", label: "Radius" },
+          { id: "spacing", label: "Spacing" },
+          { id: "typography", label: "Typography" },
+        ],
+      },
+      {
+        href: "/guidelines",
+        label: "Guidelines",
+        sections: [
+          { id: "component-semantics", label: "Component semantics" },
+          { id: "full-specification", label: "Full specification" },
+        ],
+      },
     ],
   },
   {
