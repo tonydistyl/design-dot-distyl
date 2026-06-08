@@ -122,6 +122,12 @@ const messageBubbleProps = [
     def: "required",
     desc: "Message text. Assistant role parses inline code and fenced code blocks.",
   },
+  {
+    name: "error",
+    type: "boolean",
+    def: "false",
+    desc: "Renders an assistant turn in the danger style with an alert icon.",
+  },
 ];
 
 const emptyStateProps = [
@@ -211,7 +217,7 @@ export default function ConversationalUIPage() {
         that supports a full turn-based AI exchange.
       </p>
 
-      <div className="mt-4 rounded-lg border border-border-default bg-background-subtle p-4">
+      <div className="mt-4 rounded-lg border border-border-default bg-background-accent p-4">
         <p className="text-small text-text-default">
           <span className="font-semibold">Distyl-specific.</span> This component
           has no external library counterpart or design-tool source yet. It is
@@ -245,12 +251,11 @@ export default function ConversationalUIPage() {
         <h3 className="mt-12 mb-4 text-h3 text-text-default">States</h3>
         <StatesDemo />
         <p className="mt-3 text-small">
-          The error state renders via{" "}
-          <code className="font-mono">MessageBubble</code> with{" "}
-          <code className="font-mono">role=&quot;assistant&quot;</code> — the
-          component does not have a separate error variant. The error string is
-          set by the catch block in{" "}
-          <code className="font-mono">ChatShell</code>.
+          The error state is a danger-styled{" "}
+          <code className="font-mono">MessageBubble</code> (the{" "}
+          <code className="font-mono">error</code> prop) — alert icon, danger
+          border, and danger surface. The message string is set by the catch
+          block in <code className="font-mono">ChatShell</code>.
         </p>
       </section>
 

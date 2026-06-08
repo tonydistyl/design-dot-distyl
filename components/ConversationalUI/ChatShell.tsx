@@ -8,7 +8,11 @@ import { MessageBubble } from "./MessageBubble";
 import { LoadingBubble } from "./LoadingBubble";
 import { EmptyState } from "./EmptyState";
 
-type Message = { role: "user" | "assistant"; content: string };
+type Message = {
+  role: "user" | "assistant";
+  content: string;
+  error?: boolean;
+};
 
 interface ChatShellProps {
   systemPrompt?: string;
@@ -53,7 +57,10 @@ export function ChatShell({
       setMessages([...next, { role: "assistant", content: reply }]);
     } catch (e: unknown) {
       const msg = e instanceof Error ? e.message : "Unknown error";
-      setMessages([...next, { role: "assistant", content: `Error: ${msg}` }]);
+      setMessages([
+        ...next,
+        { role: "assistant", content: `Error: ${msg}`, error: true },
+      ]);
     } finally {
       setLoading(false);
     }
@@ -89,7 +96,12 @@ export function ChatShell({
           <EmptyState onChipClick={handleSend} />
         ) : (
           messages.map((m, i) => (
-            <MessageBubble key={i} role={m.role} content={m.content} />
+            <MessageBubble
+              key={i}
+              role={m.role}
+              content={m.content}
+              error={m.error}
+            />
           ))
         )}
         {loading && <LoadingBubble />}

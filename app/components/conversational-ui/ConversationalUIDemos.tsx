@@ -110,7 +110,7 @@ export function StatesDemo() {
         >
           <div className="flex h-full flex-col gap-5 overflow-y-auto px-5 py-6">
             <MessageBubble role="user" content="Summarize this pipeline." />
-            <MessageBubble role="assistant" content="Error: API error: 401" />
+            <MessageBubble role="assistant" error content="Error: API error: 401" />
           </div>
         </div>
       </div>
@@ -167,6 +167,7 @@ export function MessageBubbleDemo() {
           "Here's a query to pull flagged entities:\n\n```typescript\nconst flagged = entities.filter(\n  (e) => e.riskScore > 0.7\n);\n```"
         }
       />
+      <MessageBubble role="assistant" error content="Error: API error: 401" />
     </div>
   );
 }
