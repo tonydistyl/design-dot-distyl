@@ -31,15 +31,16 @@ page renders directly from the spec.
 
 ```bash
 npm install
-npm run dev      # http://localhost:3000
-npm run build    # production build
+cp .env.example .env.local   # add ANTHROPIC_API_KEY for Conversational UI
+npm run dev                  # http://localhost:3000
+npm run build                # production build
 ```
 
 ## Deploy
 
-Deployed on Vercel from `DistylAI/design-dot-distyl`. Pushes to the default
-branch ship to production; pull requests get preview URLs.
+Deployed on Vercel from `tonydistyl/design-dot-distyl`. Pushes to main ship to
+production; pull requests get preview URLs.
 
 ---
 
-Cognition v1.2 · June 2026 · Questions? Ask Tony Yates #research-and-design
+Cognition v1.2 · June 2026 · Questions? [Ask Tony Yates](https://distylai.slack.com/team/U07KY4SEFH7) [#research-and-design](https://distylai.slack.com/archives/C0A22RR2N6P)
