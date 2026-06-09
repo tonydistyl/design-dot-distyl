@@ -14,6 +14,7 @@ export const nav: NavGroup[] = [
     section: "Components",
     items: [
       { href: "/components/alert", label: "Alert" },
+      { href: "/components/avatar", label: "Avatar" },
       { href: "/components/badge", label: "Badge" },
       { href: "/components/button", label: "Button" },
       { href: "/components/card", label: "Card" },
