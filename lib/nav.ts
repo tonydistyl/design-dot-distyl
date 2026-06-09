@@ -65,6 +65,17 @@ export const nav: NavGroup[] = [
         ],
       },
       {
+        href: "/foundations/icons",
+        label: "Icons",
+        sections: [
+          { id: "library", label: "Library" },
+          { id: "sizing", label: "Sizing" },
+          { id: "color", label: "Color" },
+          { id: "usage", label: "Usage" },
+          { id: "browse", label: "Browse" },
+        ],
+      },
+      {
         href: "/guidelines",
         label: "Guidelines",
         sections: [
