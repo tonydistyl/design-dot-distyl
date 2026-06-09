@@ -44,16 +44,6 @@ export function ChatInput({
           <Plus aria-hidden />
           <span className="sr-only">Attach</span>
         </Button>
-        <Button
-          type="button"
-          variant="ghost"
-          size="icon-sm"
-          onClick={onVoice}
-          className="shrink-0 text-text-subtle"
-        >
-          <Mic aria-hidden />
-          <span className="sr-only">Voice input</span>
-        </Button>
         <Textarea
           ref={ref}
           value={value}
@@ -75,6 +65,16 @@ export function ChatInput({
           // border/bg/shadow/ring so the wrapper owns the focus state.
           className="min-h-0 max-h-[120px] min-w-0 flex-1 resize-none border-0 bg-transparent px-0 py-1.5 shadow-none focus-visible:border-0 focus-visible:ring-0"
         />
+        <Button
+          type="button"
+          variant="ghost"
+          size="icon-sm"
+          onClick={onVoice}
+          className="shrink-0 text-text-subtle"
+        >
+          <Mic aria-hidden />
+          <span className="sr-only">Voice input</span>
+        </Button>
         <Button
           type="button"
           size="icon-sm"
