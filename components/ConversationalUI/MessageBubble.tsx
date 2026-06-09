@@ -82,7 +82,7 @@ export function MessageBubble({ role, content, error }: MessageBubbleProps) {
   if (error) {
     return (
       <div className="flex flex-col items-start gap-1">
-        <p className="px-0.5 text-xs text-text-subtle">Distyl</p>
+        <p className="px-0.5 text-xs text-text-subtle">Meno</p>
         <div className="flex max-w-[90%] items-start gap-2 rounded-xl rounded-bl-sm border border-border-danger bg-background-danger px-4 py-2.5 text-sm leading-relaxed text-text-danger">
           <CircleAlert className="mt-0.5 size-4 shrink-0" aria-hidden />
           <span>{content}</span>
@@ -93,7 +93,7 @@ export function MessageBubble({ role, content, error }: MessageBubbleProps) {
 
   return (
     <div className="flex flex-col items-start gap-1">
-      <p className="px-0.5 text-xs text-text-subtle">Distyl</p>
+      <p className="px-0.5 text-xs text-text-subtle">Meno</p>
       <div className="max-w-[90%] rounded-xl rounded-bl-sm border border-border-default bg-background-subtle px-4 py-2.5 text-sm leading-relaxed text-text-default">
         {renderAssistant(content)}
       </div>

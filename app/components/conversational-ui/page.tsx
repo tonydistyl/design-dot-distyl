@@ -231,17 +231,17 @@ export default function ConversationalUIPage() {
       {/* Preview */}
       <section id="preview" className="scroll-mt-8">
         <h3 className="mt-12 mb-4 text-h3 text-text-default">Preview</h3>
+        <p className="mb-3 text-small">
+          This preview is live — it&apos;s running Meno, Cognition&apos;s
+          built-in assistant. Ask it anything about tokens, components, or system
+          rules.
+        </p>
         <div className="overflow-hidden rounded-lg border border-border-default">
           <ChatShell
             systemPrompt={menoPrompt}
             placeholder="Ask Meno about Cognition..."
           />
         </div>
-        <p className="mt-2 text-small">
-          This preview is live — it&apos;s running Meno, Cognition&apos;s
-          built-in assistant. Ask it anything about tokens, components, or system
-          rules.
-        </p>
       </section>
 
       {/* Variants */}

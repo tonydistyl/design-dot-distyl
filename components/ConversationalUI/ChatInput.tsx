@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import { Send } from "lucide-react";
+import { ArrowUp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 
@@ -54,7 +54,7 @@ export function ChatInput({ onSend, disabled, placeholder }: ChatInputProps) {
           disabled={disabled || !value.trim()}
           className="shrink-0"
         >
-          <Send size={14} aria-hidden />
+          <ArrowUp size={14} aria-hidden />
           <span className="sr-only">Send message</span>
         </Button>
       </div>

@@ -1,27 +1,29 @@
 "use client";
 
+import { Binoculars } from "lucide-react";
+
 interface EmptyStateProps {
   onChipClick: (text: string) => void;
 }
 
 const chips = [
-  "Summarize key entities",
-  "What are the risk signals?",
-  "Show me a code example",
-  "Explain the token system",
+  "What token do I use for brand color?",
+  "Tag vs Badge — what's the difference?",
+  "How does dark mode work?",
+  "Show me a compliant Button example",
 ];
 
 export function EmptyState({ onChipClick }: EmptyStateProps) {
   return (
     <div className="flex flex-1 flex-col items-center justify-center gap-4 px-6 py-16 text-center">
-      <div className="flex h-9 w-9 items-center justify-center rounded-full bg-background-primary">
-        <div className="h-3 w-3 rounded-full bg-text-inverse opacity-90" />
+      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-background-primary">
+        <Binoculars className="size-5 text-text-inverse" aria-hidden />
       </div>
       <p className="text-sm font-medium text-text-default">
-        Ask anything about this context
+        Ask Meno anything about Cognition
       </p>
       <p className="max-w-xs text-sm leading-relaxed text-text-subtle">
-        Summarize, explore, or dig into the data.
+        Tokens, components, and the rules that hold the system together.
       </p>
       <div className="mt-1 flex flex-wrap justify-center gap-2">
         {chips.map((chip) => (
