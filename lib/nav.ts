@@ -36,6 +36,7 @@ export const nav: NavGroup[] = [
       { href: "/components/select", label: "Select" },
       { href: "/components/sidebar", label: "Sidebar" },
       { href: "/components/skeleton", label: "Skeleton" },
+      { href: "/components/slider", label: "Slider" },
       { href: "/components/spinner", label: "Spinner" },
       { href: "/components/switch", label: "Switch" },
       { href: "/components/tabs", label: "Tabs" },
