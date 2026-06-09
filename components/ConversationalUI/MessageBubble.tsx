@@ -8,21 +8,43 @@ interface MessageBubbleProps {
   error?: boolean;
 }
 
-// Inline `code` spans within a paragraph.
+// Inline `code` spans and [label](url) markdown links within a paragraph.
+const LINK_RE = /^\[([^\]]+)\]\(([^)]+)\)$/;
+
 function renderInline(text: string, keyPrefix: string): ReactNode[] {
-  return text.split(/(`[^`]+`)/g).map((part, i) => {
-    if (part.length > 1 && part.startsWith("`") && part.endsWith("`")) {
-      return (
-        <code
-          key={`${keyPrefix}-${i}`}
-          className="rounded-sm bg-background-secondary px-1 py-0.5 font-mono text-xs text-text-default"
-        >
-          {part.slice(1, -1)}
-        </code>
-      );
-    }
-    return part;
-  });
+  return text
+    .split(/(`[^`]+`|\[[^\]]+\]\([^)]+\))/g)
+    .map((part, i) => {
+      const key = `${keyPrefix}-${i}`;
+      if (part.length > 1 && part.startsWith("`") && part.endsWith("`")) {
+        return (
+          <code
+            key={key}
+            className="rounded-sm bg-background-secondary px-1 py-0.5 font-mono text-xs text-text-default"
+          >
+            {part.slice(1, -1)}
+          </code>
+        );
+      }
+      const link = LINK_RE.exec(part);
+      if (link) {
+        const [, label, href] = link;
+        const external = /^https?:\/\//.test(href);
+        return (
+          <a
+            key={key}
+            href={href}
+            {...(external
+              ? { target: "_blank", rel: "noopener noreferrer" }
+              : {})}
+            className="font-medium text-text-primary underline underline-offset-2 hover:opacity-80"
+          >
+            {label}
+          </a>
+        );
+      }
+      return part;
+    });
 }
 
 // Split a non-code segment into paragraphs on blank lines.
