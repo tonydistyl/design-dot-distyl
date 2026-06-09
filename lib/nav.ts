@@ -13,6 +13,7 @@ export const nav: NavGroup[] = [
   {
     section: "Components",
     items: [
+      { href: "/components/accordion", label: "Accordion" },
       { href: "/components/alert", label: "Alert" },
       { href: "/components/avatar", label: "Avatar" },
       { href: "/components/badge", label: "Badge" },
