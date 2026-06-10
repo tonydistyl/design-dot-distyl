@@ -67,6 +67,7 @@ export const nav: NavGroup[] = [
       { href: "/components/textarea", label: "Textarea" },
       { href: "/components/toggle", label: "Toggle" },
       { href: "/components/tooltip", label: "Tooltip" },
+      { href: "/components/typography", label: "Typography" },
     ],
   },
   {
