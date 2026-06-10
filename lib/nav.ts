@@ -67,7 +67,6 @@ export const nav: NavGroup[] = [
       { href: "/components/textarea", label: "Textarea" },
       { href: "/components/toggle", label: "Toggle" },
       { href: "/components/tooltip", label: "Tooltip" },
-      { href: "/components/typography", label: "Typography" },
     ],
   },
   {
@@ -84,7 +83,7 @@ export const nav: NavGroup[] = [
           { id: "chart", label: "Chart" },
           { id: "radius", label: "Radius" },
           { id: "spacing", label: "Spacing" },
-          { id: "typography", label: "Typography" },
+          { id: "typescale", label: "Type Scale" },
         ],
       },
       {
@@ -96,6 +95,15 @@ export const nav: NavGroup[] = [
           { id: "color", label: "Color" },
           { id: "usage", label: "Usage" },
           { id: "browse", label: "Browse" },
+        ],
+      },
+      {
+        href: "/foundations/typography",
+        label: "Typography",
+        sections: [
+          { id: "variants", label: "Elements" },
+          { id: "states", label: "In context" },
+          { id: "api", label: "API" },
         ],
       },
       {

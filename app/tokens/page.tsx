@@ -11,7 +11,7 @@ import {
 export const metadata: Metadata = {
   title: "Tokens",
   description:
-    "Cognition v1.2 tokens — backgrounds, text, borders, feedback, radius, spacing, and typography.",
+    "Cognition v1.2 tokens — backgrounds, text, borders, feedback, radius, spacing, and type scale.",
 };
 
 export default function TokensPage() {
@@ -35,7 +35,7 @@ export default function TokensPage() {
           { id: "color", title: "Color" },
           { id: "radius", title: "Radius" },
           { id: "spacing", title: "Spacing" },
-          { id: "typography", title: "Typography" }].map((s) => (
+          { id: "typescale", title: "Type Scale" }].map((s) => (
           <a
             key={s.id}
             href={`#${s.id}`}
@@ -167,10 +167,10 @@ export default function TokensPage() {
         </div>
       </section>
 
-      {/* Typography */}
-      <section id="typography" className="scroll-mt-8">
+      {/* Type Scale */}
+      <section id="typescale" className="scroll-mt-8">
         <h3 className="mt-14 mb-1 border-b border-border-default pb-2 text-h3 text-text-default">
-          Typography
+          Type Scale
         </h3>
         <p className="mb-6 text-small">
           <strong className="font-bold text-text-default">Geist</strong> for all

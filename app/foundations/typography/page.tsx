@@ -44,117 +44,124 @@ const api = [
 const elements = [
   {
     label: "Heading 1",
-    code: `<h1 className="text-h1 text-text-default">The Joke Tax Chronicles</h1>`,
-    node: (
-      <h1 className="text-h1 text-text-default">The Joke Tax Chronicles</h1>
-    ),
+    code: `<h1 className="text-h1 text-text-default">Building Cognition</h1>`,
+    node: <h1 className="text-h1 text-text-default">Building Cognition</h1>,
   },
   {
     label: "Heading 2",
-    code: `<h2 className="text-h2 text-text-default">The King's Plan</h2>`,
-    node: <h2 className="text-h2 text-text-default">The King&apos;s Plan</h2>,
+    code: `<h2 className="text-h2 text-text-default">Why a system</h2>`,
+    node: <h2 className="text-h2 text-text-default">Why a system</h2>,
   },
   {
     label: "Heading 3",
-    code: `<h3 className="text-h3 text-text-default">The Joke Tax</h3>`,
-    node: <h3 className="text-h3 text-text-default">The Joke Tax</h3>,
+    code: `<h3 className="text-h3 text-text-default">Three layers</h3>`,
+    node: <h3 className="text-h3 text-text-default">Three layers</h3>,
   },
   {
     label: "Heading 4",
-    code: `<h4 className="text-h4 text-text-default">People's Rebellion</h4>`,
+    code: `<h4 className="text-h4 text-text-default">Token swap, skin swap</h4>`,
     node: (
-      <h4 className="text-h4 text-text-default">People&apos;s Rebellion</h4>
+      <h4 className="text-h4 text-text-default">Token swap, skin swap</h4>
     ),
   },
   {
     label: "Lead",
-    code: `<p className="text-lead text-text-subtle">A modal dialog that interrupts the user with important content.</p>`,
+    code: `<p className="text-lead text-text-subtle">Cognition is Distyl AI's design system — the shared foundation every product sits on.</p>`,
     node: (
       <p className="text-lead text-text-subtle">
-        A modal dialog that interrupts the user with important content.
+        Cognition is Distyl AI&apos;s design system — the shared foundation every
+        product sits on.
       </p>
     ),
   },
   {
     label: "Large",
-    code: `<p className="text-large text-text-default">Are you absolutely sure?</p>`,
+    code: `<p className="text-large text-text-default">A design system is not a deliverable. It is infrastructure.</p>`,
     node: (
-      <p className="text-large text-text-default">Are you absolutely sure?</p>
+      <p className="text-large text-text-default">
+        A design system is not a deliverable. It is infrastructure.
+      </p>
     ),
   },
   {
     label: "Body",
-    code: `<p className="text-body">The king thought long and hard, and finally came up with a brilliant plan: he would tax the jokes in the kingdom.</p>`,
+    code: `<p className="text-body">Ad hoc UI compounds. Every hardcoded hex value, every one-off spacing decision is debt that slows the next build.</p>`,
     node: (
       <p className="text-body">
-        The king thought long and hard, and finally came up with a brilliant
-        plan: he would tax the jokes in the kingdom.
+        Ad hoc UI compounds. Every hardcoded hex value, every one-off spacing
+        decision is debt that slows the next build.
       </p>
     ),
   },
   {
     label: "Small",
-    code: `<p className="text-small">Last updated 3 minutes ago</p>`,
-    node: <p className="text-small">Last updated 3 minutes ago</p>,
+    code: `<p className="text-small">Cognition v1.2 · maintained by Research &amp; Design</p>`,
+    node: (
+      <p className="text-small">
+        Cognition v1.2 · maintained by Research &amp; Design
+      </p>
+    ),
   },
   {
     label: "Blockquote",
     code: `<blockquote className="text-blockquote border-l-2 border-border-default pl-4 text-text-subtle">
-  "After all," he said, "everyone enjoys a good joke, so it's only fair that they should pay for the privilege."
+  Never underestimate the cost of building the same thing twice.
 </blockquote>`,
     node: (
       <blockquote className="text-blockquote border-l-2 border-border-default pl-4 text-text-subtle">
-        &quot;After all,&quot; he said, &quot;everyone enjoys a good joke, so
-        it&apos;s only fair that they should pay for the privilege.&quot;
+        Never underestimate the cost of building the same thing twice.
       </blockquote>
     ),
   },
   {
     label: "List",
     code: `<ul className="text-list list-disc pl-6 text-text-default">
-  <li>1st level of puns: 5 gold coins</li>
-  <li>2nd level of jokes: 10 gold coins</li>
-  <li>3rd level of one-liners: 20 gold coins</li>
+  <li>Primitives — raw values, never used directly</li>
+  <li>Semantic — purpose-named aliases, where dark mode lives</li>
+  <li>Component — scoped tokens referencing semantic, never primitives</li>
 </ul>`,
     node: (
       <ul className="text-list list-disc pl-6 text-text-default">
-        <li>1st level of puns: 5 gold coins</li>
-        <li>2nd level of jokes: 10 gold coins</li>
-        <li>3rd level of one-liners: 20 gold coins</li>
+        <li>Primitives — raw values, never used directly</li>
+        <li>Semantic — purpose-named aliases, where dark mode lives</li>
+        <li>Component — scoped tokens referencing semantic, never primitives</li>
       </ul>
     ),
   },
   {
     label: "Inline code",
-    code: `<code className="text-inline-code rounded-sm bg-background-secondary px-1.5 py-0.5 text-text-default">@radix-ui/react-alert-dialog</code>`,
+    code: `<code className="text-inline-code rounded-sm bg-background-secondary px-1.5 py-0.5 text-text-default">var(--color-chart-1)</code>`,
     node: (
       <p className="text-body">
-        Install{" "}
+        Reference a series color with{" "}
         <code className="text-inline-code rounded-sm bg-background-secondary px-1.5 py-0.5 text-text-default">
-          @radix-ui/react-alert-dialog
-        </code>{" "}
-        to get started.
+          var(--color-chart-1)
+        </code>
+        .
       </p>
     ),
   },
 ] as const;
 
 const installCode = `<article className="max-w-2xl">
-  <h1 className="text-h1 text-text-default">The Joke Tax Chronicles</h1>
+  <h1 className="text-h1 text-text-default">Building Cognition</h1>
   <p className="text-lead mt-3 text-text-subtle">
-    Once upon a time, in a far-off land…
+    Cognition is Distyl AI's design system — the shared foundation every
+    product implementation sits on.
   </p>
-  <h2 className="text-h2 mt-10 text-text-default">The King's Plan</h2>
-  <p className="text-body mt-4">He would tax the jokes in the kingdom.</p>
+  <h2 className="text-h2 mt-10 text-text-default">Why a system</h2>
+  <p className="text-body mt-4">
+    A design system is not a deliverable. It is infrastructure.
+  </p>
   <blockquote className="text-blockquote mt-6 border-l-2 border-border-default pl-4 text-text-subtle">
-    "After all," he said, "everyone enjoys a good joke."
+    Never underestimate the cost of building the same thing twice.
   </blockquote>
 </article>`;
 
 export default function TypographyDocsPage() {
   return (
     <div>
-      <p className="mb-2 text-xs font-normal text-text-subtle">Components</p>
+      <p className="mb-2 text-xs font-normal text-text-subtle">Foundations</p>
       <h1 className="text-h1 text-text-default">Typography</h1>
       <p className="mt-3 max-w-2xl text-body text-text-subtle">
         Styles for typography elements — headings, paragraphs, lists, and inline
@@ -168,17 +175,18 @@ export default function TypographyDocsPage() {
         <h3 className="mt-12 mb-4 text-h3 text-text-default">Preview</h3>
         <div className="rounded-lg border border-border-default bg-background-subtle p-8">
           <div className="max-w-xl">
-            <h2 className="text-h2 text-text-default">The Joke Tax Chronicles</h2>
+            <h2 className="text-h2 text-text-default">Building Cognition</h2>
             <p className="text-lead mt-3 text-text-subtle">
-              Once upon a time, in a far-off land, there was a very lazy king
-              who spent all day lounging on his throne.
+              Cognition is Distyl AI&apos;s design system — the shared foundation
+              every product implementation sits on.
             </p>
             <p className="text-body mt-4">
-              The king thought long and hard, and finally came up with a{" "}
+              It exists so engineers ship faster, interfaces stay consistent, and
+              the cost of a rebrand is one token file — like{" "}
               <code className="text-inline-code rounded-sm bg-background-secondary px-1.5 py-0.5 text-text-default">
-                brilliant
+                var(--color-chart-1)
               </code>{" "}
-              plan: he would tax the jokes in the kingdom.
+              — not a codebase.
             </p>
           </div>
         </div>
@@ -226,69 +234,92 @@ export default function TypographyDocsPage() {
         <h3 className="mt-12 mb-4 text-h3 text-text-default">In context</h3>
         <div className="rounded-lg border border-border-default bg-background-subtle p-8">
           <article className="mx-auto max-w-2xl">
-            <h1 className="text-h1 text-text-default">
-              The Joke Tax Chronicles
-            </h1>
+            <h1 className="text-h1 text-text-default">Building Cognition</h1>
             <p className="text-lead mt-3 text-text-subtle">
-              Once upon a time, in a far-off land, there was a very lazy king
-              who spent all day lounging on his throne.
+              Cognition is Distyl AI&apos;s design system — the shared foundation
+              every product implementation sits on. It exists so engineers ship
+              faster, interfaces stay consistent, and the cost of a rebrand is one
+              token file, not a codebase.
             </p>
-            <h2 className="text-h2 mt-10 text-text-default">
-              The King&apos;s Plan
-            </h2>
+
+            <h2 className="text-h2 mt-10 text-text-default">Why a system</h2>
             <p className="text-body mt-4">
-              The king thought long and hard, and finally came up with a
-              brilliant plan: he would tax the jokes in the kingdom.
+              Ad hoc UI compounds. Every hardcoded hex value, every one-off
+              spacing decision, every parallel component is debt that slows the
+              next build and the one after that.
             </p>
-            <h3 className="text-h3 mt-8 text-text-default">The Joke Tax</h3>
             <p className="text-body mt-4">
-              The king&apos;s subjects were not amused. They grumbled and
-              complained, but the king was firm:
+              A design system is not a deliverable. It is infrastructure. It earns
+              its place the same way a database does — by making everything built
+              on top of it faster and more reliable.
             </p>
+
+            <h3 className="text-h3 mt-8 text-text-default">Three layers</h3>
             <ul className="text-list mt-4 list-disc pl-6 text-text-default">
-              <li>1st level of puns: 5 gold coins</li>
-              <li>2nd level of jokes: 10 gold coins</li>
-              <li>3rd level of one-liners: 20 gold coins</li>
+              <li>Primitives — raw values, never used directly</li>
+              <li>Semantic — purpose-named aliases, where dark mode lives</li>
+              <li>
+                Component — scoped tokens referencing semantic, never primitives
+              </li>
             </ul>
-            <blockquote className="text-blockquote mt-6 border-l-2 border-border-default pl-4 text-text-subtle">
-              &quot;After all,&quot; he said, &quot;everyone enjoys a good joke,
-              so it&apos;s only fair that they should pay for the privilege.&quot;
-            </blockquote>
-            <h4 className="text-h4 mt-8 text-text-default">
-              The People&apos;s Rebellion
-            </h4>
-            <p className="text-body mt-4">
-              The people of the kingdom, feeling uplifted by the laughter,
-              started to tell jokes and puns again.
-            </p>
-            <div className="mt-6 overflow-x-auto">
+
+            <h3 className="text-h3 mt-8 text-text-default">
+              Token swap, skin swap
+            </h3>
+            <div className="mt-4 overflow-x-auto">
               <table className="w-full border-collapse text-left text-sm">
                 <thead>
                   <tr className="border-b border-border-default">
                     <th className="py-2 pr-4 font-semibold text-text-default">
-                      King&apos;s Treasury
+                      Surface
+                    </th>
+                    <th className="py-2 pr-4 font-semibold text-text-default">
+                      Token layer
                     </th>
                     <th className="py-2 font-semibold text-text-default">
-                      People&apos;s Happiness
+                      Result
                     </th>
                   </tr>
                 </thead>
                 <tbody className="text-text-subtle">
                   <tr className="border-b border-border-default">
-                    <td className="py-2 pr-4">Empty</td>
-                    <td className="py-2">Overflowing</td>
+                    <td className="py-2 pr-4">Distyl platform</td>
+                    <td className="py-2 pr-4">Default semantic</td>
+                    <td className="py-2">Purple, dark mode</td>
                   </tr>
                   <tr className="border-b border-border-default">
-                    <td className="py-2 pr-4">Modest</td>
-                    <td className="py-2">Satisfied</td>
+                    <td className="py-2 pr-4">Hoover impl</td>
+                    <td className="py-2 pr-4">Remapped semantic</td>
+                    <td className="py-2">Custom brand</td>
                   </tr>
                   <tr>
-                    <td className="py-2 pr-4">Full</td>
-                    <td className="py-2">Ecstatic</td>
+                    <td className="py-2 pr-4">Toolkit app</td>
+                    <td className="py-2 pr-4">Remapped semantic</td>
+                    <td className="py-2">Neutral theme</td>
                   </tr>
                 </tbody>
               </table>
             </div>
+            <p className="text-body mt-4">
+              The component layer never changes. Only the semantic values swap.
+            </p>
+            <p className="text-body mt-4">
+              Use <code className="font-mono">font-mono</code> for inline
+              technical values like{" "}
+              <code className="text-inline-code rounded-sm bg-background-secondary px-1.5 py-0.5 text-text-default">
+                --color-background-primary
+              </code>{" "}
+              and{" "}
+              <code className="text-inline-code rounded-sm bg-background-secondary px-1.5 py-0.5 text-text-default">
+                var(--color-chart-1)
+              </code>
+              .
+            </p>
+
+            <h2 className="text-h2 mt-10 text-text-default">The moral</h2>
+            <blockquote className="text-blockquote mt-4 border-l-2 border-border-default pl-4 text-text-subtle">
+              Never underestimate the cost of building the same thing twice.
+            </blockquote>
           </article>
         </div>
         <p className="mt-2 text-small">
@@ -332,10 +363,10 @@ export default function TypographyDocsPage() {
           Cognition v1.2 font, size, weight, and line-height. The full scale and
           weights are documented under{" "}
           <a
-            href="/tokens#typography"
+            href="/tokens#typescale"
             className="font-medium text-text-primary underline underline-offset-2 hover:opacity-80"
           >
-            Tokens → Typography
+            Tokens → Type Scale
           </a>
           .
         </p>
@@ -386,7 +417,15 @@ export default function TypographyDocsPage() {
         <code className="font-mono text-text-default">text-blockquote</code>,{" "}
         <code className="font-mono text-text-default">text-list</code>, and more.
         They set type only; color comes from a{" "}
-        <code className="font-mono text-text-default">text-*</code> token.
+        <code className="font-mono text-text-default">text-*</code> token. The
+        full scale lives under{" "}
+        <a
+          href="/tokens#typescale"
+          className="font-medium text-text-primary underline underline-offset-2 hover:opacity-80"
+        >
+          Tokens → Type Scale
+        </a>
+        .
       </footer>
     </div>
   );
