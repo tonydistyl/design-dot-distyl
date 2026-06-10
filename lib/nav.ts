@@ -22,6 +22,7 @@ export const nav: NavGroup[] = [
       { href: "/components/button", label: "Button" },
       { href: "/components/card", label: "Card" },
       { href: "/components/checkbox", label: "Checkbox" },
+      { href: "/components/collapsible", label: "Collapsible" },
       { href: "/components/conversational-ui", label: "Conversational UI" },
       { href: "/components/data-table", label: "Data Table" },
       { href: "/components/dialog", label: "Dialog" },
