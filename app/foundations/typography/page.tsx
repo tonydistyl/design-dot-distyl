@@ -6,16 +6,17 @@ export const metadata: Metadata = {
     "Geist for all UI and body copy. Geist Mono for code and technical values only — the Cognition v1.2 type scale and weights.",
 };
 
-// Live specimen rows. Sample text is drawn from the Building Cognition write-up.
+// Live specimen rows. `sample` is the scale comparison line (drawn from the
+// Building Cognition write-up); `prose` is a representative line in running copy.
 const scale = [
-  { label: "H1", px: 36, weight: 700, weightLabel: "Bold", sample: "Building Cognition" },
-  { label: "H2", px: 30, weight: 600, weightLabel: "Semibold", sample: "Why a system" },
-  { label: "H3", px: 24, weight: 600, weightLabel: "Semibold", sample: "Three layers" },
-  { label: "H4", px: 20, weight: 600, weightLabel: "Semibold", sample: "Token swap, skin swap" },
-  { label: "Lead", px: 18, weight: 600, weightLabel: "Semibold", sample: "The shared foundation every product sits on" },
-  { label: "Body", px: 16, weight: 400, weightLabel: "Regular", sample: "A design system is not a deliverable. It is infrastructure." },
-  { label: "Small", px: 14, weight: 500, weightLabel: "Medium", sample: "Primitives, semantic, component — never crossed." },
-  { label: "Caption", px: 12, weight: 400, weightLabel: "Regular", sample: "Cognition v1.2 · maintained by Research & Design" },
+  { label: "H1", px: 36, weight: 700, weightLabel: "Bold", sample: "Building Cognition", prose: "Cognition" },
+  { label: "H2", px: 30, weight: 600, weightLabel: "Semibold", sample: "Why a system", prose: "Design system" },
+  { label: "H3", px: 24, weight: 600, weightLabel: "Semibold", sample: "Three layers", prose: "Tokens and components" },
+  { label: "H4", px: 20, weight: 600, weightLabel: "Semibold", sample: "Token swap, skin swap", prose: "Semantic colors" },
+  { label: "Lead", px: 18, weight: 600, weightLabel: "Semibold", sample: "The shared foundation every product sits on", prose: "One source of truth." },
+  { label: "Body", px: 16, weight: 400, weightLabel: "Regular", sample: "A design system is not a deliverable. It is infrastructure.", prose: "The quick brown fox jumps over the lazy dog." },
+  { label: "Small", px: 14, weight: 500, weightLabel: "Medium", sample: "Primitives, semantic, component — never crossed.", prose: "Secondary copy and helper text." },
+  { label: "Caption", px: 12, weight: 400, weightLabel: "Regular", sample: "Cognition v1.2 · maintained by Research & Design", prose: "Captions, labels, metadata." },
 ];
 
 const weights = [
@@ -86,6 +87,30 @@ export default function TypographyPage() {
             </div>
           ))}
         </div>
+
+        <p className="mt-8 mb-3 text-small">Each style set in running copy:</p>
+        <div className="space-y-4 rounded-lg border border-border-default bg-background-subtle p-6">
+          {scale.map((t) => (
+            <div
+              key={t.label}
+              className="flex items-baseline justify-between gap-4 border-b border-border-subtle pb-3 last:border-0 last:pb-0"
+            >
+              <span
+                className="min-w-0 text-text-default"
+                style={{
+                  fontSize: `${t.px}px`,
+                  fontWeight: t.weight,
+                  fontVariationSettings: `"wght" ${t.weight}`,
+                }}
+              >
+                {t.prose}
+              </span>
+              <span className="shrink-0 font-mono text-xs text-text-subtle">
+                {t.label} · {t.px}px · {t.weightLabel}
+              </span>
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* Weights */}
@@ -97,24 +122,24 @@ export default function TypographyPage() {
           Geist is variable; these four weights cover the system.
         </p>
 
-        <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
+        <div className="space-y-3">
           {weights.map((w) => (
             <div
               key={w.weight}
-              className="rounded-lg border border-border-default p-4 text-center"
+              className="flex items-baseline justify-between gap-4 rounded-lg border border-border-default p-4"
             >
-              <div
-                className="text-2xl text-text-default"
+              <span
+                className="min-w-0 text-lg text-text-default"
                 style={{
                   fontWeight: w.weight,
                   fontVariationSettings: `"wght" ${w.weight}`,
                 }}
               >
-                Aa
-              </div>
-              <div className="mt-1 font-mono text-xs text-text-subtle">
+                The quick brown fox jumps over the lazy dog.
+              </span>
+              <span className="shrink-0 font-mono text-xs text-text-subtle">
                 {w.weight} · {w.label}
-              </div>
+              </span>
             </div>
           ))}
         </div>
@@ -131,9 +156,14 @@ export default function TypographyPage() {
         </p>
 
         <div className="rounded-lg border border-border-default bg-background-inverse p-5">
-          <code className="font-mono text-sm text-text-inverse">
-            font-family: Geist Mono — 0123456789 {`{ }`} =&gt; const x = 42;
-          </code>
+          <pre className="overflow-x-auto">
+            <code className="font-mono text-sm leading-6 text-text-inverse">
+              {`const system = "Cognition";
+const tokens = { primary: "var(--color-background-primary)" };
+const theme = (key: string) => \`var(--color-\${key})\`;
+export default { system, tokens, theme };`}
+            </code>
+          </pre>
         </div>
 
         <p className="mt-4 text-small">
