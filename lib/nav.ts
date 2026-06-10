@@ -18,6 +18,7 @@ export const nav: NavGroup[] = [
       { href: "/components/aspect-ratio", label: "Aspect Ratio" },
       { href: "/components/avatar", label: "Avatar" },
       { href: "/components/badge", label: "Badge" },
+      { href: "/components/bar-chart", label: "Bar Chart" },
       { href: "/components/breadcrumb", label: "Breadcrumb" },
       { href: "/components/button", label: "Button" },
       { href: "/components/card", label: "Card" },
