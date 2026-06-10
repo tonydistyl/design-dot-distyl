@@ -103,6 +103,7 @@ export const nav: NavGroup[] = [
         sections: [
           { id: "scale", label: "Type scale" },
           { id: "weights", label: "Weights" },
+          { id: "context", label: "In context" },
           { id: "mono", label: "Monospace" },
         ],
       },

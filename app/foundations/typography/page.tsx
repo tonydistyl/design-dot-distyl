@@ -43,6 +43,7 @@ export default function TypographyPage() {
         {[
           { id: "scale", title: "Type scale" },
           { id: "weights", title: "Weights" },
+          { id: "context", title: "In context" },
           { id: "mono", title: "Monospace" },
         ].map((s) => (
           <a
@@ -142,6 +143,102 @@ export default function TypographyPage() {
               </span>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* In context */}
+      <section id="context" className="scroll-mt-8">
+        <h3 className="mt-14 mb-1 border-b border-border-default pb-2 text-h3 text-text-default">
+          In context
+        </h3>
+        <p className="mb-6 text-small">The styles working together as a document.</p>
+
+        <div className="rounded-lg border border-border-default bg-background-subtle p-8">
+          <article className="mx-auto max-w-2xl">
+            <h1 className="text-h1 text-text-default">Building Cognition</h1>
+            <p className="text-body mt-4">
+              Cognition is Distyl AI&apos;s design system — the shared foundation
+              every product implementation sits on. It exists so engineers ship
+              faster, interfaces stay consistent, and the cost of a rebrand is one
+              token file, not a codebase.
+            </p>
+
+            <h2 className="text-h2 mt-10 text-text-default">Why a system</h2>
+            <p className="text-body mt-4">
+              Ad hoc UI compounds. Every hardcoded hex value, every one-off
+              spacing decision, every parallel component is debt that slows the
+              next build and the one after that.
+            </p>
+            <blockquote className="text-blockquote mt-6 border-l-2 border-border-default pl-4 text-text-subtle">
+              A design system is not a deliverable. It is infrastructure. It earns
+              its place the same way a database does — by making everything built
+              on top of it faster and more reliable.
+            </blockquote>
+
+            <h2 className="text-h2 mt-10 text-text-default">Three layers</h2>
+            <ol className="text-list mt-4 list-decimal pl-6 text-text-default">
+              <li>Primitives — raw values, never used directly</li>
+              <li>Semantic — purpose-named aliases, where dark mode lives</li>
+              <li>
+                Component — scoped tokens referencing semantic, never primitives
+              </li>
+            </ol>
+
+            <h2 className="text-h2 mt-10 text-text-default">
+              Token swap, skin swap
+            </h2>
+            <div className="mt-4 overflow-x-auto">
+              <table className="w-full border-collapse text-left text-sm">
+                <thead>
+                  <tr className="border-b border-border-default">
+                    <th className="py-2 pr-4 font-semibold text-text-default">
+                      Surface
+                    </th>
+                    <th className="py-2 pr-4 font-semibold text-text-default">
+                      Token layer
+                    </th>
+                    <th className="py-2 font-semibold text-text-default">
+                      Result
+                    </th>
+                  </tr>
+                </thead>
+                <tbody className="text-text-subtle">
+                  <tr className="border-b border-border-default">
+                    <td className="py-2 pr-4">Distyl platform</td>
+                    <td className="py-2 pr-4">Default semantic</td>
+                    <td className="py-2">Purple, dark mode</td>
+                  </tr>
+                  <tr className="border-b border-border-default">
+                    <td className="py-2 pr-4">Hoover impl</td>
+                    <td className="py-2 pr-4">Remapped semantic</td>
+                    <td className="py-2">Custom brand</td>
+                  </tr>
+                  <tr>
+                    <td className="py-2 pr-4">Toolkit app</td>
+                    <td className="py-2 pr-4">Remapped semantic</td>
+                    <td className="py-2">Neutral theme</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-body mt-4">
+              Use <code className="font-mono">font-mono</code> for inline
+              technical values like{" "}
+              <code className="text-inline-code rounded-sm bg-background-secondary px-1.5 py-0.5 text-text-default">
+                --color-background-primary
+              </code>{" "}
+              and{" "}
+              <code className="text-inline-code rounded-sm bg-background-secondary px-1.5 py-0.5 text-text-default">
+                var(--color-chart-1)
+              </code>
+              .
+            </p>
+
+            <h2 className="text-h2 mt-10 text-text-default">The moral</h2>
+            <blockquote className="text-blockquote mt-4 border-l-2 border-border-default pl-4 text-text-subtle">
+              Never underestimate the cost of building the same thing twice.
+            </blockquote>
+          </article>
         </div>
       </section>
 
