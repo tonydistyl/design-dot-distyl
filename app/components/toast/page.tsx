@@ -94,7 +94,7 @@ function ToastMock({
   return (
     <div className="flex flex-col items-center gap-3">
       <div
-        className={`flex w-64 items-start gap-3 rounded-lg border border-border-default bg-background-default p-4 shadow-lg ${className ?? ""}`}
+        className={`flex w-full items-start gap-3 rounded-lg border border-border-default bg-background-default p-4 shadow-lg ${className ?? ""}`}
       >
         <CircleCheck className="mt-0.5 size-5 shrink-0 text-text-success" />
         <div className="flex-1">
