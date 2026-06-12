@@ -95,14 +95,17 @@ export function Sidebar() {
     <aside className="sticky top-0 hidden h-screen w-64 shrink-0 flex-col overflow-y-auto border-r border-border-default bg-background-subtle md:flex">
       {/* Sticky header — logo + search stay pinned; the nav scrolls under. */}
       <div className="sticky top-0 z-10 bg-background-subtle px-6 pt-8 pb-4">
-      <Link href="/" className="group mb-6 block">
-        <div className="flex items-center gap-2">
-          <span className="inline-block h-6 w-6 rounded-full bg-background-primary" />
-          <span className="text-lg font-bold tracking-tight text-text-default">
-            design<span className="text-text-primary">.distyl</span>
-          </span>
-        </div>
-      </Link>
+      <div className="mb-6 flex items-center justify-between gap-2">
+        <Link href="/" className="group">
+          <div className="flex items-center gap-2">
+            <span className="inline-block h-6 w-6 rounded-full bg-background-primary" />
+            <span className="text-lg font-bold tracking-tight text-text-default">
+              Cognition
+            </span>
+          </div>
+        </Link>
+        <ThemeToggle />
+      </div>
 
       {/* Search — filters the whole nav. Grows with the component list. */}
       <div className="relative">
@@ -263,8 +266,7 @@ export function Sidebar() {
       </nav>
 
       <div className="mt-8 border-t border-border-default px-6 pb-8 pt-6">
-        <ThemeToggle />
-        <div className="mt-4 flex flex-col gap-1 text-xs text-text-subtle">
+        <div className="flex flex-col gap-1 text-xs text-text-subtle">
           <span>Cognition v1.2</span>
           <a
             href="https://distylai.slack.com/archives/C0A22RR2N6P"

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { Moon, Sun } from "lucide-react";
 
 type Theme = "light" | "dark";
 
@@ -24,25 +25,23 @@ export function ThemeToggle() {
     setTheme(next);
   }
 
+  const isDark = mounted && theme === "dark";
+
   return (
     <button
       type="button"
       onClick={toggle}
-      aria-label="Toggle color theme"
-      className="flex items-center gap-2 rounded-md border border-border-default bg-background-default px-3 py-2 text-sm font-medium text-text-subtle transition-colors hover:border-border-strong hover:text-text-default"
+      aria-label={
+        mounted
+          ? `Switch to ${isDark ? "light" : "dark"} theme`
+          : "Toggle color theme"
+      }
+      title="Toggle theme"
+      className="flex size-8 shrink-0 items-center justify-center rounded-md text-text-subtle transition-colors hover:bg-background-secondary hover:text-text-default focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-border-primary [&>svg]:size-4"
     >
-      <span
-        aria-hidden
-        className="inline-block h-3 w-3 rounded-full border border-border-strong"
-        style={{
-          background: mounted
-            ? theme === "dark"
-              ? "var(--color-background-inverse)"
-              : "var(--color-background-primary)"
-            : "transparent",
-        }}
-      />
-      {mounted ? (theme === "dark" ? "Dark" : "Light") : "Theme"}
+      {/* Shows the current theme: sun in light, moon in dark. */}
+      {isDark ? <Moon /> : <Sun />}
+      <span className="sr-only">Toggle color theme</span>
     </button>
   );
 }
