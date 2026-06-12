@@ -22,6 +22,7 @@ export const nav: NavGroup[] = [
     items: [
       { href: "/components/accordion", label: "Accordion" },
       { href: "/components/alert", label: "Alert" },
+      { href: "/components/alert-dialog", label: "Alert Dialog" },
       { href: "/components/aspect-ratio", label: "Aspect Ratio" },
       { href: "/components/avatar", label: "Avatar" },
       { href: "/components/badge", label: "Badge" },
@@ -54,6 +55,7 @@ export const nav: NavGroup[] = [
       { href: "/components/dropdown-menu", label: "Dropdown Menu" },
       { href: "/components/empty-state", label: "Empty State" },
       { href: "/components/graph-canvas-node", label: "Graph Canvas Node" },
+      { href: "/components/hover-card", label: "Hover Card" },
       { href: "/components/input", label: "Input" },
       { href: "/components/input-group", label: "Input Group" },
       { href: "/components/input-otp", label: "Input OTP" },
@@ -63,6 +65,7 @@ export const nav: NavGroup[] = [
       { href: "/components/popover", label: "Popover" },
       { href: "/components/progress", label: "Progress" },
       { href: "/components/radio-group", label: "Radio Group" },
+      { href: "/components/resizable", label: "Resizable" },
       { href: "/components/scroll-area", label: "Scroll Area" },
       { href: "/components/select", label: "Select" },
       { href: "/components/separator", label: "Separator" },
