@@ -127,7 +127,7 @@ export default function ToggleGroupPage() {
         <h3 className="mt-12 mb-4 text-h3 text-text-default">Variants</h3>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8">
+            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <ToggleGroup type="single" variant="outline" defaultValue="left">
                 <ToggleGroupItem value="left" aria-label="Align left">
                   <AlignLeft />
@@ -149,7 +149,7 @@ export default function ToggleGroupPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8">
+            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <ToggleGroup type="multiple" defaultValue={["bold", "italic"]}>
                 <ToggleGroupItem value="bold" aria-label="Bold">
                   <Bold />
@@ -183,7 +183,7 @@ export default function ToggleGroupPage() {
         <h3 className="mt-12 mb-4 text-h3 text-text-default">States</h3>
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8">
+            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <ToggleGroup type="single">
                 <ToggleGroupItem value="left" aria-label="Align left">
                   <AlignLeft />
@@ -201,7 +201,7 @@ export default function ToggleGroupPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8">
+            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <ToggleGroup type="single" defaultValue="center">
                 <ToggleGroupItem value="left" aria-label="Align left">
                   <AlignLeft />
@@ -221,7 +221,7 @@ export default function ToggleGroupPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8">
+            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <ToggleGroup type="multiple" defaultValue={["bold", "underline"]}>
                 <ToggleGroupItem value="bold" aria-label="Bold">
                   <Bold />
@@ -241,7 +241,7 @@ export default function ToggleGroupPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8">
+            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <ToggleGroup type="single" defaultValue="center" disabled>
                 <ToggleGroupItem value="left" aria-label="Align left">
                   <AlignLeft />
@@ -263,7 +263,7 @@ export default function ToggleGroupPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8">
+            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <ToggleGroup type="single" defaultValue="left">
                 <ToggleGroupItem value="left" aria-label="Align left">
                   <AlignLeft />

@@ -69,7 +69,7 @@ export default function SwitchPage() {
               key={s.key}
               className="overflow-hidden rounded-lg border border-border-default"
             >
-              <div className="flex items-center justify-center bg-background-subtle p-8">
+              <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
                 {s.node}
               </div>
               <div className="border-t border-border-default p-3">

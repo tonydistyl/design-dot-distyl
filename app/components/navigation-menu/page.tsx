@@ -109,7 +109,7 @@ function MockPanel({
     { title: "Guidelines", desc: "How and when to use each piece.", icon: <FileText /> },
   ];
   return (
-    <div className="w-[380px] rounded-md border border-border-default bg-background-default p-2 shadow-md">
+    <div className="w-full max-w-[380px] rounded-md border border-border-default bg-background-default p-2 shadow-md">
       <ul className="grid gap-1 md:grid-cols-2">
         {items.map((item, i) => (
           <li key={item.title}>
@@ -243,19 +243,19 @@ export default function NavigationMenuPage() {
       <section id="variants" className="scroll-mt-8">
         <h3 className="mt-12 mb-4 text-h3 text-text-default">Variants</h3>
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
-          <div className="flex flex-col items-center gap-3 rounded-lg border border-border-default bg-background-subtle p-6">
+          <div className="flex h-auto flex-col items-center gap-3 overflow-hidden rounded-lg border border-border-default bg-background-subtle p-6">
             <MockBar />
             <p className="text-xs text-text-subtle">Default (links only)</p>
           </div>
-          <div className="flex flex-col items-center gap-3 rounded-lg border border-border-default bg-background-subtle p-6">
+          <div className="flex h-auto flex-col items-center gap-3 overflow-hidden rounded-lg border border-border-default bg-background-subtle p-6">
             <MockPanel variant="links" />
             <p className="text-xs text-text-subtle">With dropdowns</p>
           </div>
-          <div className="flex flex-col items-center gap-3 rounded-lg border border-border-default bg-background-subtle p-6">
+          <div className="flex h-auto flex-col items-center gap-3 overflow-hidden rounded-lg border border-border-default bg-background-subtle p-6">
             <MockPanel variant="icons" />
             <p className="text-xs text-text-subtle">With icons</p>
           </div>
-          <div className="flex flex-col items-center gap-3 rounded-lg border border-border-default bg-background-subtle p-6">
+          <div className="flex h-auto flex-col items-center gap-3 overflow-hidden rounded-lg border border-border-default bg-background-subtle p-6">
             <MockPanel variant="descriptions" />
             <p className="text-xs text-text-subtle">With descriptions</p>
           </div>
@@ -270,23 +270,23 @@ export default function NavigationMenuPage() {
       <section id="states" className="scroll-mt-8">
         <h3 className="mt-12 mb-4 text-h3 text-text-default">States</h3>
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
-          <div className="flex flex-col items-center gap-3 rounded-lg border border-border-default bg-background-subtle p-6">
+          <div className="flex h-auto flex-col items-center gap-3 overflow-hidden rounded-lg border border-border-default bg-background-subtle p-6">
             <MockBar />
             <p className="text-xs text-text-subtle">Default. Resting items.</p>
           </div>
-          <div className="flex flex-col items-center gap-3 rounded-lg border border-border-default bg-background-subtle p-6">
+          <div className="flex h-auto flex-col items-center gap-3 overflow-hidden rounded-lg border border-border-default bg-background-subtle p-6">
             <MockBar state="hover" />
             <p className="text-xs text-text-subtle">Item hover.</p>
           </div>
-          <div className="flex flex-col items-center gap-3 rounded-lg border border-border-default bg-background-subtle p-6">
+          <div className="flex h-auto flex-col items-center gap-3 overflow-hidden rounded-lg border border-border-default bg-background-subtle p-6">
             <MockBar state="active" />
             <p className="text-xs text-text-subtle">Item active (current page).</p>
           </div>
-          <div className="flex flex-col items-center gap-3 rounded-lg border border-border-default bg-background-subtle p-6">
+          <div className="flex h-auto flex-col items-center gap-3 overflow-hidden rounded-lg border border-border-default bg-background-subtle p-6">
             <MockBar state="focus" />
             <p className="text-xs text-text-subtle">Keyboard focused.</p>
           </div>
-          <div className="flex flex-col items-center gap-3 rounded-lg border border-border-default bg-background-subtle p-6 lg:col-span-2">
+          <div className="flex h-auto flex-col items-center gap-3 overflow-hidden rounded-lg border border-border-default bg-background-subtle p-6 lg:col-span-2">
             <MockPanel variant="descriptions" />
             <p className="text-xs text-text-subtle">
               Dropdown open, with the first item hovered.

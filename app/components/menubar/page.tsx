@@ -238,8 +238,8 @@ export default function MenubarPage() {
       {/* Variants */}
       <section id="variants" className="scroll-mt-8">
         <h3 className="mt-12 mb-4 text-h3 text-text-default">Variants</h3>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          <div className="flex flex-col items-center gap-3 rounded-lg border border-border-default bg-background-subtle p-6">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+          <div className="flex h-auto flex-col items-center gap-3 overflow-hidden rounded-lg border border-border-default bg-background-subtle p-6">
             <MenuPanel>
               <MItem>New Tab</MItem>
               <MItem>New Window</MItem>
@@ -247,7 +247,7 @@ export default function MenubarPage() {
             </MenuPanel>
             <p className="text-xs text-text-subtle">Default</p>
           </div>
-          <div className="flex flex-col items-center gap-3 rounded-lg border border-border-default bg-background-subtle p-6">
+          <div className="flex h-auto flex-col items-center gap-3 overflow-hidden rounded-lg border border-border-default bg-background-subtle p-6">
             <MenuPanel>
               <MItem shortcut="⌘T">New Tab</MItem>
               <MItem shortcut="⌘N">New Window</MItem>
@@ -255,7 +255,7 @@ export default function MenubarPage() {
             </MenuPanel>
             <p className="text-xs text-text-subtle">With keyboard shortcuts</p>
           </div>
-          <div className="flex flex-col items-center gap-3 rounded-lg border border-border-default bg-background-subtle p-6">
+          <div className="flex h-auto flex-col items-center gap-3 overflow-hidden rounded-lg border border-border-default bg-background-subtle p-6">
             <MenuPanel>
               <MItem>Open</MItem>
               <MItem chevron>Share</MItem>
@@ -263,7 +263,7 @@ export default function MenubarPage() {
             </MenuPanel>
             <p className="text-xs text-text-subtle">With submenus</p>
           </div>
-          <div className="flex flex-col items-center gap-3 rounded-lg border border-border-default bg-background-subtle p-6">
+          <div className="flex h-auto flex-col items-center gap-3 overflow-hidden rounded-lg border border-border-default bg-background-subtle p-6">
             <MenuPanel>
               <MItem>Cut</MItem>
               <MItem>Copy</MItem>
@@ -272,14 +272,14 @@ export default function MenubarPage() {
             </MenuPanel>
             <p className="text-xs text-text-subtle">With separators</p>
           </div>
-          <div className="flex flex-col items-center gap-3 rounded-lg border border-border-default bg-background-subtle p-6">
+          <div className="flex h-auto flex-col items-center gap-3 overflow-hidden rounded-lg border border-border-default bg-background-subtle p-6">
             <MenuPanel>
               <MItem checked>Always Show Bookmarks</MItem>
               <MItem checked={false}>Always Show Full URLs</MItem>
             </MenuPanel>
             <p className="text-xs text-text-subtle">With checkboxes</p>
           </div>
-          <div className="flex flex-col items-center gap-3 rounded-lg border border-border-default bg-background-subtle p-6">
+          <div className="flex h-auto flex-col items-center gap-3 overflow-hidden rounded-lg border border-border-default bg-background-subtle p-6">
             <MenuPanel>
               <MItem radio>Derek Ho</MItem>
               <MItem radio={false}>Arjun Prakash</MItem>
@@ -296,12 +296,12 @@ export default function MenubarPage() {
       {/* States */}
       <section id="states" className="scroll-mt-8">
         <h3 className="mt-12 mb-4 text-h3 text-text-default">States</h3>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          <div className="flex flex-col items-center gap-3 rounded-lg border border-border-default bg-background-subtle p-6">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+          <div className="flex h-auto flex-col items-center gap-3 overflow-hidden rounded-lg border border-border-default bg-background-subtle p-6">
             <MenuBarMock />
             <p className="text-xs text-text-subtle">Closed. The resting bar.</p>
           </div>
-          <div className="flex flex-col items-center gap-3 rounded-lg border border-border-default bg-background-subtle p-6">
+          <div className="flex h-auto flex-col items-center gap-3 overflow-hidden rounded-lg border border-border-default bg-background-subtle p-6">
             <div className="flex flex-col items-center gap-1">
               <MenuBarMock open="File" />
               <MenuPanel>
@@ -311,7 +311,7 @@ export default function MenubarPage() {
             </div>
             <p className="text-xs text-text-subtle">Item open.</p>
           </div>
-          <div className="flex flex-col items-center gap-3 rounded-lg border border-border-default bg-background-subtle p-6">
+          <div className="flex h-auto flex-col items-center gap-3 overflow-hidden rounded-lg border border-border-default bg-background-subtle p-6 sm:col-span-2">
             <div className="flex items-start">
               <MenuPanel>
                 <MItem>Open</MItem>
@@ -327,7 +327,7 @@ export default function MenubarPage() {
             </div>
             <p className="text-xs text-text-subtle">Nested item hover.</p>
           </div>
-          <div className="flex flex-col items-center gap-3 rounded-lg border border-border-default bg-background-subtle p-6">
+          <div className="flex h-auto flex-col items-center gap-3 overflow-hidden rounded-lg border border-border-default bg-background-subtle p-6">
             <MenuPanel>
               <MItem>Cut</MItem>
               <MItem disabled>Paste</MItem>
@@ -335,14 +335,14 @@ export default function MenubarPage() {
             </MenuPanel>
             <p className="text-xs text-text-subtle">Item disabled.</p>
           </div>
-          <div className="flex flex-col items-center gap-3 rounded-lg border border-border-default bg-background-subtle p-6">
+          <div className="flex h-auto flex-col items-center gap-3 overflow-hidden rounded-lg border border-border-default bg-background-subtle p-6">
             <MenuPanel>
               <MItem checked>Always Show Bookmarks</MItem>
               <MItem checked={false}>Always Show Full URLs</MItem>
             </MenuPanel>
             <p className="text-xs text-text-subtle">Checkbox checked.</p>
           </div>
-          <div className="flex flex-col items-center gap-3 rounded-lg border border-border-default bg-background-subtle p-6">
+          <div className="flex h-auto flex-col items-center gap-3 overflow-hidden rounded-lg border border-border-default bg-background-subtle p-6">
             <MenuPanel>
               <MItem radio>Derek Ho</MItem>
               <MItem radio={false}>Arjun Prakash</MItem>

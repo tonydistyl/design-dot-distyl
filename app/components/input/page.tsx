@@ -85,7 +85,7 @@ export default function InputPage() {
               key={s.key}
               className="overflow-hidden rounded-lg border border-border-default"
             >
-              <div className="flex items-center justify-center bg-background-subtle p-8">
+              <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
                 <div className="w-full max-w-xs">{s.node}</div>
               </div>
               <div className="border-t border-border-default p-3">
@@ -109,7 +109,7 @@ export default function InputPage() {
       <section id="with-label" className="scroll-mt-8">
         <h3 className="mt-12 mb-4 text-h3 text-text-default">With a label</h3>
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-          <div className="flex items-start justify-center rounded-lg border border-border-default bg-background-subtle p-8">
+          <div className="flex items-start justify-center rounded-lg border border-border-default bg-background-subtle p-8 pointer-events-none select-none">
             <div className="flex w-full max-w-xs flex-col gap-2">
               <label
                 htmlFor="email"

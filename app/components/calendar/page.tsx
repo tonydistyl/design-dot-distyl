@@ -110,7 +110,7 @@ export default function CalendarPage() {
         <h3 className="mt-12 mb-4 text-h3 text-text-default">Variants</h3>
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-6">
+            <div className="flex items-center justify-center bg-background-subtle p-6 pointer-events-none select-none">
               <CalendarSingle />
             </div>
             <div className="border-t border-border-default p-3">
@@ -122,7 +122,7 @@ export default function CalendarPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-6">
+            <div className="flex items-center justify-center bg-background-subtle p-6 pointer-events-none select-none">
               <CalendarRange />
             </div>
             <div className="border-t border-border-default p-3">
@@ -134,7 +134,7 @@ export default function CalendarPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default lg:col-span-2">
-            <div className="flex items-center justify-center bg-background-subtle p-6">
+            <div className="flex items-center justify-center bg-background-subtle p-6 pointer-events-none select-none">
               <CalendarDisabled />
             </div>
             <div className="border-t border-border-default p-3">
@@ -156,14 +156,14 @@ export default function CalendarPage() {
       <section id="states" className="scroll-mt-8">
         <h3 className="mt-12 mb-4 text-h3 text-text-default">States</h3>
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
-          <div className="flex flex-col items-center gap-3 rounded-lg border border-border-default bg-background-subtle p-6">
+          <div className="flex flex-col items-center gap-3 rounded-lg border border-border-default bg-background-subtle p-6 pointer-events-none select-none">
             <CalendarSingle />
             <p className="text-xs text-text-subtle">
               Selected fills with the brand primary; today carries the accent
               tint.
             </p>
           </div>
-          <div className="flex flex-col items-center gap-3 rounded-lg border border-border-default bg-background-subtle p-6">
+          <div className="flex flex-col items-center gap-3 rounded-lg border border-border-default bg-background-subtle p-6 pointer-events-none select-none">
             <CalendarRange />
             <p className="text-xs text-text-subtle">
               A range fills its span with the accent; disabled days dim and a day

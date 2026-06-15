@@ -121,7 +121,7 @@ export default function InputGroupPage() {
         <h3 className="mt-12 mb-4 text-h3 text-text-default">Variants</h3>
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8">
+            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <InputGroup leadingIcon={<Search />} placeholder="Search..." />
             </div>
             <div className="border-t border-border-default p-3">
@@ -133,7 +133,7 @@ export default function InputGroupPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8">
+            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <InputGroup
                 trailingIcon={<Check className="text-text-success" />}
                 defaultValue="alex@distyl.ai"
@@ -148,7 +148,7 @@ export default function InputGroupPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8">
+            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <InputGroup leadingText="https://" placeholder="workspace" />
             </div>
             <div className="border-t border-border-default p-3">
@@ -160,7 +160,7 @@ export default function InputGroupPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8">
+            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <InputGroup trailingText="USD" placeholder="0.00" />
             </div>
             <div className="border-t border-border-default p-3">
@@ -172,7 +172,7 @@ export default function InputGroupPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8">
+            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <InputGroup
                 placeholder="Invite by email"
                 trailingAction={
@@ -191,7 +191,7 @@ export default function InputGroupPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8">
+            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <InputGroup
                 leadingIcon={<AtSign />}
                 placeholder="username"
@@ -222,7 +222,7 @@ export default function InputGroupPage() {
         <h3 className="mt-12 mb-4 text-h3 text-text-default">States</h3>
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8">
+            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <InputGroup leadingIcon={<Globe />} placeholder="workspace" />
             </div>
             <div className="border-t border-border-default p-3">
@@ -230,7 +230,7 @@ export default function InputGroupPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8">
+            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <InputGroup
                 leadingIcon={<Globe />}
                 placeholder="workspace"
@@ -244,7 +244,7 @@ export default function InputGroupPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8">
+            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <InputGroup leadingIcon={<Globe />} defaultValue="cognition" />
             </div>
             <div className="border-t border-border-default p-3">
@@ -252,7 +252,7 @@ export default function InputGroupPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8">
+            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <InputGroup
                 leadingIcon={<Globe />}
                 defaultValue="not a domain"
@@ -268,7 +268,7 @@ export default function InputGroupPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8">
+            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <InputGroup
                 leadingIcon={<Globe />}
                 defaultValue="cognition"

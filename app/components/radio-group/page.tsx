@@ -121,7 +121,7 @@ export default function RadioGroupPage() {
         <h3 className="mt-12 mb-4 text-h3 text-text-default">Variants</h3>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8">
+            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <RadioGroup defaultValue="comfortable">
                 <div className="flex items-center gap-2">
                   <RadioGroupItem value="default" id="v-default" />
@@ -149,7 +149,7 @@ export default function RadioGroupPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8">
+            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <RadioGroup defaultValue="card" className="gap-3">
                 <RadioGroupLabeledOption
                   value="card"
@@ -188,7 +188,7 @@ export default function RadioGroupPage() {
         <h3 className="mt-12 mb-4 text-h3 text-text-default">States</h3>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8">
+            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <RadioGroup defaultValue="b">
                 <div className="flex items-center gap-2">
                   <RadioGroupItem value="a" id="st-a" />
@@ -209,7 +209,7 @@ export default function RadioGroupPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8">
+            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <RadioGroup defaultValue="a">
                 <div className="flex items-center gap-2">
                   <RadioGroupItem value="a" id="di-a" />
@@ -232,7 +232,7 @@ export default function RadioGroupPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8">
+            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <RadioGroup defaultValue="a" disabled>
                 <div className="flex items-center gap-2">
                   <RadioGroupItem value="a" id="dg-a" />

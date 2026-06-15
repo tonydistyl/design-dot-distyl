@@ -179,7 +179,7 @@ export default function BreadcrumbDocsPage() {
         <h3 className="mt-12 mb-4 text-h3 text-text-default">Separators</h3>
         <div className="grid grid-cols-1 gap-4">
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8">
+            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <ChevronTrail />
             </div>
             <div className="border-t border-border-default p-3">
@@ -191,7 +191,7 @@ export default function BreadcrumbDocsPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8">
+            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <DotTrail />
             </div>
             <div className="border-t border-border-default p-3">
@@ -203,7 +203,7 @@ export default function BreadcrumbDocsPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8">
+            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <BreadcrumbCollapsed />
             </div>
             <div className="border-t border-border-default p-3">
@@ -229,7 +229,7 @@ export default function BreadcrumbDocsPage() {
         <h3 className="mt-12 mb-4 text-h3 text-text-default">States</h3>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8">
+            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <Breadcrumb>
                 <BreadcrumbList>
                   <BreadcrumbItem>

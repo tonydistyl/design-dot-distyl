@@ -98,7 +98,7 @@ export default function ResizablePage() {
         <h3 className="mt-12 mb-4 text-h3 text-text-default">Variants</h3>
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="bg-background-subtle p-8">
+            <div className="bg-background-subtle p-8 pointer-events-none select-none">
               <div className="h-44 overflow-hidden rounded-lg border border-border-default bg-background-default">
                 <ResizablePanelGroup direction="horizontal">
                   <ResizablePanel defaultSize={50}>
@@ -120,7 +120,7 @@ export default function ResizablePage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="bg-background-subtle p-8">
+            <div className="bg-background-subtle p-8 pointer-events-none select-none">
               <div className="h-44 overflow-hidden rounded-lg border border-border-default bg-background-default">
                 <ResizablePanelGroup direction="vertical">
                   <ResizablePanel defaultSize={50}>
@@ -142,7 +142,7 @@ export default function ResizablePage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default lg:col-span-2">
-            <div className="bg-background-subtle p-8">
+            <div className="bg-background-subtle p-8 pointer-events-none select-none">
               <div className="h-52 overflow-hidden rounded-lg border border-border-default bg-background-default">
                 <ResizablePanelGroup direction="horizontal">
                   <ResizablePanel defaultSize={40}>
@@ -185,7 +185,7 @@ export default function ResizablePage() {
         <h3 className="mt-12 mb-4 text-h3 text-text-default">States</h3>
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="bg-background-subtle p-8">
+            <div className="bg-background-subtle p-8 pointer-events-none select-none">
               <div className="h-40 overflow-hidden rounded-lg border border-border-default bg-background-default">
                 <ResizablePanelGroup direction="horizontal">
                   <ResizablePanel defaultSize={50}>
@@ -205,7 +205,7 @@ export default function ResizablePage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="bg-background-subtle p-8">
+            <div className="bg-background-subtle p-8 pointer-events-none select-none">
               <div className="h-40 overflow-hidden rounded-lg border border-border-default bg-background-default">
                 <ResizablePanelGroup direction="horizontal">
                   <ResizablePanel defaultSize={50}>
@@ -225,7 +225,7 @@ export default function ResizablePage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="bg-background-subtle p-8">
+            <div className="bg-background-subtle p-8 pointer-events-none select-none">
               <div className="h-40 overflow-hidden rounded-lg border border-border-default bg-background-default">
                 <ResizablePanelGroup direction="horizontal">
                   <ResizablePanel

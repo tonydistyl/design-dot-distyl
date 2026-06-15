@@ -72,7 +72,7 @@ export default function SelectPage() {
       {/* Grouped */}
       <section id="grouped" className="scroll-mt-8">
         <h3 className="mt-12 mb-4 text-h3 text-text-default">Grouped options</h3>
-        <div className="flex min-h-[18rem] items-start justify-center rounded-lg border border-border-default bg-background-subtle p-10">
+        <div className="flex min-h-[18rem] items-start justify-center rounded-lg border border-border-default bg-background-subtle p-10 pointer-events-none select-none">
           <GroupedSelect />
         </div>
         <p className="mt-2 text-small">

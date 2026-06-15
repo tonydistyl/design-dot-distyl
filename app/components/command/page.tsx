@@ -169,7 +169,7 @@ export default function CommandPage() {
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
           {/* Default */}
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="bg-background-subtle p-8">
+            <div className="bg-background-subtle p-8 pointer-events-none select-none">
               <Command defaultValue={NO_AUTOSELECT} className="rounded-md border border-border-default">
                 <CommandInput placeholder="Search..." />
                 <CommandList>
@@ -194,7 +194,7 @@ export default function CommandPage() {
           </div>
           {/* With groups */}
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="bg-background-subtle p-8">
+            <div className="bg-background-subtle p-8 pointer-events-none select-none">
               <Command defaultValue={NO_AUTOSELECT} className="rounded-md border border-border-default">
                 <CommandInput placeholder="Search..." />
                 <CommandList>
@@ -223,7 +223,7 @@ export default function CommandPage() {
           </div>
           {/* With icons */}
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="bg-background-subtle p-8">
+            <div className="bg-background-subtle p-8 pointer-events-none select-none">
               <Command defaultValue={NO_AUTOSELECT} className="rounded-md border border-border-default">
                 <CommandInput placeholder="Search..." />
                 <CommandList>
@@ -258,7 +258,7 @@ export default function CommandPage() {
           </div>
           {/* Inline */}
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="bg-background-subtle p-8">
+            <div className="bg-background-subtle p-8 pointer-events-none select-none">
               <Command defaultValue={NO_AUTOSELECT} className="rounded-md border border-border-default">
                 <CommandInput placeholder="Filter results..." />
                 <CommandList>
@@ -298,7 +298,7 @@ export default function CommandPage() {
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
           {/* Default */}
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="bg-background-subtle p-8">
+            <div className="bg-background-subtle p-8 pointer-events-none select-none">
               <Command defaultValue={NO_AUTOSELECT} className="rounded-md border border-border-default">
                 <CommandInput placeholder="Search..." />
                 <CommandList>
@@ -319,7 +319,7 @@ export default function CommandPage() {
           </div>
           {/* Searching */}
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="bg-background-subtle p-8">
+            <div className="bg-background-subtle p-8 pointer-events-none select-none">
               <Command defaultValue={NO_AUTOSELECT} className="rounded-md border border-border-default">
                 <CommandInput placeholder="deploy" />
                 <CommandList>
@@ -338,7 +338,7 @@ export default function CommandPage() {
           </div>
           {/* Empty */}
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="bg-background-subtle p-8">
+            <div className="bg-background-subtle p-8 pointer-events-none select-none">
               <Command defaultValue={NO_AUTOSELECT} className="rounded-md border border-border-default">
                 <CommandInput placeholder="xyz" />
                 <CommandList>
@@ -354,7 +354,7 @@ export default function CommandPage() {
           </div>
           {/* Loading */}
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="bg-background-subtle p-8">
+            <div className="bg-background-subtle p-8 pointer-events-none select-none">
               <Command defaultValue={NO_AUTOSELECT} className="rounded-md border border-border-default">
                 <CommandInput placeholder="Search..." />
                 <CommandList>

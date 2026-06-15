@@ -1,5 +1,11 @@
 import type { Metadata } from "next";
-import { CircleCheck } from "lucide-react";
+import {
+  CircleCheck,
+  CircleX,
+  Info,
+  type LucideIcon,
+  TriangleAlert,
+} from "lucide-react";
 import { CodeBlock } from "@/components/CodeBlock";
 import { ToastButton } from "./toast-demos";
 
@@ -107,6 +113,91 @@ function ToastMock({
   );
 }
 
+// Static, frozen visual of each toast type for the Variants section, matching
+// the token styling the Toaster applies per type. The live trigger lives only
+// in the Preview.
+type ToastKind =
+  | "default"
+  | "success"
+  | "error"
+  | "warning"
+  | "info"
+  | "action"
+  | "description";
+
+const toastVariants: Record<
+  string,
+  { surface: string; tone: string; title: string; icon?: LucideIcon }
+> = {
+  default: {
+    surface: "border-border-default bg-background-default",
+    tone: "text-text-default",
+    title: "Event scheduled",
+  },
+  success: {
+    surface: "border-border-success bg-background-success",
+    tone: "text-text-success",
+    title: "Changes saved",
+    icon: CircleCheck,
+  },
+  error: {
+    surface: "border-border-danger bg-background-danger",
+    tone: "text-text-danger",
+    title: "Could not save changes",
+    icon: CircleX,
+  },
+  warning: {
+    surface: "border-border-default bg-background-warning",
+    tone: "text-text-warning",
+    title: "Your trial ends in 3 days",
+    icon: TriangleAlert,
+  },
+  info: {
+    surface: "border-border-primary bg-background-accent",
+    tone: "text-text-primary",
+    title: "A new version is available",
+    icon: Info,
+  },
+};
+
+function VariantToast({ kind }: { kind: ToastKind }) {
+  const base =
+    "flex w-full items-start gap-3 rounded-lg border p-4 text-sm shadow-md";
+
+  if (kind === "action") {
+    return (
+      <div className={`${base} border-border-default bg-background-default`}>
+        <p className="flex-1 font-medium text-text-default">Workspace archived</p>
+        <span className="shrink-0 rounded-md bg-background-secondary px-2 py-1 text-xs font-medium text-text-default">
+          Undo
+        </span>
+      </div>
+    );
+  }
+
+  if (kind === "description") {
+    return (
+      <div className={`${base} border-border-default bg-background-default`}>
+        <div className="flex-1">
+          <p className="font-medium text-text-default">Changes saved</p>
+          <p className="mt-1 text-xs text-text-subtle">
+            Your workspace is up to date as of a moment ago.
+          </p>
+        </div>
+      </div>
+    );
+  }
+
+  const cfg = toastVariants[kind];
+  const Icon = cfg.icon;
+  return (
+    <div className={`${base} ${cfg.surface}`}>
+      {Icon && <Icon className={`mt-0.5 size-5 shrink-0 ${cfg.tone}`} />}
+      <p className={`flex-1 font-medium ${cfg.tone}`}>{cfg.title}</p>
+    </div>
+  );
+}
+
 export default function ToastPage() {
   return (
     <div>
@@ -135,10 +226,10 @@ export default function ToastPage() {
       {/* Variants */}
       <section id="variants" className="scroll-mt-8">
         <h3 className="mt-12 mb-4 text-h3 text-text-default">Variants</h3>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div className="overflow-hidden rounded-lg border border-border-default">
             <div className="flex items-center justify-center bg-background-subtle p-8">
-              <ToastButton kind="default">Default</ToastButton>
+              <VariantToast kind="default" />
             </div>
             <div className="border-t border-border-default p-3">
               <CodeBlock
@@ -150,7 +241,7 @@ export default function ToastPage() {
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
             <div className="flex items-center justify-center bg-background-subtle p-8">
-              <ToastButton kind="success">Success</ToastButton>
+              <VariantToast kind="success" />
             </div>
             <div className="border-t border-border-default p-3">
               <CodeBlock
@@ -162,7 +253,7 @@ export default function ToastPage() {
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
             <div className="flex items-center justify-center bg-background-subtle p-8">
-              <ToastButton kind="error">Error</ToastButton>
+              <VariantToast kind="error" />
             </div>
             <div className="border-t border-border-default p-3">
               <CodeBlock
@@ -174,7 +265,7 @@ export default function ToastPage() {
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
             <div className="flex items-center justify-center bg-background-subtle p-8">
-              <ToastButton kind="warning">Warning</ToastButton>
+              <VariantToast kind="warning" />
             </div>
             <div className="border-t border-border-default p-3">
               <CodeBlock
@@ -186,7 +277,7 @@ export default function ToastPage() {
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
             <div className="flex items-center justify-center bg-background-subtle p-8">
-              <ToastButton kind="info">Info</ToastButton>
+              <VariantToast kind="info" />
             </div>
             <div className="border-t border-border-default p-3">
               <CodeBlock
@@ -198,7 +289,7 @@ export default function ToastPage() {
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
             <div className="flex items-center justify-center bg-background-subtle p-8">
-              <ToastButton kind="action">With action</ToastButton>
+              <VariantToast kind="action" />
             </div>
             <div className="border-t border-border-default p-3">
               <CodeBlock
@@ -212,7 +303,7 @@ export default function ToastPage() {
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
             <div className="flex items-center justify-center bg-background-subtle p-8">
-              <ToastButton kind="description">With description</ToastButton>
+              <VariantToast kind="description" />
             </div>
             <div className="border-t border-border-default p-3">
               <CodeBlock
@@ -226,8 +317,7 @@ export default function ToastPage() {
           </div>
         </div>
         <p className="mt-2 text-small">
-          Each button fires a live toast. Success, error, warning, and info take
-          the matching Cognition feedback tokens.
+          Each type is shown as it appears. Success, error, warning, and info take the matching Cognition feedback tokens. Fire a live one from the preview above.
         </p>
       </section>
 

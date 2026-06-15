@@ -139,7 +139,7 @@ export default function ComboboxPage() {
         <h3 className="mt-12 mb-4 text-h3 text-text-default">Variants</h3>
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-start justify-center bg-background-subtle p-8">
+            <div className="flex items-start justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <div className="w-full max-w-[220px]">
                 <Combobox options={regions} placeholder="Region..." />
               </div>
@@ -153,7 +153,7 @@ export default function ComboboxPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-start justify-center bg-background-subtle p-8">
+            <div className="flex items-start justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <div className="w-full max-w-[220px]">
                 <Combobox options={environments} placeholder="Environment..." />
               </div>
@@ -168,7 +168,7 @@ export default function ComboboxPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-start justify-center bg-background-subtle p-8">
+            <div className="flex items-start justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <div className="w-full max-w-[220px]">
                 <IconCombobox />
               </div>
@@ -196,7 +196,7 @@ export default function ComboboxPage() {
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
           {/* Default */}
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-start justify-center bg-background-subtle p-8">
+            <div className="flex items-start justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <div className="w-full max-w-[220px]">
                 <Combobox options={regions} placeholder="Region..." />
               </div>
@@ -209,7 +209,7 @@ export default function ComboboxPage() {
           </div>
           {/* Selected */}
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-start justify-center bg-background-subtle p-8">
+            <div className="flex items-start justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <div className="w-full max-w-[220px]">
                 <Combobox
                   options={regions}
@@ -226,7 +226,7 @@ export default function ComboboxPage() {
           </div>
           {/* Disabled */}
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-start justify-center bg-background-subtle p-8">
+            <div className="flex items-start justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <div className="w-full max-w-[220px]">
                 <Combobox options={regions} placeholder="Region..." disabled />
               </div>
@@ -239,7 +239,7 @@ export default function ComboboxPage() {
           </div>
           {/* Open */}
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-start justify-center bg-background-subtle p-8">
+            <div className="flex items-start justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <div className="w-full max-w-[220px] rounded-md border border-border-default bg-background-default">
                 <Command defaultValue={NO_AUTOSELECT}>
                   <CommandInput placeholder="Search regions..." />
@@ -264,7 +264,7 @@ export default function ComboboxPage() {
           </div>
           {/* Searching */}
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-start justify-center bg-background-subtle p-8">
+            <div className="flex items-start justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <div className="w-full max-w-[220px] rounded-md border border-border-default bg-background-default">
                 <Command defaultValue={NO_AUTOSELECT}>
                   <CommandInput placeholder="eu" />
@@ -291,7 +291,7 @@ export default function ComboboxPage() {
           </div>
           {/* Empty */}
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-start justify-center bg-background-subtle p-8">
+            <div className="flex items-start justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <div className="w-full max-w-[220px] rounded-md border border-border-default bg-background-default">
                 <Command defaultValue={NO_AUTOSELECT}>
                   <CommandInput placeholder="xyz" />

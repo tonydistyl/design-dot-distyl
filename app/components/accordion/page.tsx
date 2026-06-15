@@ -178,7 +178,7 @@ export default function AccordionDocsPage() {
         <h3 className="mt-12 mb-4 text-h3 text-text-default">Variants</h3>
         <div className="grid grid-cols-1 gap-4">
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-start justify-center bg-background-subtle p-8">
+            <div className="flex items-start justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <BasicAccordion />
             </div>
             <div className="border-t border-border-default p-3">
@@ -190,7 +190,7 @@ export default function AccordionDocsPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-start justify-center bg-background-subtle p-8">
+            <div className="flex items-start justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <Accordion
                 type="single"
                 collapsible
@@ -220,7 +220,7 @@ export default function AccordionDocsPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-start justify-center bg-background-subtle p-8">
+            <div className="flex items-start justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <Card className="w-full max-w-md">
                 <CardHeader>
                   <CardTitle>Subscription &amp; Billing</CardTitle>
@@ -267,7 +267,7 @@ export default function AccordionDocsPage() {
         <h3 className="mt-12 mb-4 text-h3 text-text-default">States</h3>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-start justify-center bg-background-subtle p-8">
+            <div className="flex items-start justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <Accordion
                 type="multiple"
                 defaultValue={["m-0", "m-1"]}
@@ -292,7 +292,7 @@ export default function AccordionDocsPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-start justify-center bg-background-subtle p-8">
+            <div className="flex items-start justify-center bg-background-subtle p-8 pointer-events-none select-none">
               <Accordion
                 type="single"
                 collapsible

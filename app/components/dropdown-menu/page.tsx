@@ -79,7 +79,7 @@ export default function DropdownMenuPage() {
         <h3 className="mt-12 mb-4 text-h3 text-text-default">
           Checkbox &amp; radio items
         </h3>
-        <div className="flex min-h-[20rem] items-start justify-center rounded-lg border border-border-default bg-background-subtle p-10">
+        <div className="flex min-h-[20rem] items-start justify-center rounded-lg border border-border-default bg-background-subtle p-10 pointer-events-none select-none">
           <ViewMenu />
         </div>
         <p className="mt-2 text-small">
