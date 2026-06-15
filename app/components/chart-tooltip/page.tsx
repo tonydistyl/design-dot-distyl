@@ -78,7 +78,7 @@ function Cell({
 }) {
   return (
     <div className="overflow-hidden rounded-lg border border-border-default">
-      <div className="bg-background-subtle p-6 pointer-events-none select-none">{children}</div>
+      <div className="bg-background-subtle p-6">{children}</div>
       <div className="border-t border-border-default p-3">
         <CodeBlock
           code={code}

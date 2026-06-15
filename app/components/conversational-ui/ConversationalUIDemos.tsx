@@ -14,7 +14,7 @@ import {
 } from "@/components/ui/tabs";
 
 const panelClass =
-  "overflow-hidden rounded-b-lg rounded-tr-lg border border-border-default pointer-events-none select-none";
+  "overflow-hidden rounded-b-lg rounded-tr-lg border border-border-default";
 
 export function VariantShell() {
   const mockSend = async () => {
@@ -73,7 +73,7 @@ export function VariantShell() {
 
 export function StatesDemo() {
   return (
-    <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 pointer-events-none select-none">
+    <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
       <div>
         <p className="mb-3 text-sm font-medium text-text-default">Empty</p>
         <div
@@ -175,7 +175,7 @@ export function MessageBubbleDemo() {
 export function EmptyStateDemo() {
   return (
     <div
-      className="overflow-hidden rounded-lg border border-border-default pointer-events-none select-none"
+      className="overflow-hidden rounded-lg border border-border-default"
       style={{ height: 280 }}
     >
       <div className="flex h-full flex-col">

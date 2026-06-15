@@ -86,7 +86,7 @@ function Cell({
 }) {
   return (
     <div className="rounded-lg border border-border-default">
-      <div className="flex items-center justify-center bg-background-subtle p-14 pointer-events-none select-none">
+      <div className="flex items-center justify-center bg-background-subtle p-14">
         {children}
       </div>
       <div className="border-t border-border-default p-3">

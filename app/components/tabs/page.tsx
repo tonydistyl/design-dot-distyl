@@ -87,7 +87,7 @@ export default function TabsPage() {
               key={v.key}
               className="overflow-hidden rounded-lg border border-border-default"
             >
-              <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
+              <div className="flex items-center justify-center bg-background-subtle p-8">
                 <VariantTabs variant={v.key} />
               </div>
               <div className="border-t border-border-default p-3">
@@ -113,7 +113,7 @@ export default function TabsPage() {
       {/* With icons */}
       <section id="with-icons" className="scroll-mt-8">
         <h3 className="mt-12 mb-4 text-h3 text-text-default">With icons</h3>
-        <div className="flex items-center justify-center rounded-lg border border-border-default bg-background-subtle p-10 pointer-events-none select-none">
+        <div className="flex items-center justify-center rounded-lg border border-border-default bg-background-subtle p-10">
           <IconTabs />
         </div>
         <p className="mt-2 text-small">

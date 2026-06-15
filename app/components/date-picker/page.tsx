@@ -89,7 +89,7 @@ export default function DatePickerPage() {
         <h3 className="mt-12 mb-4 text-h3 text-text-default">Variants</h3>
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
+            <div className="flex items-center justify-center bg-background-subtle p-8">
               <DatePicker />
             </div>
             <div className="border-t border-border-default p-3">
@@ -101,7 +101,7 @@ export default function DatePickerPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
+            <div className="flex items-center justify-center bg-background-subtle p-8">
               <DateRangePicker />
             </div>
             <div className="border-t border-border-default p-3">
@@ -113,7 +113,7 @@ export default function DatePickerPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
+            <div className="flex items-center justify-center bg-background-subtle p-8">
               <DatePicker placeholder="Select your start date" />
             </div>
             <div className="border-t border-border-default p-3">
@@ -125,7 +125,7 @@ export default function DatePickerPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
+            <div className="flex items-center justify-center bg-background-subtle p-8">
               <DatePicker clearable placeholder="Pick a date" />
             </div>
             <div className="border-t border-border-default p-3">
@@ -147,11 +147,11 @@ export default function DatePickerPage() {
       <section id="states" className="scroll-mt-8">
         <h3 className="mt-12 mb-4 text-h3 text-text-default">States</h3>
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
-          <div className="flex flex-col items-center gap-3 rounded-lg border border-border-default bg-background-subtle p-6 pointer-events-none select-none">
+          <div className="flex flex-col items-center gap-3 rounded-lg border border-border-default bg-background-subtle p-6">
             <DatePicker />
             <p className="text-xs text-text-subtle">Closed. Just the trigger.</p>
           </div>
-          <div className="flex flex-col items-center gap-3 rounded-lg border border-border-default bg-background-subtle p-6 pointer-events-none select-none">
+          <div className="flex flex-col items-center gap-3 rounded-lg border border-border-default bg-background-subtle p-6">
             <Button
               variant="outline"
               className="w-[240px] justify-start text-left font-normal"
@@ -163,7 +163,7 @@ export default function DatePickerPage() {
               Date selected. The trigger shows the value.
             </p>
           </div>
-          <div className="flex flex-col items-center gap-3 rounded-lg border border-border-default bg-background-subtle p-6 pointer-events-none select-none">
+          <div className="flex flex-col items-center gap-3 rounded-lg border border-border-default bg-background-subtle p-6">
             <Button
               variant="outline"
               className="w-[280px] justify-start text-left font-normal"
@@ -175,13 +175,13 @@ export default function DatePickerPage() {
               Range selected. Both ends are shown.
             </p>
           </div>
-          <div className="flex flex-col items-center gap-3 rounded-lg border border-border-default bg-background-subtle p-6 pointer-events-none select-none">
+          <div className="flex flex-col items-center gap-3 rounded-lg border border-border-default bg-background-subtle p-6">
             <DatePicker disabled placeholder="Pick a date" />
             <p className="text-xs text-text-subtle">
               Disabled. The calendar cannot open.
             </p>
           </div>
-          <div className="flex flex-col items-center gap-3 rounded-lg border border-border-default bg-background-subtle p-6 pointer-events-none select-none lg:col-span-2">
+          <div className="flex flex-col items-center gap-3 rounded-lg border border-border-default bg-background-subtle p-6 lg:col-span-2">
             <div className="flex flex-col items-center gap-2">
               <Button
                 variant="outline"

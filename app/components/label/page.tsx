@@ -95,7 +95,7 @@ export default function LabelPage() {
         <h3 className="mt-12 mb-4 text-h3 text-text-default">Variants</h3>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
+            <div className="flex items-center justify-center bg-background-subtle p-8">
               <Label htmlFor="v-default">Email</Label>
             </div>
             <div className="border-t border-border-default p-3">
@@ -107,7 +107,7 @@ export default function LabelPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
+            <div className="flex items-center justify-center bg-background-subtle p-8">
               <Label htmlFor="v-required" required>
                 Email
               </Label>
@@ -121,7 +121,7 @@ export default function LabelPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
+            <div className="flex items-center justify-center bg-background-subtle p-8">
               <Label htmlFor="v-disabled" disabled>
                 Email
               </Label>
@@ -147,7 +147,7 @@ export default function LabelPage() {
         <h3 className="mt-12 mb-4 text-h3 text-text-default">States</h3>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
+            <div className="flex items-center justify-center bg-background-subtle p-8">
               <div className="w-full max-w-[220px] space-y-1.5">
                 <Label htmlFor="s-default">Username</Label>
                 <Input id="s-default" placeholder="distyl" />
@@ -163,7 +163,7 @@ export default function LabelPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
+            <div className="flex items-center justify-center bg-background-subtle p-8">
               <div className="w-full max-w-[220px] space-y-1.5">
                 <Label htmlFor="s-disabled" disabled>
                   Username

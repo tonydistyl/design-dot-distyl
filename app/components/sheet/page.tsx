@@ -175,7 +175,7 @@ export default function SheetDocsPage() {
       <section id="variants" className="scroll-mt-8">
         <h3 className="mt-12 mb-4 text-h3 text-text-default">Sides</h3>
         <div className="overflow-hidden rounded-lg border border-border-default">
-          <div className="flex flex-wrap items-center justify-center gap-3 bg-background-subtle p-8 pointer-events-none select-none">
+          <div className="flex flex-wrap items-center justify-center gap-3 bg-background-subtle p-8">
             {sides.map((side) => (
               <Sheet key={side}>
                 <SheetTrigger asChild>

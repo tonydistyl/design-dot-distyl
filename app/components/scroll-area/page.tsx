@@ -107,7 +107,7 @@ export default function ScrollAreaPage() {
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
           {/* Vertical */}
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
+            <div className="flex items-center justify-center bg-background-subtle p-8">
               <ScrollArea className="h-44 w-40 rounded-md border border-border-default bg-background-default">
                 <div className="divide-y divide-border-default p-3">
                   {tags.map((tag) => (
@@ -128,7 +128,7 @@ export default function ScrollAreaPage() {
           </div>
           {/* Horizontal */}
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
+            <div className="flex items-center justify-center bg-background-subtle p-8">
               <ScrollArea className="w-44 whitespace-nowrap rounded-md border border-border-default bg-background-default">
                 <div className="flex w-max gap-3 p-3">
                   {savedViews.map((view) => (
@@ -155,7 +155,7 @@ export default function ScrollAreaPage() {
           </div>
           {/* Both axes */}
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
+            <div className="flex items-center justify-center bg-background-subtle p-8">
               <ScrollArea className="h-44 w-44 rounded-md border border-border-default bg-background-default">
                 <div className="w-[420px] p-3">
                   <div className="divide-y divide-border-default">
@@ -196,7 +196,7 @@ export default function ScrollAreaPage() {
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
           {/* Default - content fits */}
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
+            <div className="flex items-center justify-center bg-background-subtle p-8">
               <ScrollArea className="h-44 w-40 rounded-md border border-border-default bg-background-default">
                 <div className="divide-y divide-border-default p-3">
                   {tags.slice(0, 4).map((tag) => (
@@ -215,7 +215,7 @@ export default function ScrollAreaPage() {
           </div>
           {/* Thumb visible */}
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
+            <div className="flex items-center justify-center bg-background-subtle p-8">
               <ScrollArea
                 type="always"
                 className="h-44 w-40 rounded-md border border-border-default bg-background-default"
@@ -239,7 +239,7 @@ export default function ScrollAreaPage() {
           </div>
           {/* Overflow */}
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
+            <div className="flex items-center justify-center bg-background-subtle p-8">
               <ScrollArea className="h-44 w-40 rounded-md border border-border-default bg-background-default">
                 <div className="divide-y divide-border-default p-3">
                   {tags.map((tag) => (

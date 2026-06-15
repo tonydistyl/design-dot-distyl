@@ -55,7 +55,7 @@ export default function TooltipPage() {
       {/* Sides */}
       <section id="sides" className="scroll-mt-8">
         <h3 className="mt-12 mb-4 text-h3 text-text-default">Sides</h3>
-        <div className="flex min-h-[10rem] items-center justify-center rounded-lg border border-border-default bg-background-subtle p-10 pointer-events-none select-none">
+        <div className="flex min-h-[10rem] items-center justify-center rounded-lg border border-border-default bg-background-subtle p-10">
           <SidesTooltip />
         </div>
         <p className="mt-2 text-small">

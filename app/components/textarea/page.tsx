@@ -75,7 +75,7 @@ export default function TextareaPage() {
               key={s.key}
               className="overflow-hidden rounded-lg border border-border-default"
             >
-              <div className="bg-background-subtle p-8 pointer-events-none select-none">{s.node}</div>
+              <div className="bg-background-subtle p-8">{s.node}</div>
               <div className="border-t border-border-default p-3">
                 <CodeBlock
                   code={s.code}

@@ -122,7 +122,7 @@ export default function EmptyStatePage() {
       <section id="anatomy" className="scroll-mt-8">
         <h3 className="mt-12 mb-4 text-h3 text-text-default">API</h3>
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-          <div className="flex items-start justify-center rounded-lg border border-border-default bg-background-subtle p-8 pointer-events-none select-none">
+          <div className="flex items-start justify-center rounded-lg border border-border-default bg-background-subtle p-8">
             <Empty className="max-w-sm">
               <EmptyHeader>
                 <EmptyMedia variant="icon">
@@ -158,7 +158,7 @@ export default function EmptyStatePage() {
         <h3 className="mt-12 mb-4 text-h3 text-text-default">Examples</h3>
         <div className="grid grid-cols-1 items-start gap-6 lg:grid-cols-2">
           {/* Search — no results, with input action */}
-          <div className="flex items-center justify-center rounded-lg border border-border-default bg-background-subtle p-8 pointer-events-none select-none">
+          <div className="flex items-center justify-center rounded-lg border border-border-default bg-background-subtle p-8">
             <Empty className="max-w-sm">
               <EmptyHeader>
                 <EmptyMedia variant="icon">

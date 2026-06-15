@@ -98,7 +98,7 @@ export default function ButtonGroupPage() {
         <h3 className="mt-12 mb-4 text-h3 text-text-default">Variants</h3>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
+            <div className="flex items-center justify-center bg-background-subtle p-8">
               <ButtonGroup>
                 <Button variant="outline">Day</Button>
                 <Button variant="outline">Week</Button>
@@ -116,7 +116,7 @@ export default function ButtonGroupPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
+            <div className="flex items-center justify-center bg-background-subtle p-8">
               <ButtonGroup>
                 <Button aria-label="Bold">
                   <Bold />
@@ -140,7 +140,7 @@ export default function ButtonGroupPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
+            <div className="flex items-center justify-center bg-background-subtle p-8">
               <ButtonGroup>
                 <Button>Save</Button>
                 <Button variant="outline">Cancel</Button>
@@ -156,7 +156,7 @@ export default function ButtonGroupPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
+            <div className="flex items-center justify-center bg-background-subtle p-8">
               <ButtonGroup orientation="vertical">
                 <Button variant="outline">Top</Button>
                 <Button variant="outline">Middle</Button>
@@ -183,7 +183,7 @@ export default function ButtonGroupPage() {
         <h3 className="mt-12 mb-4 text-h3 text-text-default">States</h3>
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
+            <div className="flex items-center justify-center bg-background-subtle p-8">
               <ButtonGroup>
                 <Button variant="outline">Day</Button>
                 <Button variant="outline">Week</Button>
@@ -195,7 +195,7 @@ export default function ButtonGroupPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
+            <div className="flex items-center justify-center bg-background-subtle p-8">
               <ButtonGroup>
                 <Button variant="outline">Day</Button>
                 <Button variant="outline" className="bg-background-secondary">
@@ -211,7 +211,7 @@ export default function ButtonGroupPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
+            <div className="flex items-center justify-center bg-background-subtle p-8">
               <ButtonGroup>
                 <Button variant="outline">Day</Button>
                 <Button
@@ -230,7 +230,7 @@ export default function ButtonGroupPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
+            <div className="flex items-center justify-center bg-background-subtle p-8">
               <ButtonGroup disabled>
                 <Button variant="outline">Day</Button>
                 <Button variant="outline">Week</Button>
@@ -246,7 +246,7 @@ export default function ButtonGroupPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
+            <div className="flex items-center justify-center bg-background-subtle p-8">
               <ButtonGroup>
                 <Button variant="outline">Day</Button>
                 <Button variant="outline" disabled>

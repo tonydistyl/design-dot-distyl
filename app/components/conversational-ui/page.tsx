@@ -320,7 +320,7 @@ export default function ConversationalUIPage() {
           Auto-resizing message input with keyboard shortcuts. Composes Textarea
           and Button.
         </p>
-        <div className="rounded-lg border border-border-default bg-background-subtle p-6 pointer-events-none select-none">
+        <div className="rounded-lg border border-border-default bg-background-subtle p-6">
           <ChatInputDemo />
         </div>
         <PropsTable rows={chatInputProps} />
@@ -336,7 +336,7 @@ export default function ConversationalUIPage() {
           Renders a single conversation turn. User turns are plain text.
           Assistant turns parse markdown and fenced code blocks.
         </p>
-        <div className="flex flex-col gap-5 rounded-lg border border-border-default bg-background-subtle p-6 pointer-events-none select-none">
+        <div className="flex flex-col gap-5 rounded-lg border border-border-default bg-background-subtle p-6">
           <MessageBubbleDemo />
         </div>
         <PropsTable rows={messageBubbleProps} />
@@ -352,7 +352,7 @@ export default function ConversationalUIPage() {
           Assistant thinking state. Uses the Distyl Spinner. No props — render it
           while awaiting a response.
         </p>
-        <div className="rounded-lg border border-border-default bg-background-subtle p-6 pointer-events-none select-none">
+        <div className="rounded-lg border border-border-default bg-background-subtle p-6">
           <LoadingBubble />
         </div>
         <p className="mt-3 text-small text-text-subtle">

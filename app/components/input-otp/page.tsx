@@ -124,7 +124,7 @@ export default function InputOTPPage() {
         <h3 className="mt-12 mb-4 text-h3 text-text-default">Variants</h3>
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
+            <div className="flex items-center justify-center bg-background-subtle p-8">
               <InputOTP maxLength={6} pattern={REGEXP_ONLY_DIGITS}>
                 <InputOTPGroup>
                   {[0, 1, 2, 3, 4, 5].map((i) => (
@@ -142,7 +142,7 @@ export default function InputOTPPage() {
             </div>
           </div>
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
+            <div className="flex items-center justify-center bg-background-subtle p-8">
               <InputOTP maxLength={6} pattern={REGEXP_ONLY_DIGITS_AND_CHARS}>
                 <InputOTPGroup>
                   {[0, 1, 2, 3, 4, 5].map((i) => (
@@ -172,7 +172,7 @@ export default function InputOTPPage() {
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
           {/* Default */}
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
+            <div className="flex items-center justify-center bg-background-subtle p-8">
               <InputOTP maxLength={4} pattern={REGEXP_ONLY_DIGITS}>
                 <InputOTPGroup>
                   {[0, 1, 2, 3].map((i) => (
@@ -187,7 +187,7 @@ export default function InputOTPPage() {
           </div>
           {/* Active */}
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
+            <div className="flex items-center justify-center bg-background-subtle p-8">
               <InputOTP maxLength={4} pattern={REGEXP_ONLY_DIGITS}>
                 <InputOTPGroup>
                   <InputOTPSlot index={0} />
@@ -208,7 +208,7 @@ export default function InputOTPPage() {
           </div>
           {/* Filled */}
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
+            <div className="flex items-center justify-center bg-background-subtle p-8">
               <InputOTP
                 maxLength={4}
                 pattern={REGEXP_ONLY_DIGITS}
@@ -227,7 +227,7 @@ export default function InputOTPPage() {
           </div>
           {/* Error */}
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
+            <div className="flex items-center justify-center bg-background-subtle p-8">
               <InputOTP
                 maxLength={4}
                 pattern={REGEXP_ONLY_DIGITS}
@@ -252,7 +252,7 @@ export default function InputOTPPage() {
           </div>
           {/* Disabled */}
           <div className="overflow-hidden rounded-lg border border-border-default">
-            <div className="flex items-center justify-center bg-background-subtle p-8 pointer-events-none select-none">
+            <div className="flex items-center justify-center bg-background-subtle p-8">
               <InputOTP maxLength={4} pattern={REGEXP_ONLY_DIGITS} disabled>
                 <InputOTPGroup>
                   {[0, 1, 2, 3].map((i) => (
