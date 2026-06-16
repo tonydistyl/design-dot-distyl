@@ -3,13 +3,14 @@ import * as React from "react";
 
 import { cn } from "@/lib/utils";
 
-// Canonical Spinner. fe-distillery has no spinner primitive yet, so this is the
-// proposed component. The graphic is the Distyl logo mark drawn as an animated
-// stroke chase (see the .chase rules in globals.css) — the two paths are
-// staggered 0.4s so they chase rather than sync. Stroke is currentColor; the
-// default color is the Cognition background-primary token, so it remaps in dark
-// mode. Drop it inside a Button etc. and it inherits that context's text color.
-const spinnerVariants = cva("inline-block shrink-0 text-background-primary", {
+// Canonical Spinner: a brand-purple arc rotating on a neutral track. The whole
+// SVG spins via a single CSS rotate animation (Tailwind's animate-spin is
+// rotate(0deg) -> rotate(360deg), linear, infinite) about its center, so the
+// loop is seamless with no stutter on reset. The arc is a static
+// stroke-dasharray — the path geometry is never animated. The track maps to the
+// border-default token and the arc to background-primary, so both remap in dark
+// mode with no dark: classes.
+const spinnerVariants = cva("inline-block shrink-0", {
   variants: {
     size: {
       sm: "size-4",
@@ -38,18 +39,28 @@ const Spinner = React.forwardRef<HTMLSpanElement, SpinnerProps>(
       {...props}
     >
       <svg
-        viewBox="0 0 236 236"
+        viewBox="0 0 24 24"
         fill="none"
-        className="size-full"
         aria-hidden="true"
+        className="size-full origin-center animate-spin"
       >
-        <path
-          className="chase chase-1"
-          d="M102.681 92.2672H148.326L125.503 130.727L138.749 153.073L188.062 70.0625H89.4723L102.681 92.2672Z"
+        {/* Full track — rotationally symmetric, so its spin is invisible. */}
+        <circle
+          cx="12"
+          cy="12"
+          r="9"
+          strokeWidth="2.5"
+          className="stroke-border-default"
         />
-        <path
-          className="chase chase-2"
-          d="M47.9375 70.0625L117.982 188.063L131.264 165.716L74.4655 70.0625H47.9375Z"
+        {/* Rotating arc — static dasharray draws the sweep; only the SVG rotates. */}
+        <circle
+          cx="12"
+          cy="12"
+          r="9"
+          strokeWidth="2.5"
+          strokeLinecap="round"
+          strokeDasharray="42 100"
+          className="stroke-background-primary"
         />
       </svg>
     </span>

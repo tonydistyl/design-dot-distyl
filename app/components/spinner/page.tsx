@@ -6,17 +6,42 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Spinner",
   description:
-    "Spinner component — an indeterminate loading indicator drawn as the Distyl mark. Proposed canonical component.",
+    "Spinner component — an indeterminate loading indicator: a brand arc rotating smoothly on a neutral track.",
 };
+
+const props = [
+  {
+    name: "size",
+    type: '"sm" | "default" | "lg"',
+    def: '"default"',
+    desc: "Diameter: 16, 24, or 32 pixels.",
+  },
+  {
+    name: "label",
+    type: "string",
+    def: '"Loading"',
+    desc: "Accessible label announced to screen readers via role=status.",
+  },
+  {
+    name: "className",
+    type: "string",
+    def: "undefined",
+    desc: "Layout or size overrides on the wrapper.",
+  },
+] as const;
+
+const doCode = `<Spinner />
+<Spinner size="sm" />   // inline, e.g. in a button
+<Spinner size="lg" />`;
 
 const installCode = `import { Spinner } from "@/components/ui/spinner";
 
-export function SavingButton() {
+export function SavingState() {
   return (
-    <Button disabled>
-      <Spinner size="sm" className="text-text-inverse" />
-      Saving…
-    </Button>
+    <div className="flex items-center gap-2 text-sm text-text-subtle">
+      <Spinner size="sm" />
+      Saving changes...
+    </div>
   );
 }`;
 
@@ -26,17 +51,19 @@ export default function SpinnerPage() {
       <p className="mb-2 text-xs font-normal text-text-subtle">Components</p>
       <h1 className="text-h1 text-text-default">Spinner</h1>
       <p className="mt-3 max-w-2xl text-body text-text-default">
-        An indeterminate loading indicator for waits of unknown length. The
-        graphic is the Distyl mark, animated as a chasing stroke.
+        An indeterminate loading indicator for waits of unknown length. A brand
+        arc rotates on a neutral track, spinning continuously until the wait
+        ends.
       </p>
 
       <div className="mt-4 rounded-lg border border-border-default bg-background-accent p-4">
         <p className="text-small text-text-default">
-          <span className="font-bold">Custom graphic.</span> Instead of a generic
-          ring, the spinner traces the Distyl logo mark — two paths chasing on a
-          0.4s stagger. Stroke is <code className="font-mono">currentColor</code>{" "}
-          (default token <code className="font-mono">background-primary</code>),
-          so it remaps in dark mode and inherits its container&apos;s color.
+          Smooth by construction. The arc spins with a single linear rotation
+          from 0 to 360 degrees, so the loop closes on itself with no seam or
+          stutter. The arc maps to{" "}
+          <code className="font-mono">background-primary</code> and the track to{" "}
+          <code className="font-mono">border-default</code>, so both remap in
+          dark mode.
         </p>
       </div>
 
@@ -45,51 +72,101 @@ export default function SpinnerPage() {
         <h3 className="mt-12 mb-4 text-h3 text-text-default">Preview</h3>
         <div className="flex items-center justify-center gap-3 rounded-lg border border-border-default bg-background-subtle p-10">
           <Spinner />
-          <span className="text-sm text-text-subtle">Processing payment…</span>
+          <span className="text-sm text-text-subtle">Processing payment...</span>
         </div>
         <p className="mt-2 text-small">
-          Toggle the theme — the stroke remaps with the brand token, no{" "}
-          <code className="font-mono">dark:</code> classes and no hardcoded hex.
+          Rendered with live Cognition tokens. Toggle the theme and the arc and
+          track remap, no <code className="font-mono">dark:</code> classes.
         </p>
       </section>
 
-      {/* Sizes */}
-      <section id="sizes" className="scroll-mt-8">
-        <h3 className="mt-12 mb-4 text-h3 text-text-default">Sizes</h3>
-        <div className="flex items-end justify-center gap-8 rounded-lg border border-border-default bg-background-subtle p-10">
-          <div className="flex flex-col items-center gap-3">
-            <Spinner size="sm" />
-            <code className="font-mono text-xs text-text-subtle">sm</code>
+      {/* Variants */}
+      <section id="variants" className="scroll-mt-8">
+        <h3 className="mt-12 mb-4 text-h3 text-text-default">Variants</h3>
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+          <div className="overflow-hidden rounded-lg border border-border-default">
+            <div className="flex h-auto items-center justify-center bg-background-subtle p-8">
+              <Spinner size="sm" />
+            </div>
+            <div className="border-t border-border-default p-3">
+              <CodeBlock
+                code={`<Spinner size="sm" />`}
+                size="sm"
+                className="rounded-md border border-border-subtle bg-background-subtle"
+              />
+            </div>
           </div>
-          <div className="flex flex-col items-center gap-3">
-            <Spinner size="default" />
-            <code className="font-mono text-xs text-text-subtle">default</code>
+          <div className="overflow-hidden rounded-lg border border-border-default">
+            <div className="flex h-auto items-center justify-center bg-background-subtle p-8">
+              <Spinner size="default" />
+            </div>
+            <div className="border-t border-border-default p-3">
+              <CodeBlock
+                code={`<Spinner />`}
+                size="sm"
+                className="rounded-md border border-border-subtle bg-background-subtle"
+              />
+            </div>
           </div>
-          <div className="flex flex-col items-center gap-3">
-            <Spinner size="lg" />
-            <code className="font-mono text-xs text-text-subtle">lg</code>
+          <div className="overflow-hidden rounded-lg border border-border-default">
+            <div className="flex h-auto items-center justify-center bg-background-subtle p-8">
+              <Spinner size="lg" />
+            </div>
+            <div className="border-t border-border-default p-3">
+              <CodeBlock
+                code={`<Spinner size="lg" />`}
+                size="sm"
+                className="rounded-md border border-border-subtle bg-background-subtle"
+              />
+            </div>
           </div>
-        </div>
-      </section>
-
-      {/* In context */}
-      <section id="in-context" className="scroll-mt-8">
-        <h3 className="mt-12 mb-4 text-h3 text-text-default">In context</h3>
-        <div className="flex flex-wrap items-center justify-center gap-4 rounded-lg border border-border-default bg-background-subtle p-10">
-          <Button disabled>
-            <Spinner size="sm" className="text-text-inverse" />
-            Saving…
-          </Button>
-          <Button variant="outline" disabled>
-            <Spinner size="sm" className="text-text-default" />
-            Loading
-          </Button>
         </div>
         <p className="mt-2 text-small">
-          Inside a button the spinner inherits the label color — pass{" "}
-          <code className="font-mono">text-text-inverse</code> on a primary
-          button, <code className="font-mono">text-text-default</code> on an
-          outline one.
+          Three sizes at 16, 24, and 32 pixels. Stroke weight scales with the
+          diameter.
+        </p>
+      </section>
+
+      {/* States */}
+      <section id="states" className="scroll-mt-8">
+        <h3 className="mt-12 mb-4 text-h3 text-text-default">States</h3>
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="overflow-hidden rounded-lg border border-border-default">
+            <div className="flex h-auto items-center justify-center bg-background-subtle p-8">
+              <Spinner />
+            </div>
+            <div className="border-t border-border-default p-3">
+              <p className="text-xs text-text-subtle">
+                Spinning. The single, perpetual state until the wait resolves.
+              </p>
+            </div>
+          </div>
+          <div className="overflow-hidden rounded-lg border border-border-default">
+            <div className="flex h-auto items-center justify-center bg-background-subtle p-8">
+              <span className="flex items-center gap-2 text-sm text-text-subtle">
+                <Spinner size="sm" />
+                Saving changes...
+              </span>
+            </div>
+            <div className="border-t border-border-default p-3">
+              <p className="text-xs text-text-subtle">Inline beside a label.</p>
+            </div>
+          </div>
+          <div className="overflow-hidden rounded-lg border border-border-default">
+            <div className="flex h-auto items-center justify-center bg-background-subtle p-8">
+              <Button variant="secondary" disabled>
+                <Spinner size="sm" />
+                Loading
+              </Button>
+            </div>
+            <div className="border-t border-border-default p-3">
+              <p className="text-xs text-text-subtle">Inside a disabled button.</p>
+            </div>
+          </div>
+        </div>
+        <p className="mt-2 text-small">
+          The spinner is indeterminate, so it has one continuous state. Pair it
+          with text or a control to signal what is loading.
         </p>
       </section>
 
@@ -105,77 +182,90 @@ export default function SpinnerPage() {
               <div>Description</div>
             </div>
             <div className="divide-y divide-border-default">
-              {[
-                { name: "size", type: "\"sm\" | \"default\" | \"lg\"", def: "\"default\"", desc: "Diameter — 16 / 24 / 32px." },
-                { name: "label", type: "string", def: "\"Loading\"", desc: "Accessible label announced to screen readers." },
-                { name: "className", type: "string", def: "undefined", desc: "Override the color or size." },
-              ].map((p) => (
+              {props.map((p) => (
                 <div
                   key={p.name}
                   className="grid grid-cols-[1.4fr_1.8fr_1fr_3fr] gap-4 px-4 py-3"
                 >
-                  <div className="font-mono text-sm text-text-default">{p.name}</div>
-                  <div className="font-mono text-xs text-text-subtle">{p.type}</div>
-                  <div className="font-mono text-xs text-text-subtle">{p.def}</div>
+                  <div className="font-mono text-sm text-text-default">
+                    {p.name}
+                  </div>
+                  <div className="font-mono text-xs text-text-subtle">
+                    {p.type}
+                  </div>
+                  <div className="font-mono text-xs text-text-subtle">
+                    {p.def}
+                  </div>
                   <div className="text-sm text-text-subtle">{p.desc}</div>
                 </div>
               ))}
             </div>
           </div>
         </div>
+        <p className="mt-2 text-small">
+          Sets <code className="font-mono">role=&quot;status&quot;</code> with an{" "}
+          <code className="font-mono">aria-label</code> so the wait is announced.
+        </p>
       </section>
 
       {/* Don't and Do */}
       <section id="do-dont" className="scroll-mt-8">
-        <h3 className="mt-12 mb-4 text-h3 text-text-default">Don&apos;t and Do</h3>
+        <h3 className="mt-12 mb-4 text-h3 text-text-default">
+          Don&apos;t and Do
+        </h3>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           <div className="rounded-lg border border-border-danger bg-background-danger p-5">
             <div className="mb-2 text-sm font-bold text-text-danger">
               Don&apos;t
             </div>
             <p className="text-small text-text-default">
-              Don&apos;t hardcode the stroke to{" "}
-              <code className="font-mono">#5D4EE7</code> — it won&apos;t remap in
-              dark mode. And don&apos;t use a Spinner where the layout is known;
-              a Skeleton avoids the content jump.
+              Don&apos;t reach for a spinner when the final layout is already
+              known. A spinner leaves the reader staring at a blank region and
+              then jolts them with a content shift. Where the shape of the result
+              is predictable, a Skeleton holds the space and reads as calmer.
             </p>
           </div>
           <div className="rounded-lg border border-border-success bg-background-success p-5">
             <div className="mb-2 text-sm font-bold text-text-success">Do</div>
             <pre className="overflow-x-auto">
               <code className="font-mono text-xs leading-6 text-text-default">
-                {`<Spinner />                         // brand token
-<Spinner className="text-text-inverse" />  // inherits context`}
+                {doCode}
               </code>
             </pre>
           </div>
         </div>
+        <p className="mt-2 text-small">
+          Use it for waits of unknown length where there is no layout to preview,
+          such as a submit in flight or a background task finishing.
+        </p>
       </section>
 
-      {/* Install */}
+      {/* Copy-paste */}
       <section id="copy-paste" className="mt-12 scroll-mt-8">
         <CodeBlock
           code={installCode}
           className="rounded-lg border border-border-default bg-background-subtle"
         />
-        <p className="mt-2 text-small">
-          Pair it with an accessible label — the component sets{" "}
-          <code className="font-mono">role=&quot;status&quot;</code> and{" "}
-          <code className="font-mono">aria-label</code> (default{" "}
-          &ldquo;Loading&rdquo;).
-        </p>
       </section>
 
       <footer className="mt-16 border-t border-border-default pt-6 text-small">
-        Proposed canonical component — fe-distillery has no spinner primitive
-        yet. The standard ring graphic is replaced with the Distyl mark as an
-        animated stroke chase; stroke is{" "}
-        <code className="font-mono text-text-default">currentColor</code>{" "}
-        referencing{" "}
-        <code className="font-mono text-text-default">
-          --color-background-primary
-        </code>{" "}
-        — no hardcoded hex.
+        Cognition v1.2 · June 2026 · Questions? Ask{" "}
+        <a
+          href="https://distylai.slack.com/team/U07KY4SEFH7"
+          target="_blank"
+          rel="noreferrer"
+          className="font-medium text-text-primary underline-offset-4 hover:underline"
+        >
+          Tony Yates
+        </a>{" "}
+        <a
+          href="https://distylai.slack.com/archives/C0A22RR2N6P"
+          target="_blank"
+          rel="noreferrer"
+          className="font-medium text-text-primary underline-offset-4 hover:underline"
+        >
+          #research-and-design
+        </a>
       </footer>
     </div>
   );
