@@ -11,7 +11,7 @@ import {
 export const metadata: Metadata = {
   title: "Drawer",
   description:
-    "Drawer component — a panel that slides up from the bottom of the screen for focused, touch-friendly tasks. API matches fe-distillery components/ui/drawer.tsx.",
+    "Drawer component: a panel that slides up from the bottom of the screen for focused, touch-friendly tasks. API matches fe-distillery components/ui/drawer.tsx.",
 };
 
 const parts = [
@@ -25,7 +25,7 @@ const parts = [
   },
   {
     name: "DrawerContent",
-    desc: "The sliding panel — portals over an overlay and renders the drag handle, then your content.",
+    desc: "The sliding panel: portals over an overlay and renders the drag handle, then your content.",
   },
   {
     name: "DrawerHeader",
@@ -33,7 +33,7 @@ const parts = [
   },
   {
     name: "DrawerFooter",
-    desc: "Actions pinned to the bottom — stacks the primary action over a close.",
+    desc: "Actions pinned to the bottom: stacks the primary action over a close.",
   },
   {
     name: "DrawerTitle / DrawerDescription",
@@ -161,8 +161,8 @@ export default function DrawerDocsPage() {
       <h1 className="text-h1 text-text-default">Drawer</h1>
       <p className="mt-3 max-w-2xl text-body text-text-default">
         A panel that slides up from the bottom of the screen, keeping the page
-        behind it in view. Built for focused, touch-friendly tasks — quick edits,
-        confirmations, or a short read — and dismissed by dragging the handle or
+        behind it in view. Built for focused, touch-friendly tasks: quick edits,
+        confirmations, or a short read, dismissed by dragging the handle or
         tapping outside.
       </p>
 
@@ -173,7 +173,7 @@ export default function DrawerDocsPage() {
           <StatisticDrawer />
         </div>
         <p className="mt-2 text-small">
-          Rendered with live Cognition tokens — the panel surface, overlay scrim,
+          Rendered with live Cognition tokens: the panel surface, overlay scrim,
           and text remap on theme change, no{" "}
           <code className="font-mono">dark:</code> classes. Trigger it to slide
           the panel up.
@@ -214,7 +214,7 @@ export default function DrawerDocsPage() {
           </VariantCell>
         </div>
         <p className="mt-2 text-small">
-          By default a drawer is dismissible — drag the handle down or tap the
+          By default a drawer is dismissible: drag the handle down or tap the
           overlay. Set <code className="font-mono">dismissible={`{false}`}</code>{" "}
           to require an explicit action, for steps the user must acknowledge.
         </p>
@@ -255,7 +255,7 @@ export default function DrawerDocsPage() {
               Don&apos;t
             </div>
             <p className="text-small text-text-default">
-              Don&apos;t use a drawer for a desktop-first dialog — reach for{" "}
+              Don&apos;t use a drawer for a desktop-first dialog: reach for{" "}
               <code className="font-mono">Dialog</code> there. And don&apos;t stack
               drawers or nest one inside another; a drawer is a single focused
               surface, not a navigation layer.
@@ -290,7 +290,7 @@ export default function DrawerDocsPage() {
         <code className="font-mono text-text-default">
           fe-distillery/components/ui/drawer.tsx
         </code>{" "}
-        — <code className="font-mono text-text-default">Drawer</code> and its
+        <code className="font-mono text-text-default">Drawer</code> and its
         Trigger / Content / Header / Footer / Title / Description / Close parts,
         built on <code className="font-mono text-text-default">vaul</code>. The
         raw surface, scrim, handle, and muted text are replaced with Cognition

@@ -5,7 +5,7 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Avatar",
   description:
-    "Avatar component — an image element with a fallback for representing the user. API matches fe-distillery components/ui/avatar.tsx.",
+    "Avatar component: an image element with a fallback for representing the user. API matches fe-distillery components/ui/avatar.tsx.",
 };
 
 const IMG = "/avatar-sample.jpg";
@@ -19,7 +19,7 @@ const parts = [
   {
     name: "AvatarImage",
     props: "src, alt",
-    desc: "The image. Hidden until it loads and on error — the fallback shows instead.",
+    desc: "The image. Hidden until it loads or errors: the fallback shows instead.",
   },
   {
     name: "AvatarFallback",
@@ -104,7 +104,7 @@ export default function AvatarPage() {
       <h1 className="text-h1 text-text-default">Avatar</h1>
       <p className="mt-3 max-w-2xl text-body text-text-default">
         An image element with a fallback for representing the user. Use it for
-        people and accounts — the fallback shows initials while the image loads
+        people and accounts: the fallback shows initials while the image loads
         or if it is missing.
       </p>
 
@@ -122,7 +122,7 @@ export default function AvatarPage() {
           <StatusAvatar />
         </div>
         <p className="mt-2 text-small">
-          Rendered with live Cognition tokens — the fallback surface and the
+          Rendered with live Cognition tokens: the fallback surface and the
           status ring remap on theme change, no{" "}
           <code className="font-mono">dark:</code> classes.
         </p>
@@ -152,7 +152,7 @@ export default function AvatarPage() {
           </div>
         </div>
         <p className="mt-2 text-small">
-          Sizing is a <code className="font-mono">className</code> on the root —{" "}
+          Sizing is a <code className="font-mono">className</code> on the root.{" "}
           <code className="font-mono">size-6</code> (sm),{" "}
           <code className="font-mono">size-8</code> (default),{" "}
           <code className="font-mono">size-10</code> (lg).
@@ -220,7 +220,7 @@ export default function AvatarPage() {
         <p className="mt-2 text-small">
           The image falls back to{" "}
           <code className="font-mono">AvatarFallback</code> on load or error. The
-          status dot and the overlapping group are compositions — a positioned
+          status dot and the overlapping group are compositions: a positioned
           span and <code className="font-mono">flex -space-x-2</code> with a
           border ring.
         </p>
@@ -267,7 +267,7 @@ export default function AvatarPage() {
             <p className="text-small text-text-default">
               Don&apos;t use an Avatar as a generic image or icon container, and
               don&apos;t ship one without an{" "}
-              <code className="font-mono">AvatarFallback</code> — the initials or
+              <code className="font-mono">AvatarFallback</code>: the initials or
               icon are what render while the image loads or if it 404s.
             </p>
           </div>
@@ -298,7 +298,7 @@ export default function AvatarPage() {
         <code className="font-mono text-text-default">
           fe-distillery/components/ui/avatar.tsx
         </code>{" "}
-        — <code className="font-mono text-text-default">Avatar</code>,{" "}
+        <code className="font-mono text-text-default">Avatar</code>,{" "}
         <code className="font-mono text-text-default">AvatarImage</code>,{" "}
         <code className="font-mono text-text-default">AvatarFallback</code>. The
         raw <code className="font-mono text-text-default">bg-muted</code> fallback

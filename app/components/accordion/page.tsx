@@ -17,7 +17,7 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Accordion",
   description:
-    "Accordion component — a vertically stacked set of interactive headings that each reveal a section of content. API matches fe-distillery components/ui/accordion.tsx.",
+    "Accordion component: a vertically stacked set of interactive headings that each reveal a section of content. API matches fe-distillery components/ui/accordion.tsx.",
 };
 
 const faqs = [
@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     q: "Can I change my subscription plan?",
-    a: "Yes — upgrade or downgrade at any time from Billing. Changes are prorated against your current cycle.",
+    a: "Yes: upgrade or downgrade at any time from Billing. Changes are prorated against your current cycle.",
   },
   {
     q: "What payment methods do you accept?",
@@ -46,7 +46,7 @@ const props = [
     name: "collapsible",
     type: "boolean",
     def: "false",
-    desc: "single only — lets the open item close again so all can be collapsed.",
+    desc: "single only: lets the open item close again so all can be collapsed.",
   },
   {
     name: "defaultValue",
@@ -58,7 +58,7 @@ const props = [
     name: "AccordionItem value",
     type: "string",
     def: "required",
-    desc: "Unique id for the item — what type / defaultValue reference.",
+    desc: "Unique id for the item. Used by type / defaultValue reference.",
   },
   {
     name: "AccordionItem disabled",
@@ -154,9 +154,9 @@ export default function AccordionDocsPage() {
       <h1 className="text-h1 text-text-default">Accordion</h1>
       <p className="mt-3 max-w-2xl text-body text-text-default">
         A vertically stacked set of interactive headings that each reveal a
-        section of content. Built on Radix — keyboard accessible, with{" "}
-        <code className="font-mono">type</code> controlling whether one or many
-        sections stay open.
+        section of content. Keyboard accessible, focus managed, and screen
+        reader compatible. <code className="font-mono">type</code> controls
+        whether one or many sections stay open.
       </p>
 
       {/* Preview */}
@@ -166,7 +166,7 @@ export default function AccordionDocsPage() {
           <BasicAccordion />
         </div>
         <p className="mt-2 text-small">
-          Rendered with live Cognition tokens — item borders, the chevron, and
+          Rendered with live Cognition tokens: item borders, the chevron, and
           text remap on theme change, no{" "}
           <code className="font-mono">dark:</code> classes. Expand/collapse uses
           the <code className="font-mono">animate-accordion-*</code> utilities.
@@ -256,7 +256,7 @@ export default function AccordionDocsPage() {
           </div>
         </div>
         <p className="mt-2 text-small">
-          The base accordion is borderless — items are divided by a single rule.
+          The base accordion is borderless: items are divided by a single rule.
           Wrap it in a rounded border for a self-contained block, or drop it into
           a <code className="font-mono">Card</code> alongside a header.
         </p>
@@ -375,7 +375,7 @@ export default function AccordionDocsPage() {
             </div>
             <p className="text-small text-text-default">
               Don&apos;t hide content a user always needs behind an accordion,
-              and don&apos;t nest interactive controls in the trigger — the whole
+              and don&apos;t nest interactive controls in the trigger. The whole
               header is the toggle. Reach for it to condense long, optional
               sections like an FAQ, not to bury primary content.
             </p>
@@ -409,7 +409,7 @@ export default function AccordionDocsPage() {
         <code className="font-mono text-text-default">
           fe-distillery/components/ui/accordion.tsx
         </code>{" "}
-        — <code className="font-mono text-text-default">Accordion</code>,{" "}
+        <code className="font-mono text-text-default">Accordion</code>,{" "}
         <code className="font-mono text-text-default">AccordionItem</code>,{" "}
         <code className="font-mono text-text-default">AccordionTrigger</code>,{" "}
         <code className="font-mono text-text-default">AccordionContent</code>.

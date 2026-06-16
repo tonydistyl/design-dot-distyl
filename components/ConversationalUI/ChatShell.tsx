@@ -88,8 +88,7 @@ export function ChatShell({
 
   return (
     <div
-      className="flex flex-col overflow-hidden rounded-xl border border-border-default bg-background-default"
-      style={{ height: 560 }}
+      className="flex h-[560px] flex-col overflow-hidden rounded-xl border border-border-default bg-background-default"
     >
       <header className="flex shrink-0 items-center justify-between border-b border-border-default px-4 py-3">
         <div className="flex items-center gap-2">

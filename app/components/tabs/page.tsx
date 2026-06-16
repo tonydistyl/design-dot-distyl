@@ -5,14 +5,14 @@ import { IconTabs, VariantTabs } from "./TabsDemos";
 export const metadata: Metadata = {
   title: "Tabs",
   description:
-    "Tabs component — layered sections of content shown one at a time. API matches fe-distillery components/ui/tabs.tsx.",
+    "Tabs component: layered sections of content shown one at a time. API matches fe-distillery components/ui/tabs.tsx.",
 };
 
 const variants = [
   {
     key: "secondary" as const,
     label: "secondary",
-    note: "Segmented pill — the Cognition default.",
+    note: "Segmented pill: the Cognition default.",
     code: `<Tabs defaultValue="overview">
   <TabsList variant="secondary">
     <TabsTrigger variant="secondary" value="overview">Overview</TabsTrigger>
@@ -60,7 +60,7 @@ export default function TabsPage() {
       <p className="mb-2 text-xs font-normal text-text-subtle">Components</p>
       <h1 className="text-h1 text-text-default">Tabs</h1>
       <p className="mt-3 max-w-2xl text-body text-text-default">
-        A set of layered sections of content — known as tab panels — displayed
+        A set of layered sections of content, known as tab panels, displayed
         one at a time. Use for switching views within a single context.
       </p>
 
@@ -71,7 +71,7 @@ export default function TabsPage() {
           <VariantTabs variant="secondary" />
         </div>
         <p className="mt-2 text-small">
-          Live and interactive — switch tabs, then toggle the theme. The track,
+          Live and interactive: switch tabs, then toggle the theme. The track,
           active pill, and text all remap from Cognition tokens, no{" "}
           <code className="font-mono">dark:</code> classes (the fix for the
           source file&apos;s <code className="font-mono">dark:</code> violations).
@@ -117,7 +117,7 @@ export default function TabsPage() {
           <IconTabs />
         </div>
         <p className="mt-2 text-small">
-          Drop a Lucide icon in as the first child of a trigger — the{" "}
+          Drop a Lucide icon in as the first child of a trigger: the{" "}
           <code className="font-mono">[&amp;_svg]</code> rules size and align it.
         </p>
       </section>
@@ -164,7 +164,7 @@ export default function TabsPage() {
               <code className="font-mono">
                 dark:data-[state=active]:bg-input/30
               </code>{" "}
-              — the legacy tabs.tsx does. And don&apos;t use Tabs for navigation
+              The legacy tabs.tsx does. And don&apos;t use Tabs for navigation
               between routes; that&apos;s a nav, not a tab set.
             </p>
           </div>
@@ -189,8 +189,8 @@ export default function TabsPage() {
           className="rounded-lg border border-border-default bg-background-subtle"
         />
         <p className="mt-2 text-small">
-          Built on Radix Tabs — keyboard navigation and roving focus come for
-          free. Set <code className="font-mono">defaultValue</code> (uncontrolled)
+          Keyboard navigation and roving focus come for free. Set{" "}
+          <code className="font-mono">defaultValue</code> (uncontrolled)
           or <code className="font-mono">value</code> /{" "}
           <code className="font-mono">onValueChange</code> (controlled).
         </p>
@@ -201,7 +201,7 @@ export default function TabsPage() {
         <code className="font-mono text-text-default">
           fe-distillery/components/ui/tabs.tsx
         </code>{" "}
-        — <code className="font-mono text-text-default">Tabs</code>,{" "}
+        <code className="font-mono text-text-default">Tabs</code>,{" "}
         <code className="font-mono text-text-default">TabsList</code>,{" "}
         <code className="font-mono text-text-default">TabsTrigger</code>,{" "}
         <code className="font-mono text-text-default">TabsContent</code> with the{" "}

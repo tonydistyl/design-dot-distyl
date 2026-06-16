@@ -18,7 +18,7 @@ const navLinkClass =
 export const metadata: Metadata = {
   title: "Navigation Menu",
   description:
-    "Navigation Menu component — a horizontal top-level menu with dropdown content panels triggered on hover or focus.",
+    "Navigation Menu component: a horizontal top-level menu with dropdown content panels triggered on hover or focus.",
 };
 
 const composition = [

@@ -14,7 +14,7 @@ import { IconCombobox } from "./icon-combobox";
 export const metadata: Metadata = {
   title: "Combobox",
   description:
-    "Combobox component — a searchable select that combines a text input with a filterable dropdown list. A higher-order component built from Command and Popover.",
+    "Combobox component: a searchable select that combines a text input with a filterable dropdown list. A higher-order component built from Command and Popover.",
 };
 
 // cmdk auto-selects its first item on mount and scrolls it into view. With

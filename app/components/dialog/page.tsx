@@ -5,7 +5,7 @@ import { FormDialog, ShareLinkDialog, TextDialog } from "./DialogDemos";
 export const metadata: Metadata = {
   title: "Dialog",
   description:
-    "Dialog component — a modal window overlaid on the page, rendering the content underneath inert. API matches fe-distillery components/ui/dialog.tsx.",
+    "Dialog component: a modal window overlaid on the page, rendering the content underneath inert. API matches fe-distillery components/ui/dialog.tsx.",
 };
 
 const anatomyCode = `<Dialog>
@@ -18,7 +18,7 @@ const anatomyCode = `<Dialog>
       <DialogDescription>Make changes here.</DialogDescription>
     </DialogHeader>
 
-    {/* Body — wrap in px-4 pb-4 */}
+    {/* Body: wrap in px-4 pb-4 */}
     <div className="px-4 pb-4">{/* fields */}</div>
 
     <DialogFooter>
@@ -30,7 +30,7 @@ const anatomyCode = `<Dialog>
   </DialogContent>
 </Dialog>`;
 
-const doCode = `// Close from inside with DialogClose — no manual open state
+const doCode = `// Close from inside with DialogClose: no manual open state
 <DialogFooter>
   <DialogClose asChild>
     <Button variant="outline">Cancel</Button>
@@ -89,10 +89,10 @@ export default function DialogPage() {
           <ShareLinkDialog />
         </div>
         <p className="mt-2 text-small">
-          Live and interactive — open it, then toggle the theme. The surface,
+          Live and interactive: open it, then toggle the theme. The surface,
           border, footer tint, and overlay all remap from Cognition tokens, no{" "}
           <code className="font-mono">dark:</code> classes. Focus is trapped and{" "}
-          <code className="font-mono">Esc</code> closes it (Radix).
+          <code className="font-mono">Esc</code> closes it.
         </p>
       </section>
 
@@ -110,7 +110,7 @@ export default function DialogPage() {
         </div>
         <p className="mt-2 text-small">
           <code className="font-mono">DialogHeader</code> and{" "}
-          <code className="font-mono">DialogFooter</code> own their padding — the
+          <code className="font-mono">DialogFooter</code> own their padding: the
           footer is full-bleed with a top border and subtle tint. Body content
           sits between them, wrapped in{" "}
           <code className="font-mono">px-4 pb-4</code>.
@@ -123,12 +123,12 @@ export default function DialogPage() {
         <div className="grid grid-cols-1 items-start gap-6 sm:grid-cols-2">
           <div className="flex flex-col items-center gap-3 rounded-lg border border-border-default bg-background-subtle p-8">
             <FormDialog />
-            <p className="text-small">Form — inputs with a Cancel / Save footer.</p>
+            <p className="text-small">Form: inputs with a Cancel / Save footer.</p>
           </div>
           <div className="flex flex-col items-center gap-3 rounded-lg border border-border-default bg-background-subtle p-8">
             <TextDialog />
             <p className="text-small">
-              Long content — the body scrolls, header and footer stay pinned.
+              Long content: the body scrolls, header and footer stay pinned.
             </p>
           </div>
         </div>
@@ -146,7 +146,7 @@ export default function DialogPage() {
               Don&apos;t build a modal from a raw fixed{" "}
               <code className="font-mono">div</code> with a{" "}
               <code className="font-mono">bg-black/50</code> overlay and manual
-              state — you&apos;ll lose focus trapping, scroll lock, and{" "}
+              state: you&apos;ll lose focus trapping, scroll lock, and{" "}
               <code className="font-mono">Esc</code> handling.
             </p>
           </div>
@@ -168,7 +168,7 @@ export default function DialogPage() {
           className="rounded-lg border border-border-default bg-background-subtle"
         />
         <p className="mt-2 text-small">
-          Built on Radix Dialog — focus management, scroll lock, and the{" "}
+          Focus management, scroll lock, and{" "}
           <code className="font-mono">Esc</code> / overlay-click dismissal come
           for free. Cognition tokens are baked in.
         </p>
@@ -179,7 +179,7 @@ export default function DialogPage() {
         <code className="font-mono text-text-default">
           fe-distillery/components/ui/dialog.tsx
         </code>{" "}
-        — <code className="font-mono text-text-default">Dialog</code>,{" "}
+        <code className="font-mono text-text-default">Dialog</code>,{" "}
         <code className="font-mono text-text-default">DialogTrigger</code>,{" "}
         <code className="font-mono text-text-default">DialogContent</code>,{" "}
         <code className="font-mono text-text-default">DialogHeader</code>,{" "}

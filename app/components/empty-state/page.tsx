@@ -15,7 +15,7 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Empty State",
   description:
-    "Empty State component — a centered placeholder for empty lists, searches, and first-run screens. Proposed canonical component (fe-distillery has none yet).",
+    "Empty State component: a centered placeholder for empty lists, searches, and first-run screens. Proposed canonical component (fe-distillery has none yet).",
 };
 
 const anatomyCode = `<Empty>
@@ -82,7 +82,7 @@ export default function EmptyStatePage() {
         <p className="text-small text-text-default">
           <span className="font-bold">Proposed.</span> fe-distillery has no
           first-class empty-state component yet. This documents the canonical{" "}
-          <code className="font-mono">Empty</code> the audit recommends — a
+          <code className="font-mono">Empty</code> the audit recommends: a
           header, media, title, description, and content composition.
         </p>
       </div>
@@ -112,7 +112,7 @@ export default function EmptyStatePage() {
           </Empty>
         </div>
         <p className="mt-2 text-small">
-          Rendered with live Cognition tokens — the muted media well, text, and
+          Rendered with live Cognition tokens: the muted media well, text, and
           buttons remap on theme change, no{" "}
           <code className="font-mono">dark:</code> classes.
         </p>
@@ -149,7 +149,7 @@ export default function EmptyStatePage() {
           <code className="font-mono">default</code> for a bare icon or
           illustration, <code className="font-mono">icon</code> for the muted
           rounded well). <code className="font-mono">EmptyContent</code> is
-          optional — drop it for a purely informational state.
+          optional: drop it for a purely informational state.
         </p>
       </section>
 
@@ -157,7 +157,7 @@ export default function EmptyStatePage() {
       <section id="examples" className="scroll-mt-8">
         <h3 className="mt-12 mb-4 text-h3 text-text-default">Examples</h3>
         <div className="grid grid-cols-1 items-start gap-6 lg:grid-cols-2">
-          {/* Search — no results, with input action */}
+          {/* Search: no results, with input action */}
           <div className="flex items-center justify-center rounded-lg border border-border-default bg-background-subtle p-8">
             <Empty className="max-w-sm">
               <EmptyHeader>
@@ -175,7 +175,7 @@ export default function EmptyStatePage() {
             </Empty>
           </div>
 
-          {/* Informational — no actions */}
+          {/* Informational: no actions */}
           <div className="flex items-center justify-center rounded-lg border border-dashed border-border-default bg-background-subtle p-8">
             <Empty className="max-w-sm">
               <EmptyHeader>
@@ -193,7 +193,7 @@ export default function EmptyStatePage() {
         <p className="mt-2 text-small">
           The left state nests an <code className="font-mono">Input</code> in{" "}
           <code className="font-mono">EmptyContent</code>; the right is
-          informational only, sitting in a dashed well — a common pattern for
+          informational only, sitting in a dashed well: a common pattern for
           drop targets.
         </p>
       </section>
@@ -207,7 +207,7 @@ export default function EmptyStatePage() {
               Don&apos;t
             </div>
             <p className="text-small text-text-default">
-              Don&apos;t leave a blank area or a bare “No data” string — and
+              Don&apos;t leave a blank area or a bare “No data” string: and
               don&apos;t hardcode <code className="font-mono">bg-gray-50</code>{" "}
               for the media well. Explain the state and offer a way forward.
             </p>
@@ -230,13 +230,13 @@ export default function EmptyStatePage() {
           className="rounded-lg border border-border-default bg-background-subtle"
         />
         <p className="mt-2 text-small">
-          Drop-in ready. Compose only the parts you need — every piece is plain
+          Drop-in ready. Compose only the parts you need: every piece is plain
           markup styled with Cognition tokens.
         </p>
       </section>
 
       <footer className="mt-16 border-t border-border-default pt-6 text-small">
-        Proposed canonical component — fe-distillery has no empty-state primitive
+        Proposed canonical component: fe-distillery has no empty-state primitive
         yet. The parts compose as{" "}
         <code className="font-mono text-text-default">Empty</code> (
         <code className="font-mono text-text-default">EmptyHeader</code>,{" "}

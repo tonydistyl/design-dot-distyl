@@ -5,7 +5,7 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Tag",
   description:
-    "Tag component — non-interactive label / category / keyword. Proposed canonical Tag (fe-distillery has none yet).",
+    "Tag component: non-interactive label / category / keyword. Proposed canonical Tag (fe-distillery has none yet).",
 };
 
 const doCode = `<Tag>Engineering</Tag>`;
@@ -29,7 +29,7 @@ export default function TagPage() {
       <div className="mt-4 rounded-lg border border-border-default bg-background-accent p-4">
         <p className="text-small text-text-default">
           <span className="font-bold">Proposed.</span> fe-distillery has no
-          first-class <code className="font-mono">Tag</code> yet — only a
+          first-class <code className="font-mono">Tag</code> yet: only a
           third-party tags multi-select combobox. This documents the canonical
           Tag the audit recommends building.
         </p>
@@ -61,7 +61,7 @@ export default function TagPage() {
           </div>
         </div>
         <p className="mt-2 text-small">
-          A single default style — no variants or size axes exist in any source
+          A single default style: no variants or size axes exist in any source
           API, so none are invented.
         </p>
       </section>
@@ -110,7 +110,7 @@ export default function TagPage() {
             </div>
             <p className="text-small text-text-default">
               Don&apos;t render a category with an outline button (tower&apos;s
-              ActionPill) or a raw styled span (spear&apos;s status pill) — and a
+              ActionPill) or a raw styled span (spear&apos;s status pill) and a
               status belongs in a Badge, not a Tag.
             </p>
           </div>

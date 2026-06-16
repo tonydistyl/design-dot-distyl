@@ -8,7 +8,7 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Date Picker",
   description:
-    "Date Picker component — a compact date input that opens a Calendar in a Popover, for forms and toolbars.",
+    "Date Picker component: a compact date input that opens a Calendar in a Popover, for forms and toolbars.",
 };
 
 const props = [

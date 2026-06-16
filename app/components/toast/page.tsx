@@ -12,7 +12,7 @@ import { ToastButton } from "./toast-demos";
 export const metadata: Metadata = {
   title: "Toast",
   description:
-    "Toast component — a transient notification that appears briefly and dismisses on its own. For confirmations, errors, and status feedback.",
+    "Toast component: a transient notification that appears briefly and dismisses on its own. For confirmations, errors, and status feedback.",
 };
 
 const api = [

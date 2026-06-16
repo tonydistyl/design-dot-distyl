@@ -10,7 +10,7 @@ import {
 export const metadata: Metadata = {
   title: "Pagination",
   description:
-    "Pagination component — page navigation with next and previous links. API matches fe-distillery components/ui/pagination.tsx.",
+    "Pagination component: page navigation with next and previous links. API matches fe-distillery components/ui/pagination.tsx.",
 };
 
 const parts = [
@@ -24,7 +24,7 @@ const parts = [
   },
   {
     name: "PaginationItem",
-    desc: "A single <li> — wraps a link, previous/next, or the ellipsis.",
+    desc: "A single <li>: wraps a link, previous/next, or the ellipsis.",
   },
   {
     name: "PaginationLink",
@@ -145,7 +145,7 @@ export default function PaginationDocsPage() {
       <h1 className="text-h1 text-text-default">Pagination</h1>
       <p className="mt-3 max-w-2xl text-body text-text-default">
         Page navigation with next and previous links. Use it to split long lists
-        or results into pages — the current page is marked active, and an
+        or results into pages: the current page is marked active, and an
         ellipsis stands in for skipped ranges.
       </p>
 
@@ -156,7 +156,7 @@ export default function PaginationDocsPage() {
           <PaginationDemo total={10} />
         </div>
         <p className="mt-2 text-small">
-          Rendered with live Cognition tokens — it composes the Button ghost and
+          Rendered with live Cognition tokens: it composes the Button ghost and
           outline variants, so it remaps on theme change with no{" "}
           <code className="font-mono">dark:</code> classes. Click a page or the
           Previous / Next links.
@@ -236,7 +236,7 @@ export default function PaginationDocsPage() {
               Don&apos;t
             </div>
             <p className="text-small text-text-default">
-              Don&apos;t render every page number for a long list — collapse the
+              Don&apos;t render every page number for a long list: collapse the
               middle with an ellipsis. And don&apos;t leave Previous / Next live
               at the ends; disable the one that has nowhere to go so it
               doesn&apos;t mislead.
@@ -270,7 +270,7 @@ export default function PaginationDocsPage() {
         <code className="font-mono text-text-default">
           fe-distillery/components/ui/pagination.tsx
         </code>{" "}
-        — <code className="font-mono text-text-default">Pagination</code> and its
+        <code className="font-mono text-text-default">Pagination</code> and its
         Content / Item / Link / Previous / Next / Ellipsis parts. It composes the
         Button ghost and outline variants, so it inherits Cognition tokens with
         no extra mapping.

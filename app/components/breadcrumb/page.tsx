@@ -14,7 +14,7 @@ import { BreadcrumbCollapsed } from "./BreadcrumbDemos";
 export const metadata: Metadata = {
   title: "Breadcrumb",
   description:
-    "Breadcrumb component — displays the path to the current resource using a hierarchy of links. API matches fe-distillery components/ui/breadcrumb.tsx.",
+    "Breadcrumb component: displays the path to the current resource using a hierarchy of links. API matches fe-distillery components/ui/breadcrumb.tsx.",
 };
 
 const parts = [
@@ -28,7 +28,7 @@ const parts = [
   },
   {
     name: "BreadcrumbItem",
-    desc: "A single level — wraps a link, a page, or the collapsed menu.",
+    desc: "A single level: wraps a link, a page, or the collapsed menu.",
   },
   {
     name: "BreadcrumbLink",
@@ -36,7 +36,7 @@ const parts = [
   },
   {
     name: "BreadcrumbPage",
-    desc: "The current page — non-interactive, aria-current=\"page\".",
+    desc: "The current page: non-interactive, aria-current=\"page\".",
   },
   {
     name: "BreadcrumbSeparator",
@@ -168,7 +168,7 @@ export default function BreadcrumbDocsPage() {
           <ChevronTrail />
         </div>
         <p className="mt-2 text-small">
-          Rendered with live Cognition tokens — link, hover, and current-page
+          Rendered with live Cognition tokens: link, hover, and current-page
           colors remap on theme change, no{" "}
           <code className="font-mono">dark:</code> classes.
         </p>
@@ -219,7 +219,7 @@ export default function BreadcrumbDocsPage() {
           The default separator is a chevron; pass any icon as{" "}
           <code className="font-mono">BreadcrumbSeparator</code> children to swap
           it. When a path is too deep, collapse the middle into a{" "}
-          <code className="font-mono">BreadcrumbEllipsis</code> menu — open the
+          <code className="font-mono">BreadcrumbEllipsis</code> menu: open the
           last example to see the hidden levels.
         </p>
       </section>
@@ -268,7 +268,7 @@ export default function BreadcrumbDocsPage() {
         <p className="mt-2 text-small">
           Links sit at <code className="font-mono">text-subtle</code> and lift to{" "}
           <code className="font-mono">text-default</code> on hover. The current
-          page uses <code className="font-mono">BreadcrumbPage</code> — solid{" "}
+          page uses <code className="font-mono">BreadcrumbPage</code>: solid{" "}
           <code className="font-mono">text-default</code>, not a link, carrying{" "}
           <code className="font-mono">aria-current=&quot;page&quot;</code>.
         </p>
@@ -310,7 +310,7 @@ export default function BreadcrumbDocsPage() {
             </div>
             <p className="text-small text-text-default">
               Don&apos;t make the current page a link, and don&apos;t use a
-              breadcrumb as primary navigation — it reflects hierarchy, it
+              breadcrumb as primary navigation: it reflects hierarchy, it
               doesn&apos;t replace a nav. The last item is a{" "}
               <code className="font-mono">BreadcrumbPage</code>, not a{" "}
               <code className="font-mono">BreadcrumbLink</code>.
@@ -346,7 +346,7 @@ export default function BreadcrumbDocsPage() {
         <code className="font-mono text-text-default">
           fe-distillery/components/ui/breadcrumb.tsx
         </code>{" "}
-        — <code className="font-mono text-text-default">Breadcrumb</code>,{" "}
+        <code className="font-mono text-text-default">Breadcrumb</code>,{" "}
         <code className="font-mono text-text-default">BreadcrumbList</code>,{" "}
         <code className="font-mono text-text-default">BreadcrumbItem</code>,{" "}
         <code className="font-mono text-text-default">BreadcrumbLink</code>,{" "}

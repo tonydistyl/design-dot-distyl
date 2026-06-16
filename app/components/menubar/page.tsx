@@ -20,7 +20,7 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Menubar",
   description:
-    "Menubar component — a persistent horizontal command bar for desktop applications, where each item opens a dropdown of commands.",
+    "Menubar component: a persistent horizontal command bar for desktop applications, where each item opens a dropdown of commands.",
 };
 
 const composition = [

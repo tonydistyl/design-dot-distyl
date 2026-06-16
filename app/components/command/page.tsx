@@ -23,7 +23,7 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Command",
   description:
-    "Command component — a keyboard-first command palette with search, grouped results, icons, keyboard navigation, and empty states.",
+    "Command component: a keyboard-first command palette with search, grouped results, icons, keyboard navigation, and empty states.",
 };
 
 // cmdk auto-selects its first item on mount and scrolls it into view. With

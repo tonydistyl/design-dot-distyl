@@ -5,7 +5,7 @@ import { BasicTooltip, SidesTooltip } from "./TooltipDemos";
 export const metadata: Metadata = {
   title: "Tooltip",
   description:
-    "Tooltip component — a label shown on hover or focus. API matches fe-distillery components/ui/tooltip.tsx.",
+    "Tooltip component: a label shown on hover or focus. API matches fe-distillery components/ui/tooltip.tsx.",
 };
 
 const installCode = `import {
@@ -34,8 +34,8 @@ export default function TooltipPage() {
       <p className="mb-2 text-xs font-normal text-text-subtle">Components</p>
       <h1 className="text-h1 text-text-default">Tooltip</h1>
       <p className="mt-3 max-w-2xl text-body text-text-default">
-        A label that appears on hover or focus. Use it for supplementary hints —
-        never for essential information.
+        A label that appears on hover or focus. Use it for supplementary hints, never
+        for essential information.
       </p>
 
       {/* Preview */}
@@ -46,9 +46,9 @@ export default function TooltipPage() {
         </div>
         <p className="mt-2 text-small">
           Hover or focus the trigger. The surface uses the{" "}
-          <code className="font-mono">background-inverse</code> token — a
+          <code className="font-mono">background-inverse</code> token: a
           high-contrast dark-on-light (and light-on-dark) chip, not brand
-          purple — so it remaps correctly on theme toggle.
+          purple: so it remaps correctly on theme toggle.
         </p>
       </section>
 
@@ -64,7 +64,7 @@ export default function TooltipPage() {
           <code className="font-mono">top</code> /{" "}
           <code className="font-mono">right</code> /{" "}
           <code className="font-mono">bottom</code> /{" "}
-          <code className="font-mono">left</code>); Radix flips it on collision.
+          <code className="font-mono">left</code>); position flips on collision.
         </p>
       </section>
 
@@ -106,7 +106,7 @@ export default function TooltipPage() {
               Don&apos;t
             </div>
             <p className="text-small text-text-default">
-              Don&apos;t paint the tooltip surface brand purple — a tooltip is a
+              Don&apos;t paint the tooltip surface brand purple: a tooltip is a
               high-contrast inverse chip, not a brand element. And don&apos;t
               hide essential info or actions in one; it&apos;s hover-only and
               invisible on touch.
@@ -146,7 +146,7 @@ export default function TooltipPage() {
         </code>
         . The surface is intentionally{" "}
         <code className="font-mono text-text-default">background-inverse</code> /{" "}
-        <code className="font-mono text-text-default">text-inverse</code> — a
+        <code className="font-mono text-text-default">text-inverse</code>: a
         high-contrast chip, deliberately not brand purple, which is not the
         correct token for a tooltip surface.
       </footer>

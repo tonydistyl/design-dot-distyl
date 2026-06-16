@@ -5,7 +5,7 @@ import { AccountMenu, ViewMenu } from "./DropdownDemos";
 export const metadata: Metadata = {
   title: "Dropdown Menu",
   description:
-    "Dropdown Menu — a menu of actions or options triggered by a button. API matches fe-distillery components/ui/dropdown-menu.tsx.",
+    "Dropdown Menu: a menu of actions or options triggered by a button. API matches fe-distillery components/ui/dropdown-menu.tsx.",
 };
 
 const anatomyCode = `<DropdownMenu>
@@ -51,10 +51,10 @@ export default function DropdownMenuPage() {
           <AccountMenu />
         </div>
         <p className="mt-2 text-small">
-          Live and interactive — open it, then toggle the theme. The panel,
+          Live and interactive: open it, then toggle the theme. The panel,
           item focus highlight, and separators all remap from Cognition tokens,
           no <code className="font-mono">dark:</code> classes. Focus is trapped
-          and arrow keys navigate (Radix).
+          and arrow keys navigate.
         </p>
       </section>
 
@@ -99,9 +99,9 @@ export default function DropdownMenuPage() {
               Don&apos;t
             </div>
             <p className="text-small text-text-default">
-              Don&apos;t import{" "}
-              <code className="font-mono">@radix-ui/react-dropdown-menu</code>{" "}
-              directly and restyle it inline — that&apos;s how unstyled,
+              Don&apos;t import from{" "}
+              <code className="font-mono">@radix-ui/*</code>{" "}
+              directly and restyle inline: that&apos;s how unstyled,
               off-token menus creep in. Use the Cognition wrapper. And
               don&apos;t use it for primary navigation; that&apos;s a nav or a
               Select.
@@ -111,7 +111,7 @@ export default function DropdownMenuPage() {
             <div className="mb-2 text-sm font-bold text-text-success">Do</div>
             <pre className="overflow-x-auto">
               <code className="font-mono text-xs leading-6 text-text-default">
-                {`// Import the Cognition wrapper, not Radix directly
+                {`// Import the Cognition wrapper, not the Radix primitive
 import { DropdownMenu } from "@/components/ui/dropdown-menu";`}
               </code>
             </pre>
@@ -126,8 +126,8 @@ import { DropdownMenu } from "@/components/ui/dropdown-menu";`}
           className="rounded-lg border border-border-default bg-background-subtle"
         />
         <p className="mt-2 text-small">
-          Built on Radix Dropdown Menu — keyboard navigation, typeahead, focus
-          trapping, and submenus come for free. Compose only the parts you need.
+          Keyboard navigation, typeahead, focus trapping, and submenus come for
+          free. Compose only the parts you need.
         </p>
       </section>
 
@@ -136,7 +136,7 @@ import { DropdownMenu } from "@/components/ui/dropdown-menu";`}
         <code className="font-mono text-text-default">
           fe-distillery/components/ui/dropdown-menu.tsx
         </code>{" "}
-        — the full set (
+        the full set (
         <code className="font-mono text-text-default">DropdownMenu</code>,{" "}
         <code className="font-mono text-text-default">Trigger</code>,{" "}
         <code className="font-mono text-text-default">Content</code>,{" "}

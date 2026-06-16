@@ -5,7 +5,7 @@ import { FruitSelect, GroupedSelect } from "./SelectDemos";
 export const metadata: Metadata = {
   title: "Select",
   description:
-    "Select component — a control for choosing one option from a list. API matches fe-distillery components/ui/select.tsx.",
+    "Select component: a control for choosing one option from a list. API matches fe-distillery components/ui/select.tsx.",
 };
 
 const anatomyCode = `<Select>
@@ -46,7 +46,7 @@ export default function SelectPage() {
           <FruitSelect />
         </div>
         <p className="mt-2 text-small">
-          Live and interactive — open it, then toggle the theme. The trigger,
+          Live and interactive: open it, then toggle the theme. The trigger,
           panel, and selected-item check remap from Cognition tokens, no{" "}
           <code className="font-mono">dark:</code> classes. The trigger matches
           the Input field.
@@ -92,7 +92,7 @@ export default function SelectPage() {
             <p className="text-small text-text-default">
               Don&apos;t reach for a native{" "}
               <code className="font-mono">&lt;select&gt;</code> when you need
-              token styling, groups, or icons — it can&apos;t theme with
+              token styling, groups, or icons: it can&apos;t theme with
               Cognition. And don&apos;t use Select for 2–3 options; a Radio Group
               is clearer.
             </p>
@@ -118,8 +118,8 @@ export default function SelectPage() {
           className="rounded-lg border border-border-default bg-background-subtle"
         />
         <p className="mt-2 text-small">
-          Built on Radix Select — typeahead, keyboard navigation, and collision
-          handling come for free. Use{" "}
+          Typeahead, keyboard navigation, and collision handling come for free.
+          Use{" "}
           <code className="font-mono">value</code> /{" "}
           <code className="font-mono">onValueChange</code> for controlled state.
         </p>
@@ -130,7 +130,7 @@ export default function SelectPage() {
         <code className="font-mono text-text-default">
           fe-distillery/components/ui/select.tsx
         </code>{" "}
-        — <code className="font-mono text-text-default">Select</code>,{" "}
+        <code className="font-mono text-text-default">Select</code>,{" "}
         <code className="font-mono text-text-default">SelectTrigger</code>,{" "}
         <code className="font-mono text-text-default">SelectValue</code>,{" "}
         <code className="font-mono text-text-default">SelectContent</code>,{" "}

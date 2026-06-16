@@ -9,7 +9,7 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Calendar",
   description:
-    "Calendar component — an always-visible date selection grid for single dates, ranges, and multiple dates.",
+    "Calendar component: an always-visible date selection grid for single dates, ranges, and multiple dates.",
 };
 
 const props = [
