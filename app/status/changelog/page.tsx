@@ -114,9 +114,9 @@ export default function ChangelogPage() {
 
       <div className="mt-4 rounded-lg border border-border-default bg-background-accent p-4">
         <p className="text-small text-text-default">
-          Cognition started as a two-day prototype in April 2026. It is now
-          production infrastructure for Distyl AI, distributed as a versioned
-          skill across the team&apos;s AI toolchain.
+          Cognition is currently in development. Goal is production
+          infrastructure for Distyl AI, distributed as a versioned skill across
+          the team&apos;s AI toolchain.
         </p>
       </div>
 
