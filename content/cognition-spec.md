@@ -4,8 +4,6 @@
 
 This file defines the design and component conventions for all Distyl frontend work. It applies to new implementations, new features, and any surface where AI tooling (Claude Code, Cursor, Copilot) is generating or modifying UI code. Follow these rules exactly. No exceptions without a proposal.
 
----
-
 ## 1. Token Rules
 
 ### Colors
