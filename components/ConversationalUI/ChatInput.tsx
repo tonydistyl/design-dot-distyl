@@ -5,6 +5,7 @@ import { ArrowUp, Mic, Plus } from "lucide-react";
 import { Box } from "@/components/ui/box";
 import { Button } from "@/components/ui/button";
 import { Stack } from "@/components/ui/stack";
+import { Text } from "@/components/ui/text";
 import { Textarea } from "@/components/ui/textarea";
 
 interface ChatInputProps {
@@ -93,9 +94,9 @@ export function ChatInput({
           <span className="sr-only">Send message</span>
         </Button>
       </Stack>
-      <p className="mt-2 text-center text-xs text-text-subtle">
+      <Text size="xs" align="center" color="subtle" className="mt-2">
         Enter to send · Shift+Enter for newline
-      </p>
+      </Text>
     </Box>
   );
 }
