@@ -97,7 +97,7 @@ export function SidebarDemo() {
         </header>
         <div className="p-6 text-sm text-text-subtle">
           Toggle the sidebar with the button in the header. Collapsed, it shows
-          icons only — the labels and sub-menu hide.
+          icons only -- the labels and sub-menu hide.
         </div>
       </SidebarInset>
     </SidebarProvider>

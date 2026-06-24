@@ -9,11 +9,11 @@ import { Toaster } from "@/components/ui/sonner";
 
 export const metadata: Metadata = {
   title: {
-    default: "Cognition — Distyl AI Design System",
+    default: "Cognition -- Distyl AI Design System",
     template: "%s · Cognition",
   },
   description:
-    "Cognition v1.2 — the canonical design system for Distyl AI. Tokens, component rules, and the current codebase audit.",
+    "Cognition v1.2 -- the canonical design system for Distyl AI. Tokens, component rules, and the current codebase audit.",
 };
 
 // Set the theme before first paint to avoid a flash of the wrong theme.

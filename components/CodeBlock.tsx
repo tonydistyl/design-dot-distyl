@@ -26,7 +26,7 @@ export function CopyButton({
       await navigator.clipboard.writeText(value);
       setCopied(true);
     } catch {
-      // clipboard unavailable (e.g. insecure context) — no-op
+      // clipboard unavailable (e.g. insecure context) -- no-op
     }
   }
 
@@ -51,7 +51,7 @@ export function CopyButton({
 
 // Code container. Multi-line code gets a toolbar row above it so the copy
 // button never overlaps the content. Single-line code keeps the icon inline on
-// the right (no toolbar) and truncates — a stacked toolbar over one line leaves
+// the right (no toolbar) and truncates -- a stacked toolbar over one line leaves
 // odd empty space above it.
 export function CodeBlock({
   code,

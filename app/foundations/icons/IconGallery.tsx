@@ -24,7 +24,7 @@ export function IconGallery() {
       setCopied(name);
       setTimeout(() => setCopied((c) => (c === name ? null : c)), 1500);
     } catch {
-      // clipboard unavailable (e.g. insecure context) — no-op
+      // clipboard unavailable (e.g. insecure context) -- no-op
     }
   }
 

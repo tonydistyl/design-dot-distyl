@@ -24,7 +24,7 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Context Menu",
   description:
-    "Context Menu component — a right-click menu surfacing contextual actions relevant to the target element.",
+    "Context Menu component -- a right-click menu surfacing contextual actions relevant to the target element.",
 };
 
 const composition = [

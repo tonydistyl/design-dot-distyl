@@ -11,7 +11,7 @@ import {
 export const metadata: Metadata = {
   title: "Bar Chart",
   description:
-    "Bar Chart — a Recharts bar chart wrapped in the Cognition Chart primitives, with token-driven series colors, tooltips, and legends.",
+    "Bar Chart -- a Recharts bar chart wrapped in the Cognition Chart primitives, with token-driven series colors, tooltips, and legends.",
 };
 
 const parts = [
@@ -136,7 +136,7 @@ export default function BarChartDocsPage() {
           <BasicBar />
         </div>
         <p className="mt-2 text-small">
-          Rendered with live Cognition tokens — bars, axes, grid, and tooltip all
+          Rendered with live Cognition tokens -- bars, axes, grid, and tooltip all
           remap on theme change, no <code className="font-mono">dark:</code>{" "}
           classes. Series colors are injected from the config as{" "}
           <code className="font-mono">--color-*</code> CSS vars.
@@ -148,7 +148,7 @@ export default function BarChartDocsPage() {
         <h3 className="mt-12 mb-4 text-h3 text-text-default">Config</h3>
         <p className="mb-4 text-small">
           Every chart starts with a <code className="font-mono">ChartConfig</code>{" "}
-          — one entry per series, each pointing at a Cognition token. The
+          -- one entry per series, each pointing at a Cognition token. The
           container turns those into <code className="font-mono">--color-*</code>{" "}
           variables the bars reference.
         </p>
@@ -182,7 +182,7 @@ export default function BarChartDocsPage() {
           The same primitives cover vertical and horizontal layouts (
           <code className="font-mono">layout=&quot;vertical&quot;</code>), grouped
           and stacked series (<code className="font-mono">stackId</code>), and
-          per-bar colors via <code className="font-mono">Cell</code> — e.g.
+          per-bar colors via <code className="font-mono">Cell</code> -- e.g.
           chart-1 / chart-4 for positive and negative values.
         </p>
       </section>
@@ -212,10 +212,10 @@ export default function BarChartDocsPage() {
           </div>
         </div>
         <p className="mt-2 text-small">
-          The Recharts pieces — <code className="font-mono">BarChart</code>,{" "}
+          The Recharts pieces -- <code className="font-mono">BarChart</code>,{" "}
           <code className="font-mono">Bar</code>,{" "}
           <code className="font-mono">XAxis</code>,{" "}
-          <code className="font-mono">CartesianGrid</code> — are used directly
+          <code className="font-mono">CartesianGrid</code> -- are used directly
           inside <code className="font-mono">ChartContainer</code>.
         </p>
       </section>
@@ -229,9 +229,9 @@ export default function BarChartDocsPage() {
               Don&apos;t
             </div>
             <p className="text-small text-text-default">
-              Don&apos;t hardcode bar colors with a hex or raw palette utility —
+              Don&apos;t hardcode bar colors with a hex or raw palette utility --
               drive them from the config with token vars so they theme. Don&apos;t
-              use the brand primary or feedback tokens for a data series — those carry
+              use the brand primary or feedback tokens for a data series -- those carry
               meaning (brand, status); use the chart-1…chart-5 tokens, in
               order. And don&apos;t stack more than three or four series; past
               that, bars get hard to read.
@@ -268,7 +268,7 @@ export default function BarChartDocsPage() {
         <code className="font-mono text-text-default">
           fe-distillery/components/ui/chart.tsx
         </code>{" "}
-        — <code className="font-mono text-text-default">ChartContainer</code>,{" "}
+        -- <code className="font-mono text-text-default">ChartContainer</code>,{" "}
         <code className="font-mono text-text-default">ChartTooltip</code>/
         <code className="font-mono text-text-default">Content</code>,{" "}
         <code className="font-mono text-text-default">ChartLegend</code>/

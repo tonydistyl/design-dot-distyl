@@ -4,7 +4,7 @@ import * as React from "react";
 
 import { cn } from "@/lib/utils";
 
-// API mirrors fe-distillery/components/ui/card.tsx — the Card + CardHeader /
+// API mirrors fe-distillery/components/ui/card.tsx -- the Card + CardHeader /
 // CardTitle / CardDescription / CardContent / CardFooter compound parts. Visual
 // classes are mapped to Cognition v1.2 semantic tokens so the card themes via
 // [data-theme="dark"] with no dark: classes (the fix for card.tsx's raw

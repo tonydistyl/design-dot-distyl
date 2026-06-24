@@ -5,7 +5,7 @@ import { DataTableDemo } from "./DataTableDemo";
 export const metadata: Metadata = {
   title: "Data Table",
   description:
-    "Data Table — powerful tables and datagrids built on TanStack Table. The canonical stack at Distyl (DataTable + @tanstack/react-table).",
+    "Data Table -- powerful tables and datagrids built on TanStack Table. The canonical stack at Distyl (DataTable + @tanstack/react-table).",
 };
 
 const columnsCode = `import { type ColumnDef } from "@tanstack/react-table";
@@ -61,7 +61,7 @@ export default function DataTablePage() {
           </div>
         </div>
         <p className="mt-2 text-small">
-          Live and interactive — sort by Email, filter, select rows, page. Toggle
+          Live and interactive -- sort by Email, filter, select rows, page. Toggle
           the theme: the header, row borders, hover, and selected-row tint all
           remap from Cognition tokens, no <code className="font-mono">dark:</code>{" "}
           classes.
@@ -85,7 +85,7 @@ export default function DataTablePage() {
         />
         <p className="mt-2 text-small">
           Sorting, filtering, row selection, and pagination are TanStack row
-          models you opt into — the markup stays the same.
+          models you opt into -- the markup stays the same.
         </p>
       </section>
 
@@ -129,7 +129,7 @@ export default function DataTablePage() {
             <p className="text-small text-text-default">
               Don&apos;t reach for{" "}
               <code className="font-mono">MaterialReactTable</code> or the{" "}
-              <code className="font-mono">MUI DataGrid</code> for new tables —
+              <code className="font-mono">MUI DataGrid</code> for new tables --
               they pull in MUI, bypass Cognition tokens, and can&apos;t theme
               with the design system. TanStack Table is the canonical stack.
             </p>
@@ -159,7 +159,7 @@ const table = useReactTable({ data, columns, ... });
           <code className="font-mono">
             @/platform/components/DataTable
           </code>{" "}
-          — it auto-adds the selection column and wires the shared toolbar.
+          -- it auto-adds the selection column and wires the shared toolbar.
           Standalone tables can call <code className="font-mono">useReactTable</code>{" "}
           directly.
         </p>

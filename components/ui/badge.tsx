@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 // API mirrors fe-distillery/components/ui/badge.tsx exactly: variant/size/color
 // axes, asChild, and the Badge + badgeVariants exports. The fix: the 16 raw
 // Tailwind palette colors are dropped, and the semantic color set is mapped to
-// Cognition v1.2 tokens — no raw palette utilities.
+// Cognition v1.2 tokens -- no raw palette utilities.
 const badgeVariants = cva(
   "inline-flex items-center gap-1 rounded-md border font-medium focus:outline-none focus:ring-2 focus:ring-border-primary focus:ring-offset-2 [&_svg]:pointer-events-none [&_svg]:size-3 [&_svg]:shrink-0",
   {
@@ -31,21 +31,21 @@ const badgeVariants = cva(
       },
     },
     compoundVariants: [
-      // default — solid fill
+      // default -- solid fill
       { variant: "default", color: "default", class: "bg-background-inverse text-text-inverse" },
       { variant: "default", color: "primary", class: "bg-background-primary text-text-inverse" },
       { variant: "default", color: "destructive", class: "bg-feedback-danger text-text-inverse" },
       { variant: "default", color: "success", class: "bg-feedback-success text-text-inverse" },
       { variant: "default", color: "warning", class: "bg-feedback-warning text-text-inverse" },
       { variant: "default", color: "info", class: "bg-feedback-info text-text-inverse" },
-      // secondary — soft tint
+      // secondary -- soft tint
       { variant: "secondary", color: "default", class: "bg-background-secondary text-text-default" },
       { variant: "secondary", color: "primary", class: "bg-background-accent text-text-primary" },
       { variant: "secondary", color: "destructive", class: "bg-background-danger text-text-danger" },
       { variant: "secondary", color: "success", class: "bg-background-success text-text-success" },
       { variant: "secondary", color: "warning", class: "bg-background-warning text-text-warning" },
       { variant: "secondary", color: "info", class: "bg-background-accent text-text-primary" },
-      // outline — bordered
+      // outline -- bordered
       { variant: "outline", color: "default", class: "border-border-default text-text-default" },
       { variant: "outline", color: "primary", class: "border-border-primary text-text-primary" },
       { variant: "outline", color: "destructive", class: "border-border-danger text-text-danger" },

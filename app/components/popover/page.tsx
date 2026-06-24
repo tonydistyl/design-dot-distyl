@@ -9,7 +9,7 @@ import {
 export const metadata: Metadata = {
   title: "Popover",
   description:
-    "Popover component — displays rich content in a portal, triggered by a button. API matches fe-distillery components/ui/popover.tsx.",
+    "Popover component -- displays rich content in a portal, triggered by a button. API matches fe-distillery components/ui/popover.tsx.",
 };
 
 const props = [
@@ -131,7 +131,7 @@ export default function PopoverDocsPage() {
       <h1 className="text-h1 text-text-default">Popover</h1>
       <p className="mt-3 max-w-2xl text-body text-text-default">
         Displays rich content in a portal, triggered by a button. Use it for
-        secondary controls — a form, a detail panel, a set of options — that
+        secondary controls -- a form, a detail panel, a set of options -- that
         should float above the page and dismiss on outside click or Escape.
       </p>
 
@@ -142,7 +142,7 @@ export default function PopoverDocsPage() {
           <DimensionsPopover />
         </div>
         <p className="mt-2 text-small">
-          Rendered with live Cognition tokens — the panel surface, border, and
+          Rendered with live Cognition tokens -- the panel surface, border, and
           text remap on theme change, no{" "}
           <code className="font-mono">dark:</code> classes. Trigger it to float
           the content over the page.
@@ -161,7 +161,7 @@ export default function PopoverDocsPage() {
           </Cell>
         </div>
         <p className="mt-2 text-small">
-          The popover frames whatever you put in it — a compact form like
+          The popover frames whatever you put in it -- a compact form like
           Dimensions, or a short block of detail. Set an explicit width on{" "}
           <code className="font-mono">PopoverContent</code> (it defaults to{" "}
           <code className="font-mono">w-72</code>).
@@ -231,8 +231,8 @@ export default function PopoverDocsPage() {
               Don&apos;t
             </div>
             <p className="text-small text-text-default">
-              Don&apos;t use a popover for a simple menu of actions — that&apos;s{" "}
-              <code className="font-mono">Dropdown Menu</code> — or for a flat
+              Don&apos;t use a popover for a simple menu of actions -- that&apos;s{" "}
+              <code className="font-mono">Dropdown Menu</code> -- or for a flat
               text hint, which is a <code className="font-mono">Tooltip</code>.
               And don&apos;t put critical, must-act-on content in one; it
               dismisses on any outside click.
@@ -267,7 +267,7 @@ export default function PopoverDocsPage() {
         <code className="font-mono text-text-default">
           fe-distillery/components/ui/popover.tsx
         </code>{" "}
-        — <code className="font-mono text-text-default">Popover</code>,{" "}
+        -- <code className="font-mono text-text-default">Popover</code>,{" "}
         <code className="font-mono text-text-default">PopoverTrigger</code>,{" "}
         <code className="font-mono text-text-default">PopoverAnchor</code>,{" "}
         <code className="font-mono text-text-default">PopoverContent</code>. The

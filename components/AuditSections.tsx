@@ -11,8 +11,8 @@ export function AuditSections({ sections }: { sections: AuditSection[] }) {
     sections.map((_, i) => i === 0),
   );
 
-  // Open (and scroll to) a section when its anchor is hit — e.g. from the
-  // sidebar subnav — so jumping never lands on a collapsed panel.
+  // Open (and scroll to) a section when its anchor is hit -- e.g. from the
+  // sidebar subnav -- so jumping never lands on a collapsed panel.
   useEffect(() => {
     function openFromHash() {
       const id = decodeURIComponent(window.location.hash.slice(1));

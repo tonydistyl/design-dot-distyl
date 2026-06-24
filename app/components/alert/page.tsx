@@ -6,7 +6,7 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Alert",
   description:
-    "Alert component — a callout for user attention. API matches fe-distillery components/ui/alert.tsx.",
+    "Alert component -- a callout for user attention. API matches fe-distillery components/ui/alert.tsx.",
 };
 
 const variants = [
@@ -56,7 +56,7 @@ export default function AlertPage() {
       <h1 className="text-h1 text-text-default">Alert</h1>
       <p className="mt-3 max-w-2xl text-body text-text-default">
         Displays a callout for user attention. Use it for inline, persistent
-        messages — not for transient toasts or blocking dialogs.
+        messages -- not for transient toasts or blocking dialogs.
       </p>
 
       {/* Preview */}
@@ -72,7 +72,7 @@ export default function AlertPage() {
           </Alert>
         </div>
         <p className="mt-2 text-small">
-          Rendered with live Cognition tokens — surface, border, and every
+          Rendered with live Cognition tokens -- surface, border, and every
           variant color remap on theme change, no{" "}
           <code className="font-mono">dark:</code> classes.
         </p>
@@ -93,7 +93,7 @@ export default function AlertPage() {
                     <CircleAlert />
                     <AlertTitle>Heads up</AlertTitle>
                     <AlertDescription>
-                      This is the default alert — neutral surface and text.
+                      This is the default alert -- neutral surface and text.
                     </AlertDescription>
                   </Alert>
                 )}
@@ -129,7 +129,7 @@ export default function AlertPage() {
         <p className="mt-2 text-small">
           <code className="font-mono">destructive</code> recolors the title,
           description, and icon to the danger token;{" "}
-          <code className="font-mono">warning</code> tints the surface amber —
+          <code className="font-mono">warning</code> tints the surface amber --
           both via tokens, so dark mode is automatic.
         </p>
       </section>
@@ -142,7 +142,7 @@ export default function AlertPage() {
             <Alert>
               <AlertTitle>Title only</AlertTitle>
               <AlertDescription>
-                No icon — the title and description sit flush left.
+                No icon -- the title and description sit flush left.
               </AlertDescription>
             </Alert>
           </div>
@@ -158,7 +158,7 @@ export default function AlertPage() {
         </div>
         <p className="mt-2 text-small">
           <code className="font-mono">AlertTitle</code> and{" "}
-          <code className="font-mono">AlertDescription</code> are both optional —
+          <code className="font-mono">AlertDescription</code> are both optional --
           drop the icon, the title, or both. With no icon the text fills the
           full width.
         </p>
@@ -205,7 +205,7 @@ export default function AlertPage() {
               <code className="font-mono">
                 border-destructive dark:border-destructive
               </code>{" "}
-              — the legacy alert.tsx does exactly this. Hardcoded{" "}
+              -- the legacy alert.tsx does exactly this. Hardcoded{" "}
               <code className="font-mono">dark:</code> classes drift the moment
               the brand changes.
             </p>
@@ -229,7 +229,7 @@ export default function AlertPage() {
           className="rounded-lg border border-border-default bg-background-subtle"
         />
         <p className="mt-2 text-small">
-          Drop the icon in as the first child — the{" "}
+          Drop the icon in as the first child -- the{" "}
           <code className="font-mono">[&amp;&gt;svg]</code> rules position it and
           pad the text. Cognition tokens are baked in.
         </p>
@@ -240,7 +240,7 @@ export default function AlertPage() {
         <code className="font-mono text-text-default">
           fe-distillery/components/ui/alert.tsx
         </code>{" "}
-        — <code className="font-mono text-text-default">Alert</code>,{" "}
+        -- <code className="font-mono text-text-default">Alert</code>,{" "}
         <code className="font-mono text-text-default">AlertTitle</code>,{" "}
         <code className="font-mono text-text-default">AlertDescription</code>{" "}
         with the <code className="font-mono text-text-default">variant</code>{" "}

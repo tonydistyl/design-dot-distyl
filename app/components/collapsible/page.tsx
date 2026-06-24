@@ -11,7 +11,7 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Collapsible",
   description:
-    "Collapsible component — an interactive element that expands and collapses a panel. API matches fe-distillery components/ui/collapsible.tsx.",
+    "Collapsible component -- an interactive element that expands and collapses a panel. API matches fe-distillery components/ui/collapsible.tsx.",
 };
 
 const parts = [
@@ -171,8 +171,8 @@ export default function CollapsibleDocsPage() {
       <h1 className="text-h1 text-text-default">Collapsible</h1>
       <p className="mt-3 max-w-2xl text-body text-text-default">
         An interactive element that expands and collapses a panel. Use it to hide
-        secondary detail behind a trigger — order status, advanced options, a
-        longer description — without leaving the page.
+        secondary detail behind a trigger -- order status, advanced options, a
+        longer description -- without leaving the page.
       </p>
 
       {/* Preview */}
@@ -182,7 +182,7 @@ export default function CollapsibleDocsPage() {
           <OrderCollapsible />
         </div>
         <p className="mt-2 text-small">
-          Rendered with live Cognition tokens — the trigger, border, and text
+          Rendered with live Cognition tokens -- the trigger, border, and text
           remap on theme change, no{" "}
           <code className="font-mono">dark:</code> classes. Toggle the control to
           collapse the panel.
@@ -202,7 +202,7 @@ export default function CollapsibleDocsPage() {
         </div>
         <p className="mt-2 text-small">
           The trigger is yours to compose with{" "}
-          <code className="font-mono">asChild</code> — an icon-only toggle beside
+          <code className="font-mono">asChild</code> -- an icon-only toggle beside
           a heading, or a full-width labeled button whose chevron rotates on{" "}
           <code className="font-mono">data-[state=open]</code>.
         </p>
@@ -265,7 +265,7 @@ export default function CollapsibleDocsPage() {
               Don&apos;t
             </div>
             <p className="text-small text-text-default">
-              Don&apos;t use a Collapsible for a set of stacked sections — that&apos;s{" "}
+              Don&apos;t use a Collapsible for a set of stacked sections -- that&apos;s{" "}
               <code className="font-mono">Accordion</code>. And don&apos;t hide
               essential content or primary actions behind one; reach for it only
               for secondary, skippable detail.
@@ -302,7 +302,7 @@ export default function CollapsibleDocsPage() {
         <code className="font-mono text-text-default">
           fe-distillery/components/ui/collapsible.tsx
         </code>{" "}
-        — <code className="font-mono text-text-default">Collapsible</code>,{" "}
+        -- <code className="font-mono text-text-default">Collapsible</code>,{" "}
         <code className="font-mono text-text-default">CollapsibleTrigger</code>,{" "}
         <code className="font-mono text-text-default">CollapsibleContent</code> on
         Radix. A re-export with no styling of its own; the trigger and content

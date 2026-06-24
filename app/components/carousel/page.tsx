@@ -9,7 +9,7 @@ import {
 export const metadata: Metadata = {
   title: "Carousel",
   description:
-    "Carousel component — a swipeable, motion-driven set of slides built on Embla. API matches fe-distillery components/ui/carousel.tsx.",
+    "Carousel component -- a swipeable, motion-driven set of slides built on Embla. API matches fe-distillery components/ui/carousel.tsx.",
 };
 
 const parts = [
@@ -107,7 +107,7 @@ export default function CarouselDocsPage() {
       <h1 className="text-h1 text-text-default">Carousel</h1>
       <p className="mt-3 max-w-2xl text-body text-text-default">
         A swipeable, motion-driven set of slides built on Embla. Use it to page
-        through media or cards — with keyboard arrows, drag, and prev/next
+        through media or cards -- with keyboard arrows, drag, and prev/next
         controls that disable at the ends.
       </p>
 
@@ -118,7 +118,7 @@ export default function CarouselDocsPage() {
           <BasicCarousel />
         </div>
         <p className="mt-2 text-small">
-          Rendered with live Cognition tokens — slides, borders, and the arrow
+          Rendered with live Cognition tokens -- slides, borders, and the arrow
           controls remap on theme change, no{" "}
           <code className="font-mono">dark:</code> classes. Drag, use the arrows,
           or press the left/right keys.
@@ -156,7 +156,7 @@ export default function CarouselDocsPage() {
         </div>
         <p className="mt-2 text-small">
           Set <code className="font-mono">orientation=&quot;vertical&quot;</code>{" "}
-          to page up and down — give{" "}
+          to page up and down -- give{" "}
           <code className="font-mono">CarouselContent</code> a fixed height and
           the arrows rotate to match.
         </p>
@@ -197,7 +197,7 @@ export default function CarouselDocsPage() {
               Don&apos;t
             </div>
             <p className="text-small text-text-default">
-              Don&apos;t put content users must not miss in a carousel — anything
+              Don&apos;t put content users must not miss in a carousel -- anything
               off-screen gets overlooked. And don&apos;t hand-roll arrow enabled
               state; <code className="font-mono">CarouselPrevious</code> /{" "}
               <code className="font-mono">CarouselNext</code> read it from the
@@ -234,7 +234,7 @@ export default function CarouselDocsPage() {
         <code className="font-mono text-text-default">
           fe-distillery/components/ui/carousel.tsx
         </code>{" "}
-        — <code className="font-mono text-text-default">Carousel</code> and its
+        -- <code className="font-mono text-text-default">Carousel</code> and its
         Content / Item / Previous / Next parts (plus{" "}
         <code className="font-mono text-text-default">useCarousel</code> and{" "}
         <code className="font-mono text-text-default">CarouselApi</code>), built

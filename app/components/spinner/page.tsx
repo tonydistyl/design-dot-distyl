@@ -6,7 +6,7 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Spinner",
   description:
-    "Spinner component — an indeterminate loading indicator: a brand arc rotating smoothly on a neutral track.",
+    "Spinner component -- an indeterminate loading indicator: a brand arc rotating smoothly on a neutral track.",
 };
 
 const props = [

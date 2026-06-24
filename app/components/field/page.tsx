@@ -7,7 +7,7 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Field",
   description:
-    "Field component — a form field wrapper that composes a label, a control, and optional helper or error text into one accessible unit.",
+    "Field component -- a form field wrapper that composes a label, a control, and optional helper or error text into one accessible unit.",
 };
 
 const props = [

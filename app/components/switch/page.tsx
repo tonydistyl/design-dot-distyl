@@ -5,7 +5,7 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Switch",
   description:
-    "Switch component — a control that toggles an on/off setting that applies immediately. API matches fe-distillery components/ui/switch.tsx.",
+    "Switch component -- a control that toggles an on/off setting that applies immediately. API matches fe-distillery components/ui/switch.tsx.",
 };
 
 const states = [
@@ -41,7 +41,7 @@ export default function SwitchPage() {
       <h1 className="text-h1 text-text-default">Switch</h1>
       <p className="mt-3 max-w-2xl text-body text-text-default">
         A control that toggles between checked and not checked. Use it for
-        settings that apply immediately — no submit step.
+        settings that apply immediately -- no submit step.
       </p>
 
       {/* Preview */}
@@ -54,7 +54,7 @@ export default function SwitchPage() {
           </label>
         </div>
         <p className="mt-2 text-small">
-          Rendered with live Cognition tokens — the track flips to the brand
+          Rendered with live Cognition tokens -- the track flips to the brand
           token when on and the thumb stays on the surface token, no{" "}
           <code className="font-mono">dark:</code> classes.
         </p>
@@ -127,7 +127,7 @@ export default function SwitchPage() {
             </div>
             <p className="text-small text-text-default">
               Don&apos;t use a Switch where the change only takes effect after a
-              Save — that&apos;s a Checkbox. A Switch implies an immediate effect.
+              Save -- that&apos;s a Checkbox. A Switch implies an immediate effect.
             </p>
           </div>
           <div className="rounded-lg border border-border-success bg-background-success p-5">
@@ -150,7 +150,7 @@ export default function SwitchPage() {
           className="rounded-lg border border-border-default bg-background-subtle"
         />
         <p className="mt-2 text-small">
-          Built on Radix Switch — keyboard toggle and ARIA come for free. Use{" "}
+          Built on Radix Switch -- keyboard toggle and ARIA come for free. Use{" "}
           <code className="font-mono">checked</code> /{" "}
           <code className="font-mono">onCheckedChange</code> for controlled state.
         </p>

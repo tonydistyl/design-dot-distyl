@@ -10,7 +10,7 @@ import {
 export const metadata: Metadata = {
   title: "Radar Chart",
   description:
-    "Radar Chart — a Recharts radar chart wrapped in the Cognition Chart primitives, with token-driven series colors and tooltips.",
+    "Radar Chart -- a Recharts radar chart wrapped in the Cognition Chart primitives, with token-driven series colors and tooltips.",
 };
 
 const parts = [
@@ -127,7 +127,7 @@ export default function RadarChartDocsPage() {
           <BasicRadar />
         </div>
         <p className="mt-2 text-small">
-          Rendered with live Cognition tokens — the web, grid, and fill remap on
+          Rendered with live Cognition tokens -- the web, grid, and fill remap on
           theme change, no <code className="font-mono">dark:</code> classes.
           Series colors are injected from the config as{" "}
           <code className="font-mono">--color-*</code> CSS vars.
@@ -139,7 +139,7 @@ export default function RadarChartDocsPage() {
         <h3 className="mt-12 mb-4 text-h3 text-text-default">Config</h3>
         <p className="mb-4 text-small">
           Every chart starts with a <code className="font-mono">ChartConfig</code>{" "}
-          — one entry per series, each pointing at a Cognition token. The
+          -- one entry per series, each pointing at a Cognition token. The
           container turns those into <code className="font-mono">--color-*</code>{" "}
           variables the radars reference.
         </p>
@@ -199,10 +199,10 @@ export default function RadarChartDocsPage() {
           </div>
         </div>
         <p className="mt-2 text-small">
-          The Recharts pieces — <code className="font-mono">RadarChart</code>,{" "}
+          The Recharts pieces -- <code className="font-mono">RadarChart</code>,{" "}
           <code className="font-mono">Radar</code>,{" "}
           <code className="font-mono">PolarAngleAxis</code>,{" "}
-          <code className="font-mono">PolarGrid</code> — are used directly inside{" "}
+          <code className="font-mono">PolarGrid</code> -- are used directly inside{" "}
           <code className="font-mono">ChartContainer</code>.
         </p>
       </section>
@@ -216,9 +216,9 @@ export default function RadarChartDocsPage() {
               Don&apos;t
             </div>
             <p className="text-small text-text-default">
-              Don&apos;t hardcode radar colors with a hex or raw palette utility —
+              Don&apos;t hardcode radar colors with a hex or raw palette utility --
               drive them from the config with token vars so they theme. Don&apos;t
-              use the brand primary or feedback tokens for a data series — those carry
+              use the brand primary or feedback tokens for a data series -- those carry
               meaning (brand, status); use the chart-1…chart-5 tokens, in
               order. And don&apos;t plot more than two or three series; the web
               gets unreadable.
@@ -255,7 +255,7 @@ export default function RadarChartDocsPage() {
         <code className="font-mono text-text-default">
           fe-distillery/components/ui/chart.tsx
         </code>{" "}
-        — <code className="font-mono text-text-default">ChartContainer</code>,{" "}
+        -- <code className="font-mono text-text-default">ChartContainer</code>,{" "}
         <code className="font-mono text-text-default">ChartTooltip</code>/
         <code className="font-mono text-text-default">Content</code>,{" "}
         <code className="font-mono text-text-default">ChartLegend</code>/

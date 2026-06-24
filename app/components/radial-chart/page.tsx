@@ -10,7 +10,7 @@ import {
 export const metadata: Metadata = {
   title: "Radial Chart",
   description:
-    "Radial Chart — a Recharts radial bar chart wrapped in the Cognition Chart primitives, with token-driven colors and tooltips.",
+    "Radial Chart -- a Recharts radial bar chart wrapped in the Cognition Chart primitives, with token-driven colors and tooltips.",
 };
 
 const parts = [
@@ -120,7 +120,7 @@ export default function RadialChartDocsPage() {
       <h1 className="text-h1 text-text-default">Radial Chart</h1>
       <p className="mt-3 max-w-2xl text-body text-text-default">
         A radial bar chart built on Recharts and wrapped in the Cognition Chart
-        primitives — bars drawn around a center rather than along an axis. Colors
+        primitives -- bars drawn around a center rather than along an axis. Colors
         come from the config.
       </p>
 
@@ -131,7 +131,7 @@ export default function RadialChartDocsPage() {
           <StackedRadial />
         </div>
         <p className="mt-2 text-small">
-          Rendered with live Cognition tokens — bars, track, and center label
+          Rendered with live Cognition tokens -- bars, track, and center label
           remap on theme change, no <code className="font-mono">dark:</code>{" "}
           classes. Bar colors are injected from the config as{" "}
           <code className="font-mono">--color-*</code> CSS vars.
@@ -203,10 +203,10 @@ export default function RadialChartDocsPage() {
           </div>
         </div>
         <p className="mt-2 text-small">
-          The Recharts pieces — <code className="font-mono">RadialBarChart</code>,{" "}
+          The Recharts pieces -- <code className="font-mono">RadialBarChart</code>,{" "}
           <code className="font-mono">RadialBar</code>,{" "}
           <code className="font-mono">PolarGrid</code>,{" "}
-          <code className="font-mono">LabelList</code> — are used directly inside{" "}
+          <code className="font-mono">LabelList</code> -- are used directly inside{" "}
           <code className="font-mono">ChartContainer</code>.
         </p>
       </section>
@@ -220,12 +220,12 @@ export default function RadialChartDocsPage() {
               Don&apos;t
             </div>
             <p className="text-small text-text-default">
-              Don&apos;t hardcode bar colors with a hex or raw palette utility —
+              Don&apos;t hardcode bar colors with a hex or raw palette utility --
               drive them from the config with token vars so they theme. Don&apos;t
-              use the brand primary or feedback tokens for a data series — those carry
+              use the brand primary or feedback tokens for a data series -- those carry
               meaning (brand, status); use the chart-1…chart-5 tokens, in
               order. And don&apos;t use a radial chart for precise value
-              comparison — a bar chart reads more accurately.
+              comparison -- a bar chart reads more accurately.
             </p>
           </div>
           <div className="rounded-lg border border-border-success bg-background-success p-5">
@@ -258,7 +258,7 @@ const config = {
         <code className="font-mono text-text-default">
           fe-distillery/components/ui/chart.tsx
         </code>{" "}
-        — <code className="font-mono text-text-default">ChartContainer</code>,{" "}
+        -- <code className="font-mono text-text-default">ChartContainer</code>,{" "}
         <code className="font-mono text-text-default">ChartTooltip</code>/
         <code className="font-mono text-text-default">Content</code> on Recharts.
         Bar colors are chart-token vars from the config.

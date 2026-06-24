@@ -11,7 +11,7 @@ import {
 export const metadata: Metadata = {
   title: "Tokens",
   description:
-    "Cognition v1.2 tokens — backgrounds, text, borders, feedback, radius, spacing, and type scale.",
+    "Cognition v1.2 tokens -- backgrounds, text, borders, feedback, radius, spacing, and type scale.",
 };
 
 export default function TokensPage() {
@@ -25,11 +25,11 @@ export default function TokensPage() {
       </h1>
       <p className="mt-3 max-w-2xl text-body text-text-default">
         The canonical Cognition v1.2 token set. Swatches below render from the
-        live CSS variables — toggle the theme and they remap automatically.
+        live CSS variables -- toggle the theme and they remap automatically.
         Never hardcode a hex value; always reference the token utility.
       </p>
 
-      {/* On-this-page — desktop uses the sidebar subnav, so this is mobile-only */}
+      {/* On-this-page -- desktop uses the sidebar subnav, so this is mobile-only */}
       <nav className="mt-6 flex flex-wrap gap-2 md:hidden">
         {[
           { id: "color", title: "Color" },
@@ -46,13 +46,13 @@ export default function TokensPage() {
         ))}
       </nav>
 
-      {/* Color — parent heading over backgrounds, text, borders, feedback, chart */}
+      {/* Color -- parent heading over backgrounds, text, borders, feedback, chart */}
       <section id="color" className="scroll-mt-8">
         <h3 className="mt-14 mb-1 border-b border-border-default pb-2 text-h3 text-text-default">
           {colorParentTitle}
         </h3>
         <p className="mb-6 text-small">
-          Every color token, grouped by role — backgrounds, text, borders,
+          Every color token, grouped by role -- backgrounds, text, borders,
           feedback, and chart series.
         </p>
       </section>
@@ -226,7 +226,7 @@ export default function TokensPage() {
 
         <div className="mt-4 rounded-lg border border-border-default bg-background-inverse p-5">
           <code className="font-mono text-sm text-text-inverse">
-            font-family: Geist Mono — 0123456789 {`{ }`} =&gt; const x = 42;
+            font-family: Geist Mono -- 0123456789 {`{ }`} =&gt; const x = 42;
           </code>
         </div>
 

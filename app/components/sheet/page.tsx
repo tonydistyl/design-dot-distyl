@@ -16,7 +16,7 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Sheet",
   description:
-    "Sheet component — a panel that slides in from an edge of the screen, built on Dialog. API matches fe-distillery components/ui/sheet.tsx.",
+    "Sheet component -- a panel that slides in from an edge of the screen, built on Dialog. API matches fe-distillery components/ui/sheet.tsx.",
 };
 
 const sides = ["top", "right", "bottom", "left"] as const;
@@ -152,7 +152,7 @@ export default function SheetDocsPage() {
       <p className="mb-2 text-xs font-normal text-text-subtle">Components</p>
       <h1 className="text-h1 text-text-default">Sheet</h1>
       <p className="mt-3 max-w-2xl text-body text-text-default">
-        A panel that slides in from an edge of the screen — built on Dialog, so
+        A panel that slides in from an edge of the screen -- built on Dialog, so
         it traps focus and dismisses on overlay click or Escape. Use it for
         secondary tasks like editing a record or filtering a list.
       </p>
@@ -164,7 +164,7 @@ export default function SheetDocsPage() {
           <ProfileSheet />
         </div>
         <p className="mt-2 text-small">
-          Rendered with live Cognition tokens — the panel surface, overlay scrim,
+          Rendered with live Cognition tokens -- the panel surface, overlay scrim,
           and text remap on theme change, no{" "}
           <code className="font-mono">dark:</code> classes. Trigger it to open the
           panel from the right.
@@ -252,8 +252,8 @@ export default function SheetDocsPage() {
               Don&apos;t
             </div>
             <p className="text-small text-text-default">
-              Don&apos;t use a Sheet for a short confirmation — that&apos;s a{" "}
-              <code className="font-mono">Dialog</code> — or for a bottom,
+              Don&apos;t use a Sheet for a short confirmation -- that&apos;s a{" "}
+              <code className="font-mono">Dialog</code> -- or for a bottom,
               touch-first panel, which is a{" "}
               <code className="font-mono">Drawer</code>. And don&apos;t stack
               sheets; keep one focused panel open at a time.
@@ -288,7 +288,7 @@ export default function SheetDocsPage() {
         <code className="font-mono text-text-default">
           fe-distillery/components/ui/sheet.tsx
         </code>{" "}
-        — <code className="font-mono text-text-default">Sheet</code> and its
+        -- <code className="font-mono text-text-default">Sheet</code> and its
         Trigger / Content / Header / Footer / Title / Description / Close parts,
         built on Radix Dialog. The raw surface, scrim, border, and muted text are
         replaced with Cognition tokens; the entrance animation is omitted to match

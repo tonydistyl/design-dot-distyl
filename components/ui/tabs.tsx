@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
 // TabsTrigger / TabsContent, variant axis default|underline|secondary). The
 // fix: the source ships dark: class violations (dark:data-[state=active]:
 // border-input, dark:data-[state=active]:bg-input/30) and raw palette colors
-// (primary-50, gray-600) — here every color is a Cognition v1.2 token, so the
+// (primary-50, gray-600) -- here every color is a Cognition v1.2 token, so the
 // tabs theme via [data-theme="dark"] with no dark: classes.
 //   secondary = segmented pill
 //   underline = bottom-border line

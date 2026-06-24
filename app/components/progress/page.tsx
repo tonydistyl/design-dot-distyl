@@ -6,7 +6,7 @@ import { AnimatedProgress, LoadingProgress } from "./ProgressDemos";
 export const metadata: Metadata = {
   title: "Progress",
   description:
-    "Progress component — displays an indicator showing the completion progress of a task, typically as a progress bar. API matches fe-distillery components/ui/progress.tsx.",
+    "Progress component -- displays an indicator showing the completion progress of a task, typically as a progress bar. API matches fe-distillery components/ui/progress.tsx.",
 };
 
 const values = [0, 25, 50, 75, 100];
@@ -34,7 +34,7 @@ const props = [
     name: "className",
     type: "string",
     def: "undefined",
-    desc: "Override the track — width, height (h-2 default), or radius.",
+    desc: "Override the track -- width, height (h-2 default), or radius.",
   },
 ] as const;
 
@@ -98,7 +98,7 @@ export default function ProgressDocsPage() {
       <p className="mt-3 max-w-2xl text-body text-text-default">
         Displays an indicator showing the completion progress of a task,
         typically as a progress bar. Drive it with a{" "}
-        <code className="font-mono">value</code> from 0 to 100 — uploads,
+        <code className="font-mono">value</code> from 0 to 100 -- uploads,
         multi-step flows, or any measurable task.
       </p>
 
@@ -109,7 +109,7 @@ export default function ProgressDocsPage() {
           <AnimatedProgress />
         </div>
         <p className="mt-2 text-small">
-          Rendered with live Cognition tokens — the track and indicator remap on
+          Rendered with live Cognition tokens -- the track and indicator remap on
           theme change, no <code className="font-mono">dark:</code> classes. The
           indicator slides via <code className="font-mono">transition-all</code>{" "}
           as the value changes.
@@ -161,7 +161,7 @@ export default function ProgressDocsPage() {
         <p className="mt-2 text-small">
           A <span className="font-medium text-text-default">determinate</span> bar
           reflects a known percentage. For an ongoing task with no known
-          duration, loop the value to keep it moving — or set{" "}
+          duration, loop the value to keep it moving -- or set{" "}
           <code className="font-mono">value={`{null}`}</code> for an empty,
           indeterminate track.
         </p>
@@ -211,7 +211,7 @@ export default function ProgressDocsPage() {
             </div>
             <p className="text-small text-text-default">
               Don&apos;t freeze the bar at a fixed value while work is still
-              happening, and don&apos;t use it for a brief, instant action — a{" "}
+              happening, and don&apos;t use it for a brief, instant action -- a{" "}
               <code className="font-mono">Spinner</code> fits better there. Keep{" "}
               <code className="font-mono">value</code> in step with real progress.
             </p>
@@ -240,7 +240,7 @@ export default function ProgressDocsPage() {
         <code className="font-mono text-text-default">
           fe-distillery/components/ui/progress.tsx
         </code>{" "}
-        — a single <code className="font-mono text-text-default">Progress</code>{" "}
+        -- a single <code className="font-mono text-text-default">Progress</code>{" "}
         built on Radix. The raw{" "}
         <code className="font-mono text-text-default">bg-primary</code> track and
         indicator are replaced with the Cognition background-primary token.

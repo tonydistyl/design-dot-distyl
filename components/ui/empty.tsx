@@ -4,7 +4,7 @@ import * as React from "react";
 import { cn } from "@/lib/utils";
 
 // Canonical Empty State. fe-distillery has no empty-state primitive yet, so this
-// documents the component the audit recommends — the standard Empty composition
+// documents the component the audit recommends -- the standard Empty composition
 // (Empty / EmptyHeader / EmptyMedia / EmptyTitle / EmptyDescription /
 // EmptyContent). All visual
 // classes are Cognition v1.2 tokens, so it themes via [data-theme="dark"] with

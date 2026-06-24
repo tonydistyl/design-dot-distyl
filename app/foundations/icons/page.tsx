@@ -7,14 +7,14 @@ import { IconGallery } from "./IconGallery";
 export const metadata: Metadata = {
   title: "Icons",
   description:
-    "Iconography in Cognition — Lucide is the canonical icon library. Sizing, color tokens, usage patterns, and a searchable icon grid.",
+    "Iconography in Cognition -- Lucide is the canonical icon library. Sizing, color tokens, usage patterns, and a searchable icon grid.",
 };
 
-const sizingCode = `<Bell className="size-4" />   {/* 16px — default, inline with text */}
-<Bell className="size-5" />   {/* 20px — medium */}
-<Bell className="size-6" />   {/* 24px — large */}`;
+const sizingCode = `<Bell className="size-4" />   {/* 16px -- default, inline with text */}
+<Bell className="size-5" />   {/* 20px -- medium */}
+<Bell className="size-6" />   {/* 24px -- large */}`;
 
-const colorCode = `{/* Icons inherit currentColor — set it with a text-* token */}
+const colorCode = `{/* Icons inherit currentColor -- set it with a text-* token */}
 <Heart className="size-5 text-text-default" />
 <Heart className="size-5 text-text-subtle" />
 <Heart className="size-5 text-text-primary" />
@@ -61,7 +61,7 @@ export default function IconsPage() {
       <h1 className="text-h1 text-text-default">Icons</h1>
       <p className="mt-3 max-w-2xl text-body text-text-default">
         Cognition uses one icon library, sized on the 4px scale and colored with
-        text tokens. Icons clarify actions and status — they don&apos;t decorate.
+        text tokens. Icons clarify actions and status -- they don&apos;t decorate.
       </p>
 
       {/* Library */}
@@ -72,7 +72,7 @@ export default function IconsPage() {
             <span className="font-semibold">Lucide is the only icon set.</span>{" "}
             Import every icon from{" "}
             <code className="font-mono">lucide-react</code>. Don&apos;t add a
-            second icon library or paste raw SVGs — one consistent set keeps the
+            second icon library or paste raw SVGs -- one consistent set keeps the
             visual language coherent and themeable.
           </p>
         </div>
@@ -116,7 +116,7 @@ export default function IconsPage() {
           pairs with body text; step up to{" "}
           <code className="font-mono">size-5</code> (20px) or{" "}
           <code className="font-mono">size-6</code> (24px) for emphasis. Stay on
-          the 4px scale — no arbitrary pixel sizes.
+          the 4px scale -- no arbitrary pixel sizes.
         </p>
       </section>
 
@@ -200,7 +200,7 @@ export default function IconsPage() {
           </div>
         </div>
         <p className="mt-2 text-small">
-          Components size icons for you — drop a bare icon into a{" "}
+          Components size icons for you -- drop a bare icon into a{" "}
           <code className="font-mono">Button</code> and it inherits the right
           size and color. An icon-only control always needs an{" "}
           <code className="font-mono">aria-label</code>.
@@ -229,7 +229,7 @@ export default function IconsPage() {
               Don&apos;t
             </div>
             <p className="text-small text-text-default">
-              Don&apos;t introduce a second icon library or drop in raw SVGs — it
+              Don&apos;t introduce a second icon library or drop in raw SVGs -- it
               fragments the visual language. And never color an icon with a
               hardcoded hex or a raw palette utility; icons take a{" "}
               <code className="font-mono">text-*</code> token like everything

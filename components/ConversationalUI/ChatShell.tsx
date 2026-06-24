@@ -32,7 +32,7 @@ export function ChatShell({
   const lastMessageRef = useRef<HTMLDivElement>(null);
 
   // When an assistant message arrives, bring the TOP of it to the top of the
-  // message container. Scoped strictly to the container's own scroll — we never
+  // message container. Scoped strictly to the container's own scroll -- we never
   // call scrollIntoView (it bubbles up and scrolls the page/window too); instead
   // we adjust the container's scrollTop by the gap between the message's top and
   // the container's top. For user messages, scroll the container to the bottom.

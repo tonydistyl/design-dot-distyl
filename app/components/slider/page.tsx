@@ -6,7 +6,7 @@ import { SliderDemo } from "./SliderDemos";
 export const metadata: Metadata = {
   title: "Slider",
   description:
-    "Slider component — an input where the user selects a value from within a given range. API matches fe-distillery components/ui/slider.tsx.",
+    "Slider component -- an input where the user selects a value from within a given range. API matches fe-distillery components/ui/slider.tsx.",
 };
 
 const props = [
@@ -50,7 +50,7 @@ const props = [
     name: "onValueChange",
     type: "(value: number[]) => void",
     def: "undefined",
-    desc: "Fires as the thumb moves — use it to drive a controlled value.",
+    desc: "Fires as the thumb moves -- use it to drive a controlled value.",
   },
 ] as const;
 
@@ -107,7 +107,7 @@ export default function SliderDocsPage() {
       <h1 className="text-h1 text-text-default">Slider</h1>
       <p className="mt-3 max-w-2xl text-body text-text-default">
         An input where the user selects a value from within a given range. Drag a
-        thumb along the track — use one thumb for a single value or two for a
+        thumb along the track -- use one thumb for a single value or two for a
         range, on either axis.
       </p>
 
@@ -118,7 +118,7 @@ export default function SliderDocsPage() {
           <SliderDemo />
         </div>
         <p className="mt-2 text-small">
-          Rendered with live Cognition tokens — the track, range fill, and thumb
+          Rendered with live Cognition tokens -- the track, range fill, and thumb
           remap on theme change, no <code className="font-mono">dark:</code>{" "}
           classes. Drag the thumb to update the value.
         </p>
@@ -238,7 +238,7 @@ export default function SliderDocsPage() {
               Don&apos;t
             </div>
             <p className="text-small text-text-default">
-              Don&apos;t use a slider when the exact value matters — a precise
+              Don&apos;t use a slider when the exact value matters -- a precise
               number is better typed into an <code className="font-mono">Input</code>.
               And don&apos;t hide the selected value; show it nearby so the user
               knows where they&apos;ve landed.
@@ -273,7 +273,7 @@ export default function SliderDocsPage() {
         <code className="font-mono text-text-default">
           fe-distillery/components/ui/slider.tsx
         </code>{" "}
-        — a single <code className="font-mono text-text-default">Slider</code>{" "}
+        -- a single <code className="font-mono text-text-default">Slider</code>{" "}
         built on Radix. The raw{" "}
         <code className="font-mono text-text-default">bg-primary</code> track and
         thumb are replaced with Cognition tokens, and thumb rendering is extended

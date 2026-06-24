@@ -7,8 +7,8 @@ import { cn } from "@/lib/utils";
 
 // API mirrors fe-distillery/components/ui/popover.tsx (Popover, PopoverTrigger,
 // PopoverAnchor, PopoverContent) on Radix. The bg-popover / popover-foreground /
-// border values are mapped to Cognition tokens — matching the project's
-// DropdownMenu/Dialog content — so it themes via [data-theme="dark"] with no
+// border values are mapped to Cognition tokens -- matching the project's
+// DropdownMenu/Dialog content -- so it themes via [data-theme="dark"] with no
 // dark: classes and no animation plugin.
 const Popover = PopoverPrimitive.Root;
 

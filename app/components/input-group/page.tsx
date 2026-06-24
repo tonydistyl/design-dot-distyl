@@ -7,7 +7,7 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Input Group",
   description:
-    "Input Group component — an Input with attached leading or trailing context: icons, prefixes, suffixes, or an action, inside one visual boundary.",
+    "Input Group component -- an Input with attached leading or trailing context: icons, prefixes, suffixes, or an action, inside one visual boundary.",
 };
 
 const props = [

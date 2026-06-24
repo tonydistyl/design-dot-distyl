@@ -5,7 +5,7 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Scroll Area",
   description:
-    "Scroll Area component — a bounded container that replaces native browser scrollbars with custom Cognition-styled ones.",
+    "Scroll Area component -- a bounded container that replaces native browser scrollbars with custom Cognition-styled ones.",
 };
 
 const tags = Array.from({ length: 24 }, (_, i) => `v1.2.0-beta.${50 - i}`);

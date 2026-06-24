@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 // / AvatarFallback). The raw bg-muted on the fallback is mapped to the Cognition
 // background-secondary token (with muted text), so it themes via
 // [data-theme="dark"] with no dark: classes. Size (sm/default/lg), status
-// badge, and avatar groups are compositions — size via className, see the docs.
+// badge, and avatar groups are compositions -- size via className, see the docs.
 const Avatar = React.forwardRef<
   React.ElementRef<typeof AvatarPrimitive.Root>,
   React.ComponentPropsWithoutRef<typeof AvatarPrimitive.Root>

@@ -18,14 +18,14 @@ const data = [
   { month: "Jun", desktop: 264, mobile: 140 },
 ];
 
-// Series colors come from the Cognition chart tokens (chart-1 through chart-5) — never hardcoded hex, and
+// Series colors come from the Cognition chart tokens (chart-1 through chart-5) -- never hardcoded hex, and
 // never feedback or primary tokens for neutral data series.
 const config = {
   desktop: { label: "Desktop", color: "var(--color-chart-1)" },
   mobile: { label: "Mobile", color: "var(--color-chart-2)" },
 } satisfies ChartConfig;
 
-// Shared base chart — each demo swaps in a differently configured tooltip.
+// Shared base chart -- each demo swaps in a differently configured tooltip.
 function BaseBar({ tooltip }: { tooltip: ReactElement }) {
   return (
     <ChartContainer config={config} className="h-[220px] w-full">

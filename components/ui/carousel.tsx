@@ -11,8 +11,8 @@ import { cn } from "@/lib/utils";
 
 // API mirrors fe-distillery/components/ui/carousel.tsx (Carousel + Content / Item
 // / Previous / Next, useCarousel, CarouselApi) on embla-carousel-react. It's
-// structural — the arrows are Button (variant outline), which already carries
-// Cognition tokens — so it themes via [data-theme="dark"] with no dark: classes.
+// structural -- the arrows are Button (variant outline), which already carries
+// Cognition tokens -- so it themes via [data-theme="dark"] with no dark: classes.
 type CarouselApi = UseEmblaCarouselType[1];
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>;
 type CarouselOptions = UseCarouselParameters[0];

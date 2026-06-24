@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Typography",
   description:
-    "Geist for all UI and body copy. Geist Mono for code and technical values only — the Cognition v1.2 type scale and weights.",
+    "Geist for all UI and body copy. Geist Mono for code and technical values only -- the Cognition v1.2 type scale and weights.",
 };
 
 // Live specimen rows. `sample` is the scale comparison line (drawn from the
@@ -15,7 +15,7 @@ const scale = [
   { label: "H4", px: 20, weight: 600, weightLabel: "Semibold", sample: "Token swap, skin swap", prose: "Semantic colors" },
   { label: "Lead", px: 18, weight: 600, weightLabel: "Semibold", sample: "The shared foundation every product sits on", prose: "One source of truth." },
   { label: "Body", px: 16, weight: 400, weightLabel: "Regular", sample: "A design system is not a deliverable. It is infrastructure.", prose: "The quick brown fox jumps over the lazy dog." },
-  { label: "Small", px: 14, weight: 500, weightLabel: "Medium", sample: "Primitives, semantic, component — never crossed.", prose: "Secondary copy and helper text." },
+  { label: "Small", px: 14, weight: 500, weightLabel: "Medium", sample: "Primitives, semantic, component -- never crossed.", prose: "Secondary copy and helper text." },
   { label: "Caption", px: 12, weight: 400, weightLabel: "Regular", sample: "Cognition v1.2 · maintained by Research & Design", prose: "Captions, labels, metadata." },
 ];
 
@@ -38,7 +38,7 @@ export default function TypographyPage() {
         code and technical values only.
       </p>
 
-      {/* On-this-page — desktop uses the sidebar subnav, so this is mobile-only */}
+      {/* On-this-page -- desktop uses the sidebar subnav, so this is mobile-only */}
       <nav className="mt-6 flex flex-wrap gap-2 md:hidden">
         {[
           { id: "scale", title: "Type scale" },
@@ -157,7 +157,7 @@ export default function TypographyPage() {
           <article className="mx-auto max-w-2xl">
             <h1 className="text-h1 text-text-default">Building Cognition</h1>
             <p className="text-body mt-4">
-              Cognition is Distyl AI&apos;s design system — the shared foundation
+              Cognition is Distyl AI&apos;s design system -- the shared foundation
               every product implementation sits on. It exists so engineers ship
               faster, interfaces stay consistent, and the cost of a rebrand is one
               token file, not a codebase.
@@ -171,16 +171,16 @@ export default function TypographyPage() {
             </p>
             <blockquote className="text-blockquote mt-6 border-l-2 border-border-default pl-4 text-text-subtle">
               A design system is not a deliverable. It is infrastructure. It earns
-              its place the same way a database does — by making everything built
+              its place the same way a database does -- by making everything built
               on top of it faster and more reliable.
             </blockquote>
 
             <h2 className="text-h2 mt-10 text-text-default">Three layers</h2>
             <ol className="text-list mt-4 list-decimal pl-6 text-text-default">
-              <li>Primitives — raw values, never used directly</li>
-              <li>Semantic — purpose-named aliases, where dark mode lives</li>
+              <li>Primitives -- raw values, never used directly</li>
+              <li>Semantic -- purpose-named aliases, where dark mode lives</li>
               <li>
-                Component — scoped tokens referencing semantic, never primitives
+                Component -- scoped tokens referencing semantic, never primitives
               </li>
             </ol>
 
@@ -249,7 +249,7 @@ export default function TypographyPage() {
         </h3>
         <p className="mb-6 text-small">
           <strong className="font-bold text-text-default">Geist Mono</strong> for
-          code and technical values only — never for prose.
+          code and technical values only -- never for prose.
         </p>
 
         <div className="rounded-lg border border-border-default bg-background-inverse p-5">
@@ -280,7 +280,7 @@ export default { system, tokens, theme };`}
 
       <footer className="mt-16 border-t border-border-default pt-6 text-sm text-text-subtle">
         Type styles are the Cognition v1.2 named text styles in{" "}
-        <code className="font-mono text-text-default">globals.css</code> — set the
+        <code className="font-mono text-text-default">globals.css</code> -- set the
         type with the <code className="font-mono text-text-default">text-*</code>{" "}
         class, the color with a token. The full token scale lives under{" "}
         <a

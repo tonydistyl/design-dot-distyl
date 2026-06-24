@@ -7,7 +7,7 @@ import { exampleDomains } from "./examples";
 export const metadata: Metadata = {
   title: "Graph Canvas Node",
   description:
-    "A compact card representing a graph entity — a colored domain header over an entity name and metadata. Generic and reusable; the consuming app supplies its own taxonomy and colors.",
+    "A compact card representing a graph entity -- a colored domain header over an entity name and metadata. Generic and reusable; the consuming app supplies its own taxonomy and colors.",
 };
 
 const variants = [
@@ -54,7 +54,7 @@ const props = [
     name: "domainColor",
     type: "{ background: string; text: string }",
     def: "required",
-    desc: "Header band background and text colors. Supplied by the consuming app — the component has no taxonomy.",
+    desc: "Header band background and text colors. Supplied by the consuming app -- the component has no taxonomy.",
   },
   {
     name: "name",
@@ -169,7 +169,7 @@ export default function GraphCanvasNodePage() {
       <p className="mb-2 text-xs font-normal text-text-subtle">Components</p>
       <h1 className="text-h1 text-text-default">Graph Canvas Node</h1>
       <p className="mt-3 max-w-2xl text-body text-text-default">
-        A compact card representing a graph entity — a colored domain header over
+        A compact card representing a graph entity -- a colored domain header over
         an entity name with attribute and edge metadata. Used in canvas and
         explorer views to display categorized nodes.
       </p>
@@ -177,7 +177,7 @@ export default function GraphCanvasNodePage() {
       <div className="mt-4 rounded-lg border border-border-default bg-background-accent p-4">
         <p className="text-small text-text-default">
           <span className="font-semibold">Generic &amp; reusable.</span> The
-          component has no built-in taxonomy — the consuming app passes{" "}
+          component has no built-in taxonomy -- the consuming app passes{" "}
           <code className="font-mono">domainLabel</code> and{" "}
           <code className="font-mono">domainColor</code> directly. The Party /
           Risk / Evidence colors below are example values from Context Explorer,
@@ -192,7 +192,7 @@ export default function GraphCanvasNodePage() {
           <GraphCanvasNodeInteractive />
         </div>
         <p className="mt-2 text-small">
-          Rendered with live Cognition tokens — the body, border, and active ring
+          Rendered with live Cognition tokens -- the body, border, and active ring
           remap on theme change, no <code className="font-mono">dark:</code>{" "}
           classes. The header color is caller-supplied.
         </p>
@@ -214,7 +214,7 @@ export default function GraphCanvasNodePage() {
           ))}
         </div>
         <p className="mt-2 text-small">
-          One component, three example domains — the header band is driven
+          One component, three example domains -- the header band is driven
           entirely by <code className="font-mono">domainColor</code>. Node counts
           show the K/M formatting: <code className="font-mono">184.2K</code>,{" "}
           <code className="font-mono">1.2M</code>,{" "}
@@ -277,7 +277,7 @@ export default function GraphCanvasNodePage() {
               Don&apos;t
             </div>
             <p className="text-small text-text-default">
-              Don&apos;t bake a domain taxonomy or color map into the component —
+              Don&apos;t bake a domain taxonomy or color map into the component --
               pass <code className="font-mono">domainColor</code> from the
               consuming app so each product owns its own categories. And
               don&apos;t use it for non-entity content; it&apos;s a graph node,
@@ -304,7 +304,7 @@ export default function GraphCanvasNodePage() {
       </section>
 
       <footer className="mt-16 border-t border-border-default pt-6 text-small">
-        Distyl-specific — a generic graph-entity card with no built-in taxonomy.
+        Distyl-specific -- a generic graph-entity card with no built-in taxonomy.
         Domain colors are caller-supplied via{" "}
         <code className="font-mono text-text-default">domainColor</code>; the
         example Party / Risk / Evidence values are illustrative, not canonical.

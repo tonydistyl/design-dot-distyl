@@ -9,7 +9,7 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Resizable",
   description:
-    "Resizable component — panels with drag handles for split-pane layouts, editors, and any surface where the user controls panel sizing.",
+    "Resizable component -- panels with drag handles for split-pane layouts, editors, and any surface where the user controls panel sizing.",
 };
 
 const api = [

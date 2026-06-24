@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 // API mirrors fe-distillery/components/ui/alert.tsx (Alert / AlertTitle /
 // AlertDescription, variant axis default|destructive|warning). The fix: the
 // source file ships dark: class violations (border-destructive
-// dark:border-destructive, etc.) — here every color is a Cognition v1.2
+// dark:border-destructive, etc.) -- here every color is a Cognition v1.2
 // semantic token, so the alert themes via [data-theme="dark"] with NO dark:
 // classes. Destructive recolors title + description; warning tints the surface.
 const alertVariants = cva(

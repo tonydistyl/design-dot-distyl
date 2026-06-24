@@ -15,7 +15,7 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 
-// Deterministic bar heights for the statistic chart (no Math.random — keeps
+// Deterministic bar heights for the statistic chart (no Math.random -- keeps
 // server/client render stable).
 const bars = [40, 32, 48, 36, 56, 44, 64, 52, 72, 60, 80, 68, 56, 44];
 
@@ -147,7 +147,7 @@ export function TextDrawer() {
             <p>
               A drawer slides content up from the bottom of the screen, keeping
               the page behind it in view. It&apos;s well suited to focused,
-              touch-friendly tasks on small screens — quick edits, confirmations,
+              touch-friendly tasks on small screens -- quick edits, confirmations,
               or a longer read like this one.
             </p>
             <p className="mt-3">
@@ -203,7 +203,7 @@ export function NonDismissibleDrawer() {
           <DrawerHeader>
             <DrawerTitle>Confirm to continue</DrawerTitle>
             <DrawerDescription>
-              The overlay and drag are disabled — only the button closes it.
+              The overlay and drag are disabled -- only the button closes it.
             </DrawerDescription>
           </DrawerHeader>
           <DrawerFooter>
