@@ -9,14 +9,22 @@ export default function HomePage() {
       </p>
 
       <h1 className="text-h1 tracking-[-0.025em] text-text-default">
-        The design system that makes everything <span className="text-text-primary">look and behave like Distyl</span>
+        Distyl&apos;s design <span className="text-text-primary">foundation</span>.
       </h1>
 
       <p className="mt-4 max-w-2xl text-body text-text-default">
-        Cognition is Distyl&apos;s design system — the single set of rules for how every
+        Cognition is Distyl&apos;s design system, the single source of rules for how every
         frontend surface looks, responds, and adapts. Every color, spacing step,
         radius, and typographic choice is a named token. Components consume
         tokens, not raw values. Brand and dark mode come for free.
+      </p>
+
+      <p className="mt-4 max-w-2xl text-body text-text-default">
+        Momentum. Durability. Elevation.
+      </p>
+
+      <p className="mt-4 max-w-2xl text-body text-text-default">
+        Three principles. Three phases: Belief, Truth, Coherence.
       </p>
 
       <div className="mt-8 flex flex-wrap gap-3">
