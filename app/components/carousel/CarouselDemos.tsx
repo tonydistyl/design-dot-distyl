@@ -83,7 +83,7 @@ export function MultiCarousel({ per }: { per: 2 | 3 }) {
   );
 }
 
-// Vertical axis — content gets a fixed height; items size as a fraction of it.
+// Vertical axis -- content gets a fixed height; items size as a fraction of it.
 export function VerticalCarousel() {
   return (
     <div className="w-full max-w-[15rem]">

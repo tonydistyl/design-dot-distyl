@@ -17,7 +17,7 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Alert Dialog",
   description:
-    "Alert Dialog component — a modal that interrupts the user with a critical, irreversible decision and blocks interaction until confirmed or cancelled.",
+    "Alert Dialog component -- a modal that interrupts the user with a critical, irreversible decision and blocks interaction until confirmed or cancelled.",
 };
 
 const composition = [

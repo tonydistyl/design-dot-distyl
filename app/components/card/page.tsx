@@ -14,10 +14,10 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Card",
   description:
-    "Card component — a surface that groups a header, content, and footer. API matches fe-distillery components/ui/card.tsx.",
+    "Card component -- a surface that groups a header, content, and footer. API matches fe-distillery components/ui/card.tsx.",
 };
 
-// Illustrative input — the design system has no Input component yet, so the
+// Illustrative input -- the design system has no Input component yet, so the
 // playground renders the field shells with tokens to match the Cognition Input.
 function FieldShell({ label, value }: { label: string; value: string }) {
   return (
@@ -114,7 +114,7 @@ export default function CardPage() {
           </Card>
         </div>
         <p className="mt-2 text-small">
-          Rendered with live Cognition tokens — toggle the theme and the surface,
+          Rendered with live Cognition tokens -- toggle the theme and the surface,
           border, and footer tint remap, no{" "}
           <code className="font-mono">dark:</code> classes.
         </p>
@@ -146,7 +146,7 @@ export default function CardPage() {
         <p className="mt-2 text-small">
           <code className="font-mono">CardHeader</code>,{" "}
           <code className="font-mono">CardContent</code>, and{" "}
-          <code className="font-mono">CardFooter</code> are all optional — compose
+          <code className="font-mono">CardFooter</code> are all optional -- compose
           only the parts you need. The footer carries the top border and subtle
           tint automatically.
         </p>
@@ -219,7 +219,7 @@ export default function CardPage() {
               Don&apos;t reach for a Card as a generic{" "}
               <code className="font-mono">div</code> wrapper or hardcode{" "}
               <code className="font-mono">bg-white</code> /{" "}
-              <code className="font-mono">border-gray-200</code> on it — that
+              <code className="font-mono">border-gray-200</code> on it -- that
               breaks dark mode and the rebrand.
             </p>
           </div>
@@ -242,7 +242,7 @@ export default function CardPage() {
         />
         <p className="mt-2 text-small">
           Drop-in ready. The surface, border, shadow, and footer tint are baked
-          into the component as Cognition tokens — no{" "}
+          into the component as Cognition tokens -- no{" "}
           <code className="font-mono">className</code> needed for standard usage.
         </p>
       </section>
@@ -252,7 +252,7 @@ export default function CardPage() {
         <code className="font-mono text-text-default">
           fe-distillery/components/ui/card.tsx
         </code>{" "}
-        — <code className="font-mono text-text-default">Card</code>,{" "}
+        -- <code className="font-mono text-text-default">Card</code>,{" "}
         <code className="font-mono text-text-default">CardHeader</code>,{" "}
         <code className="font-mono text-text-default">CardTitle</code>,{" "}
         <code className="font-mono text-text-default">CardDescription</code>,{" "}

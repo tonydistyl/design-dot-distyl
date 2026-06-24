@@ -5,7 +5,7 @@ import { BasicPie, DonutPie, DonutTextPie, LegendPie } from "./PieChartDemos";
 export const metadata: Metadata = {
   title: "Pie Chart",
   description:
-    "Pie Chart — a Recharts pie/donut chart wrapped in the Cognition Chart primitives, with token-driven slice colors and tooltips.",
+    "Pie Chart -- a Recharts pie/donut chart wrapped in the Cognition Chart primitives, with token-driven slice colors and tooltips.",
 };
 
 const parts = [
@@ -50,7 +50,7 @@ const donutCode = `<Pie data={chartData} dataKey="visitors" nameKey="source" inn
 
 const donutTextCode = `<Pie data={chartData} dataKey="visitors" nameKey="source" innerRadius={60}>
   <Label content={({ viewBox }) => (
-    /* center <text>: total on top, label beneath — fill via fill-text-* tokens */
+    /* center <text>: total on top, label beneath -- fill via fill-text-* tokens */
   )} />
 </Pie>`;
 
@@ -124,7 +124,7 @@ export default function PieChartDocsPage() {
           <DonutTextPie />
         </div>
         <p className="mt-2 text-small">
-          Rendered with live Cognition tokens — slices and the center label remap
+          Rendered with live Cognition tokens -- slices and the center label remap
           on theme change, no <code className="font-mono">dark:</code> classes.
           Each slice&apos;s color is injected from the config as a{" "}
           <code className="font-mono">--color-*</code> CSS var.
@@ -197,9 +197,9 @@ export default function PieChartDocsPage() {
           </div>
         </div>
         <p className="mt-2 text-small">
-          The Recharts pieces — <code className="font-mono">PieChart</code>,{" "}
+          The Recharts pieces -- <code className="font-mono">PieChart</code>,{" "}
           <code className="font-mono">Pie</code>,{" "}
-          <code className="font-mono">Label</code> — are used directly inside{" "}
+          <code className="font-mono">Label</code> -- are used directly inside{" "}
           <code className="font-mono">ChartContainer</code>.
         </p>
       </section>
@@ -213,9 +213,9 @@ export default function PieChartDocsPage() {
               Don&apos;t
             </div>
             <p className="text-small text-text-default">
-              Don&apos;t hardcode slice colors with a hex or raw palette utility —
+              Don&apos;t hardcode slice colors with a hex or raw palette utility --
               drive them from the config with token vars so they theme. Don&apos;t
-              use the brand primary or feedback tokens for a data slice — those
+              use the brand primary or feedback tokens for a data slice -- those
               carry meaning (brand, status); use the chart-1…chart-5 tokens, in
               order. And don&apos;t split a pie into many tiny slices; past five
               or six, use a bar chart.
@@ -251,7 +251,7 @@ const config = {
         <code className="font-mono text-text-default">
           fe-distillery/components/ui/chart.tsx
         </code>{" "}
-        — <code className="font-mono text-text-default">ChartContainer</code>,{" "}
+        -- <code className="font-mono text-text-default">ChartContainer</code>,{" "}
         <code className="font-mono text-text-default">ChartTooltip</code>/
         <code className="font-mono text-text-default">Content</code>,{" "}
         <code className="font-mono text-text-default">ChartLegend</code>/

@@ -8,7 +8,7 @@ interface EmptyStateProps {
 
 const chips = [
   "What token do I use for brand color?",
-  "Tag vs Badge — what's the difference?",
+  "Tag vs Badge -- what's the difference?",
   "How does dark mode work?",
   "Show me a compliant Button example",
 ];

@@ -6,7 +6,7 @@ import { Label } from "@/components/ui/label";
 import { cn } from "@/lib/utils";
 
 // A Cognition higher-order form component. Field composes a Label, a control
-// (passed as children — Input, Select, Textarea, etc.), and optional helper or
+// (passed as children -- Input, Select, Textarea, etc.), and optional helper or
 // error text into one labelled, accessible unit. It does not replace those
 // primitives; it wires them together: the label's htmlFor, the control's id,
 // aria-invalid, and aria-describedby are all linked. Colors are Cognition

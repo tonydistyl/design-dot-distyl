@@ -5,7 +5,7 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Button",
   description:
-    "Button component — variants, states, usage, and a drop-in snippet. API matches fe-distillery components/ui/button.tsx.",
+    "Button component -- variants, states, usage, and a drop-in snippet. API matches fe-distillery components/ui/button.tsx.",
 };
 
 const variants = [
@@ -66,7 +66,7 @@ export default function ButtonPage() {
           <Button>Button</Button>
         </div>
         <p className="mt-2 text-small">
-          Rendered with live Cognition tokens — toggle the theme and it remaps,
+          Rendered with live Cognition tokens -- toggle the theme and it remaps,
           no <code className="font-mono">dark:</code> classes.
         </p>
       </section>
@@ -127,7 +127,7 @@ export default function ButtonPage() {
           </div>
         </div>
         <p className="mt-2 text-small">
-          <code className="font-mono">loading</code> is a built-in prop — it
+          <code className="font-mono">loading</code> is a built-in prop -- it
           shows a spinner and disables the button. Don&apos;t add an external
           spinner.
         </p>
@@ -178,7 +178,7 @@ export default function ButtonPage() {
             </div>
             <p className="text-small text-text-default">
               Don&apos;t use a Button as a non-interactive label, category, or
-              status pill — that&apos;s a Tag or a Badge.
+              status pill -- that&apos;s a Tag or a Badge.
             </p>
           </div>
           <div className="rounded-lg border border-border-success bg-background-success p-5">
@@ -200,7 +200,7 @@ export default function ButtonPage() {
         />
         <p className="mt-2 text-small">
           Drop-in ready. Variants and Cognition tokens are baked into the
-          component — no <code className="font-mono">className</code> needed for
+          component -- no <code className="font-mono">className</code> needed for
           standard usage.
         </p>
       </section>
@@ -210,7 +210,7 @@ export default function ButtonPage() {
         <code className="font-mono text-text-default">
           fe-distillery/components/ui/button.tsx
         </code>{" "}
-        — variants, sizes, and props (
+        -- variants, sizes, and props (
         <code className="font-mono text-text-default">asChild</code>,{" "}
         <code className="font-mono text-text-default">loading</code>,{" "}
         <code className="font-mono text-text-default">loadingText</code>,{" "}

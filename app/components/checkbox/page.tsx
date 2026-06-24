@@ -5,7 +5,7 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Checkbox",
   description:
-    "Checkbox component — a control that toggles between checked, unchecked, and indeterminate. API matches fe-distillery components/ui/checkbox.tsx.",
+    "Checkbox component -- a control that toggles between checked, unchecked, and indeterminate. API matches fe-distillery components/ui/checkbox.tsx.",
 };
 
 const states = [
@@ -60,7 +60,7 @@ export default function CheckboxPage() {
           </label>
         </div>
         <p className="mt-2 text-small">
-          Rendered with live Cognition tokens — the box, check, and focus ring
+          Rendered with live Cognition tokens -- the box, check, and focus ring
           remap on theme change, no <code className="font-mono">dark:</code>{" "}
           classes. Clicking the label toggles it.
         </p>
@@ -90,7 +90,7 @@ export default function CheckboxPage() {
         </div>
         <p className="mt-2 text-small">
           <code className="font-mono">indeterminate</code> is a third visual
-          state for &ldquo;some but not all&rdquo; — set{" "}
+          state for &ldquo;some but not all&rdquo; -- set{" "}
           <code className="font-mono">checked=&quot;indeterminate&quot;</code>{" "}
           (e.g. a select-all header).
         </p>
@@ -164,7 +164,7 @@ export default function CheckboxPage() {
           className="rounded-lg border border-border-default bg-background-subtle"
         />
         <p className="mt-2 text-small">
-          Built on Radix Checkbox — keyboard toggle and the indeterminate state
+          Built on Radix Checkbox -- keyboard toggle and the indeterminate state
           come for free. Pass <code className="font-mono">checked</code> /{" "}
           <code className="font-mono">onCheckedChange</code> for controlled use.
         </p>

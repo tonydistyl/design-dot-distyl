@@ -14,7 +14,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 
 // Body content sits between DialogHeader and DialogFooter, wrapped in px-4 pb-4
-// — the header and footer own their padding so the footer can be full-bleed.
+// -- the header and footer own their padding so the footer can be full-bleed.
 
 export function ShareLinkDialog() {
   return (

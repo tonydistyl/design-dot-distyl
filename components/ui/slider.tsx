@@ -9,8 +9,8 @@ import { cn } from "@/lib/utils";
 // bg-primary track/range, border-primary thumb, and bg-background are mapped to
 // Cognition tokens (focus ring matches the project's Input), so it themes via
 // [data-theme="dark"] with no dark: classes. Extended to the canonical shadcn
-// form — thumbs render from the value array (so range works) and the track is
-// orientation-aware (so vertical works) — both shown in the Figma.
+// form -- thumbs render from the value array (so range works) and the track is
+// orientation-aware (so vertical works) -- both shown in the Figma.
 const Slider = React.forwardRef<
   React.ElementRef<typeof SliderPrimitive.Root>,
   React.ComponentPropsWithoutRef<typeof SliderPrimitive.Root>

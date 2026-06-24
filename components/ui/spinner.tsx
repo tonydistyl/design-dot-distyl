@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 // SVG spins via a single CSS rotate animation (Tailwind's animate-spin is
 // rotate(0deg) -> rotate(360deg), linear, infinite) about its center, so the
 // loop is seamless with no stutter on reset. The arc is a static
-// stroke-dasharray — the path geometry is never animated. The track maps to the
+// stroke-dasharray -- the path geometry is never animated. The track maps to the
 // border-default token and the arc to background-primary, so both remap in dark
 // mode with no dark: classes.
 const spinnerVariants = cva("inline-block shrink-0", {
@@ -44,7 +44,7 @@ const Spinner = React.forwardRef<HTMLSpanElement, SpinnerProps>(
         aria-hidden="true"
         className="size-full origin-center animate-spin"
       >
-        {/* Full track — rotationally symmetric, so its spin is invisible. */}
+        {/* Full track -- rotationally symmetric, so its spin is invisible. */}
         <circle
           cx="12"
           cy="12"
@@ -52,7 +52,7 @@ const Spinner = React.forwardRef<HTMLSpanElement, SpinnerProps>(
           strokeWidth="2.5"
           className="stroke-border-default"
         />
-        {/* Rotating arc — static dasharray draws the sweep; only the SVG rotates. */}
+        {/* Rotating arc -- static dasharray draws the sweep; only the SVG rotates. */}
         <circle
           cx="12"
           cy="12"

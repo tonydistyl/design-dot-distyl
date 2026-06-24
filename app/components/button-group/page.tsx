@@ -13,7 +13,7 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Button Group",
   description:
-    "Button Group component — related buttons joined into one control, with a shared edge and radius only on the outermost corners.",
+    "Button Group component -- related buttons joined into one control, with a shared edge and radius only on the outermost corners.",
 };
 
 const props = [

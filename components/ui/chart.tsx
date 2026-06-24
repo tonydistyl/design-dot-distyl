@@ -9,7 +9,7 @@ import { cn } from "@/lib/utils";
 // / ChartTooltipContent, ChartLegend / ChartLegendContent, ChartStyle,
 // ChartConfig) on Recharts. The muted-foreground / border / muted / background
 // classes are mapped to Cognition tokens, and the dark theme selector is the
-// project's [data-theme="dark"] — so charts theme with no dark: classes. Series
+// project's [data-theme="dark"] -- so charts theme with no dark: classes. Series
 // colors come from the config (use Cognition token vars, never hardcoded hex).
 
 // Format: { THEME_NAME: CSS_SELECTOR }

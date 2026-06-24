@@ -5,7 +5,7 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Aspect Ratio",
   description:
-    "Aspect Ratio component — constrains content to a desired width-to-height ratio. API matches fe-distillery components/ui/aspect-ratio.tsx.",
+    "Aspect Ratio component -- constrains content to a desired width-to-height ratio. API matches fe-distillery components/ui/aspect-ratio.tsx.",
 };
 
 const ratios = [
@@ -20,7 +20,7 @@ const props = [
     name: "ratio",
     type: "number",
     def: "1",
-    desc: "Width divided by height — e.g. 16 / 9 for widescreen, 1 for a square.",
+    desc: "Width divided by height -- e.g. 16 / 9 for widescreen, 1 for a square.",
   },
   {
     name: "children",
@@ -32,7 +32,7 @@ const props = [
     name: "className",
     type: "string",
     def: "undefined",
-    desc: "Applied to the ratio box — radius, background, or overflow-hidden for media.",
+    desc: "Applied to the ratio box -- radius, background, or overflow-hidden for media.",
   },
 ] as const;
 
@@ -87,7 +87,7 @@ export default function AspectRatioDocsPage() {
           </div>
         </div>
         <p className="mt-2 text-small">
-          Rendered with live Cognition tokens — the placeholder surface remaps on
+          Rendered with live Cognition tokens -- the placeholder surface remaps on
           theme change, no <code className="font-mono">dark:</code> classes. The
           box keeps its ratio as its width changes.
         </p>
@@ -204,7 +204,7 @@ export default function AspectRatioDocsPage() {
               Don&apos;t
             </div>
             <p className="text-small text-text-default">
-              Don&apos;t set a fixed height on the content to fake a ratio — it
+              Don&apos;t set a fixed height on the content to fake a ratio -- it
               breaks when the width changes. And don&apos;t wrap text in one;
               Aspect Ratio is for media and fixed-shape blocks, not flowing copy.
             </p>
@@ -235,7 +235,7 @@ export default function AspectRatioDocsPage() {
         <code className="font-mono text-text-default">
           fe-distillery/components/ui/aspect-ratio.tsx
         </code>{" "}
-        — a re-export of the Radix{" "}
+        -- a re-export of the Radix{" "}
         <code className="font-mono text-text-default">AspectRatio</code> root.
         It&apos;s a layout primitive with no color, so there are no tokens to map.
       </footer>

@@ -22,7 +22,7 @@ export function slug(text: string): string {
     .replace(/^-+|-+$/g, "");
 }
 
-// Styled Markdown — every element maps to Cognition semantic tokens, so the
+// Styled Markdown -- every element maps to Cognition semantic tokens, so the
 // rendered docs are themselves a demonstration of the system (and dark mode
 // works with zero dark: classes).
 export function Markdown({ content }: { content: string }) {

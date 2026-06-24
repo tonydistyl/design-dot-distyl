@@ -51,7 +51,7 @@ export default function HomePage() {
           },
           {
             title: "Token layer, not dark classes",
-            body: "Themes remap [data-theme=\"dark\"] on <html>. No dark: classes anywhere — the token layer does all the work.",
+            body: "Themes remap [data-theme=\"dark\"] on <html>. No dark: classes anywhere -- the token layer does all the work.",
           },
           {
             title: "Right component, every time",
@@ -104,7 +104,7 @@ export default function HomePage() {
           {
             href: "/audit",
             title: "Codebase Audit",
-            body: "Where the three Distyl repos stand against Cognition v1.2 today — and what blocks the rebrand.",
+            body: "Where the three Distyl repos stand against Cognition v1.2 today -- and what blocks the rebrand.",
           },
         ].map((item) => (
           <Link

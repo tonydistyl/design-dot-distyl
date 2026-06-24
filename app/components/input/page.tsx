@@ -5,7 +5,7 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Input",
   description:
-    "Input component — a form input field or a component that looks like an input field. API matches fe-distillery components/ui/input.tsx.",
+    "Input component -- a form input field or a component that looks like an input field. API matches fe-distillery components/ui/input.tsx.",
 };
 
 const states = [
@@ -70,7 +70,7 @@ export default function InputPage() {
           <Input placeholder="Enter text" className="max-w-sm" />
         </div>
         <p className="mt-2 text-small">
-          Rendered with live Cognition tokens — the surface, border, and focus
+          Rendered with live Cognition tokens -- the surface, border, and focus
           ring remap on theme change, no{" "}
           <code className="font-mono">dark:</code> classes.
         </p>
@@ -100,8 +100,8 @@ export default function InputPage() {
         </div>
         <p className="mt-2 text-small">
           Invalid styling is driven by the native{" "}
-          <code className="font-mono">aria-invalid</code> attribute — no separate
-          prop — so it stays in sync with form validation and screen readers.
+          <code className="font-mono">aria-invalid</code> attribute -- no separate
+          prop -- so it stays in sync with form validation and screen readers.
         </p>
       </section>
 
@@ -149,7 +149,7 @@ export default function InputPage() {
             </div>
             <div className="divide-y divide-border-default">
               {[
-                { name: "type", type: "string", def: "\"text\"", desc: "Native input type — text, email, password, number." },
+                { name: "type", type: "string", def: "\"text\"", desc: "Native input type -- text, email, password, number." },
                 { name: "placeholder", type: "string", def: "undefined", desc: "Hint shown while the field is empty." },
                 { name: "value / defaultValue", type: "string", def: "undefined", desc: "Controlled / uncontrolled value." },
                 { name: "disabled", type: "boolean", def: "false", desc: "Dims and blocks input." },
@@ -181,7 +181,7 @@ export default function InputPage() {
             <p className="text-small text-text-default">
               Don&apos;t use an Input as a read-only label or hardcode{" "}
               <code className="font-mono">border-gray-300</code> /{" "}
-              <code className="font-mono">bg-white</code> on it — that breaks dark
+              <code className="font-mono">bg-white</code> on it -- that breaks dark
               mode and the rebrand.
             </p>
           </div>
@@ -217,7 +217,7 @@ export default function InputPage() {
         <code className="font-mono text-text-default">
           fe-distillery/components/ui/input.tsx
         </code>{" "}
-        — a single <code className="font-mono text-text-default">Input</code> that
+        -- a single <code className="font-mono text-text-default">Input</code> that
         forwards its ref and spreads{" "}
         <code className="font-mono text-text-default">
           React.ComponentProps&lt;&quot;input&quot;&gt;

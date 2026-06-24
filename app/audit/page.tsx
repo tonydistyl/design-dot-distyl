@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     "Cognition v1.2 design system audit across fe-distillery, distillery, and distillery-platform.",
 };
 
-// Every headline number is a critical finding — all red.
+// Every headline number is a critical finding -- all red.
 const headline = [
   { stat: "344", label: "Hardcoded hex in fe-distillery" },
   { stat: "2,061", label: "Raw Tailwind color utilities" },
@@ -25,7 +25,7 @@ function parseAudit(md: string): { meta: string[]; sections: AuditSection[] } {
 
   for (const chunk of chunks) {
     const m = chunk.match(/^## (.+?)\n([\s\S]*)$/);
-    if (!m) continue; // the leading "# Title" block — skip
+    if (!m) continue; // the leading "# Title" block -- skip
     const title = m[1].trim();
     const body = m[2].replace(/\n*---\s*$/g, "").trim();
 
@@ -103,18 +103,18 @@ export default async function AuditPage() {
         ))}
       </div>
 
-      {/* BLUF — the stop */}
+      {/* BLUF -- the stop */}
       <div className="mt-6 rounded-lg border border-border-default bg-background-accent p-5">
         <p className="text-body">
           <strong className="font-bold">BLUF:</strong> the codebase is not
           yet ready to receive Cognition v1.2 values. The brand purple{" "}
           <code className="font-mono text-text-default">#5D4EE7</code> is already
           present, so a clean rename plus a dark-mode reshape preserves brand
-          exactly — but the rename is full-stack.
+          exactly -- but the rename is full-stack.
         </p>
       </div>
 
-      {/* Detailed findings — collapsed by default */}
+      {/* Detailed findings -- collapsed by default */}
       <h3 className="mt-12 mb-4 text-h3 text-text-default">
         Detailed findings
       </h3>

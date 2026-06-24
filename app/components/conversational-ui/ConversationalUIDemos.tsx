@@ -19,7 +19,7 @@ const panelClass =
 export function VariantShell() {
   const mockSend = async () => {
     await new Promise((r) => setTimeout(r, 600));
-    return "This response came from a custom API layer — not /api/chat. Tower and Platform use this pattern to own their own model calls.";
+    return "This response came from a custom API layer -- not /api/chat. Tower and Platform use this pattern to own their own model calls.";
   };
 
   return (

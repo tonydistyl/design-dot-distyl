@@ -14,7 +14,7 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Table",
   description:
-    "Table component — a lightweight HTML table primitive for simple, static, structured data with no built-in interactivity.",
+    "Table component -- a lightweight HTML table primitive for simple, static, structured data with no built-in interactivity.",
 };
 
 const invoices = [

@@ -10,7 +10,7 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Radio Group",
   description:
-    "Radio Group component — a single-select control where exactly one option can be chosen from a visible set.",
+    "Radio Group component -- a single-select control where exactly one option can be chosen from a visible set.",
 };
 
 const props = [

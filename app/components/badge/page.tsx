@@ -5,7 +5,7 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Badge",
   description:
-    "Badge component — semantic status colors on Cognition tokens. API matches fe-distillery components/ui/badge.tsx.",
+    "Badge component -- semantic status colors on Cognition tokens. API matches fe-distillery components/ui/badge.tsx.",
 };
 
 const colors = [
@@ -54,7 +54,7 @@ export default function BadgePage() {
           <Badge color="success">Active</Badge>
         </div>
         <p className="mt-2 text-small">
-          Every color maps to a Cognition feedback token — no raw Tailwind
+          Every color maps to a Cognition feedback token -- no raw Tailwind
           palette utilities (the fix for badge.tsx&apos;s 30+ baked-in variants).
         </p>
       </section>
@@ -82,7 +82,7 @@ export default function BadgePage() {
           ))}
         </div>
         <p className="mt-2 text-small">
-          Semantic intent is the <code className="font-mono">color</code> prop —
+          Semantic intent is the <code className="font-mono">color</code> prop --
           the error value is <code className="font-mono">destructive</code>{" "}
           (Cognition&apos;s danger feedback token).
         </p>
@@ -101,7 +101,7 @@ export default function BadgePage() {
             </div>
             <div className="divide-y divide-border-default">
               {[
-                { name: "variant", type: "\"default\" | \"secondary\" | \"outline\"", def: "\"default\"", desc: "Fill style — solid, tonal, or bordered." },
+                { name: "variant", type: "\"default\" | \"secondary\" | \"outline\"", def: "\"default\"", desc: "Fill style -- solid, tonal, or bordered." },
                 { name: "color", type: "\"default\" | \"primary\" | \"destructive\" | \"success\" | \"warning\" | \"info\"", def: "\"default\"", desc: "Semantic color, combined with the variant." },
                 { name: "size", type: "\"default\" | \"sm\"", def: "\"default\"", desc: "Standard or compact." },
                 { name: "children", type: "ReactNode", def: "required", desc: "Label text; a leading icon is sized automatically." },
@@ -133,7 +133,7 @@ export default function BadgePage() {
             </div>
             <p className="text-small text-text-default">
               Don&apos;t fake a status with a pill-shaped Button or a raw styled
-              span — that&apos;s what a Badge is for.
+              span -- that&apos;s what a Badge is for.
             </p>
           </div>
           <div className="rounded-lg border border-border-success bg-background-success p-5">
@@ -160,7 +160,7 @@ export default function BadgePage() {
         <code className="font-mono text-text-default">
           fe-distillery/components/ui/badge.tsx
         </code>{" "}
-        — <code className="font-mono text-text-default">variant</code>,{" "}
+        -- <code className="font-mono text-text-default">variant</code>,{" "}
         <code className="font-mono text-text-default">size</code>,{" "}
         <code className="font-mono text-text-default">color</code>,{" "}
         <code className="font-mono text-text-default">asChild</code>. The raw

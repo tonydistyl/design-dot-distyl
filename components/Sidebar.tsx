@@ -93,7 +93,7 @@ export function Sidebar() {
 
   return (
     <aside className="sticky top-0 hidden h-screen w-64 shrink-0 flex-col overflow-y-auto border-r border-border-default bg-background-subtle md:flex">
-      {/* Sticky header — logo + search stay pinned; the nav scrolls under. */}
+      {/* Sticky header -- logo + search stay pinned; the nav scrolls under. */}
       <div className="sticky top-0 z-10 bg-background-subtle px-6 pt-8 pb-4">
       <div className="mb-6 flex items-center justify-between gap-2">
         <Link href="/" className="group">
@@ -107,7 +107,7 @@ export function Sidebar() {
         <ThemeToggle />
       </div>
 
-      {/* Search — filters the whole nav. Grows with the component list. */}
+      {/* Search -- filters the whole nav. Grows with the component list. */}
       <div className="relative">
         <Search
           aria-hidden

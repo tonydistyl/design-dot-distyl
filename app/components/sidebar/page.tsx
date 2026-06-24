@@ -5,7 +5,7 @@ import { SidebarDemo } from "./SidebarDemo";
 export const metadata: Metadata = {
   title: "Sidebar",
   description:
-    "Sidebar — a composable, collapsible application sidebar. API matches fe-distillery components/ui/sidebar.tsx (canonical pattern).",
+    "Sidebar -- a composable, collapsible application sidebar. API matches fe-distillery components/ui/sidebar.tsx (canonical pattern).",
 };
 
 const anatomyCode = `<SidebarProvider>
@@ -56,7 +56,7 @@ export default function SidebarPage() {
       <p className="mb-2 text-xs font-normal text-text-subtle">Components</p>
       <h1 className="text-h1 text-text-default">Sidebar</h1>
       <p className="mt-3 max-w-2xl text-body text-text-default">
-        A composable, collapsible application sidebar — header, grouped menu, and
+        A composable, collapsible application sidebar -- header, grouped menu, and
         footer, paired with the main content via{" "}
         <code className="font-mono">SidebarInset</code>.
       </p>
@@ -66,7 +66,7 @@ export default function SidebarPage() {
           <span className="font-bold">Canonical pattern.</span> The full
           fe-distillery primitive ships 14 variants (mobile sheet, rail,
           floating/inset, skeletons, badges, …). This documents the one primary
-          pattern most apps should reach for — the others compose from the same
+          pattern most apps should reach for -- the others compose from the same
           parts.
         </p>
       </div>
@@ -78,7 +78,7 @@ export default function SidebarPage() {
           <SidebarDemo />
         </div>
         <p className="mt-2 text-small">
-          Live and interactive — hit the toggle to collapse to an icon rail, then
+          Live and interactive -- hit the toggle to collapse to an icon rail, then
           switch the theme. Every surface, the active-item highlight, and the
           brand badge remap from Cognition tokens, no{" "}
           <code className="font-mono">dark:</code> classes.
@@ -116,7 +116,7 @@ export default function SidebarPage() {
               Don&apos;t hand-roll a fixed{" "}
               <code className="font-mono">aside</code> with{" "}
               <code className="font-mono">bg-gray-50</code> and ad-hoc collapse
-              state — you&apos;ll miss the shared active styling, keyboard focus,
+              state -- you&apos;ll miss the shared active styling, keyboard focus,
               and token theming. Compose the provided parts.
             </p>
           </div>
@@ -152,7 +152,7 @@ export default function SidebarPage() {
         <code className="font-mono text-text-default">
           fe-distillery/components/ui/sidebar.tsx
         </code>{" "}
-        — <code className="font-mono text-text-default">SidebarProvider</code>,{" "}
+        -- <code className="font-mono text-text-default">SidebarProvider</code>,{" "}
         <code className="font-mono text-text-default">Sidebar</code>,{" "}
         <code className="font-mono text-text-default">SidebarMenuButton</code>,{" "}
         <code className="font-mono text-text-default">SidebarInset</code>,{" "}

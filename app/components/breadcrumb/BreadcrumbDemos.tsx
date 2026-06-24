@@ -16,7 +16,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-// Collapsed path — when there are too many levels to show, hide the middle
+// Collapsed path -- when there are too many levels to show, hide the middle
 // ones behind an ellipsis that opens a menu. The trigger wraps
 // BreadcrumbEllipsis; the menu lists the hidden ancestors.
 export function BreadcrumbCollapsed() {

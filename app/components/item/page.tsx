@@ -18,7 +18,7 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Item",
   description:
-    "Item component — a single structured row with a leading element, a primary and optional secondary label, and a trailing element.",
+    "Item component -- a single structured row with a leading element, a primary and optional secondary label, and a trailing element.",
 };
 
 const props = [

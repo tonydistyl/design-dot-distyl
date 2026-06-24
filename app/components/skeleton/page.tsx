@@ -5,7 +5,7 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Skeleton",
   description:
-    "Skeleton component — a placeholder shown while content loads. API matches fe-distillery components/ui/skeleton.tsx.",
+    "Skeleton component -- a placeholder shown while content loads. API matches fe-distillery components/ui/skeleton.tsx.",
 };
 
 const installCode = `import { Skeleton } from "@/components/ui/skeleton";
@@ -45,7 +45,7 @@ export default function SkeletonPage() {
           </div>
         </div>
         <p className="mt-2 text-small">
-          Rendered with live Cognition tokens — the muted fill pulses and remaps
+          Rendered with live Cognition tokens -- the muted fill pulses and remaps
           on theme change, no <code className="font-mono">dark:</code> classes.
         </p>
       </section>
@@ -72,7 +72,7 @@ export default function SkeletonPage() {
           </div>
         </div>
         <p className="mt-2 text-small">
-          Skeleton is a single primitive — compose avatars, lines, media blocks,
+          Skeleton is a single primitive -- compose avatars, lines, media blocks,
           and form fields by sizing it with utility classes.
         </p>
       </section>
@@ -90,7 +90,7 @@ export default function SkeletonPage() {
             </div>
             <div className="divide-y divide-border-default">
               {[
-                { name: "className", type: "string", def: "undefined", desc: "Sets the shape — width, height, and radius of the placeholder." },
+                { name: "className", type: "string", def: "undefined", desc: "Sets the shape -- width, height, and radius of the placeholder." },
                 { name: "...props", type: "HTMLAttributes<div>", def: "—", desc: "Native div attributes pass through." },
               ].map((p) => (
                 <div
@@ -117,7 +117,7 @@ export default function SkeletonPage() {
               Don&apos;t
             </div>
             <p className="text-small text-text-default">
-              Don&apos;t drop a centered Spinner over a known layout — the page
+              Don&apos;t drop a centered Spinner over a known layout -- the page
               jumps when content arrives. And don&apos;t hardcode{" "}
               <code className="font-mono">bg-gray-100</code> for the fill.
             </p>

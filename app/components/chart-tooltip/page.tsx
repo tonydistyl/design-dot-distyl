@@ -11,7 +11,7 @@ import {
 export const metadata: Metadata = {
   title: "Chart Tooltip",
   description:
-    "Chart Tooltip — the styled tooltip for Cognition charts, with dot / line / dashed indicators, optional labels, and custom formatters.",
+    "Chart Tooltip -- the styled tooltip for Cognition charts, with dot / line / dashed indicators, optional labels, and custom formatters.",
 };
 
 const props = [
@@ -110,7 +110,7 @@ export default function ChartTooltipDocsPage() {
           <DotTooltip />
         </div>
         <p className="mt-2 text-small">
-          Rendered with live Cognition tokens — the tooltip surface, border, and
+          Rendered with live Cognition tokens -- the tooltip surface, border, and
           text remap on theme change, no <code className="font-mono">dark:</code>{" "}
           classes. Hover a bar to reveal it.
         </p>
@@ -151,7 +151,7 @@ export default function ChartTooltipDocsPage() {
           </Cell>
         </div>
         <p className="mt-2 text-small">
-          The <code className="font-mono">indicator</code> sets the marker shape —{" "}
+          The <code className="font-mono">indicator</code> sets the marker shape --{" "}
           <code className="font-mono">dot</code>,{" "}
           <code className="font-mono">line</code>, or{" "}
           <code className="font-mono">dashed</code>. Drop it with{" "}
@@ -209,7 +209,7 @@ export default function ChartTooltipDocsPage() {
               Don&apos;t
             </div>
             <p className="text-small text-text-default">
-              Don&apos;t hardcode the indicator color — it&apos;s drawn from the
+              Don&apos;t hardcode the indicator color -- it&apos;s drawn from the
               series config, so it must use the chart-1…chart-5 tokens; the brand
               primary and feedback tokens carry meaning (brand, status) and
               aren&apos;t for neutral data. Don&apos;t hide essential information
@@ -244,7 +244,7 @@ export default function ChartTooltipDocsPage() {
         <code className="font-mono text-text-default">
           fe-distillery/components/ui/chart.tsx
         </code>{" "}
-        — <code className="font-mono text-text-default">ChartTooltip</code> and{" "}
+        -- <code className="font-mono text-text-default">ChartTooltip</code> and{" "}
         <code className="font-mono text-text-default">ChartTooltipContent</code> on
         Recharts. The surface, border, and text use Cognition tokens; indicator
         colors come from the series config.

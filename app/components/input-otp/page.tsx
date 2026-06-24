@@ -10,7 +10,7 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Input OTP",
   description:
-    "Input OTP component — a segmented one-time-password field for entering short numeric or alphanumeric codes, slot by slot.",
+    "Input OTP component -- a segmented one-time-password field for entering short numeric or alphanumeric codes, slot by slot.",
 };
 
 // Defined locally rather than imported from "input-otp": that package calls

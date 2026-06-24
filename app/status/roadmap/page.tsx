@@ -66,8 +66,8 @@ const epics: Epic[] = [
     status: "queue",
     summary: "Fix the components poisoning their consumers.",
     tickets: [
-      "Rewrite badge.tsx — replace 30+ raw Tailwind utilities with semantic tokens",
-      "Rewrite toast.tsx — remove text-red-300/50 and similar",
+      "Rewrite badge.tsx -- replace 30+ raw Tailwind utilities with semantic tokens",
+      "Rewrite toast.tsx -- remove text-red-300/50 and similar",
       "Introduce canonical Tag primitive",
       "Move 4 direct @radix-ui imports onto the shared ui/ wrappers",
     ],

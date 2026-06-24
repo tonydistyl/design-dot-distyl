@@ -12,7 +12,7 @@ import { cn } from "@/lib/utils";
 // Dialog. The raw bg-background / border / muted-foreground / ring colors are
 // mapped to Cognition tokens and the overlay matches the project's Dialog scrim,
 // so it themes via [data-theme="dark"] with no dark: classes. Entrance/exit
-// animation classes are dropped — the site has no animation plugin (consistent
+// animation classes are dropped -- the site has no animation plugin (consistent
 // with Dialog, Dropdown Menu, and Popover).
 const Sheet = SheetPrimitive.Root;
 

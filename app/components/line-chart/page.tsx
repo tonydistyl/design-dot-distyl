@@ -5,7 +5,7 @@ import { BasicLine, DotsLine, MultipleLine, StepLine } from "./LineChartDemos";
 export const metadata: Metadata = {
   title: "Line Chart",
   description:
-    "Line Chart — a Recharts line chart wrapped in the Cognition Chart primitives, with token-driven series colors, tooltips, and legends.",
+    "Line Chart -- a Recharts line chart wrapped in the Cognition Chart primitives, with token-driven series colors, tooltips, and legends.",
 };
 
 const parts = [
@@ -123,7 +123,7 @@ export default function LineChartDocsPage() {
           <BasicLine />
         </div>
         <p className="mt-2 text-small">
-          Rendered with live Cognition tokens — the line, axes, grid, and tooltip
+          Rendered with live Cognition tokens -- the line, axes, grid, and tooltip
           all remap on theme change, no <code className="font-mono">dark:</code>{" "}
           classes. Series colors are injected from the config as{" "}
           <code className="font-mono">--color-*</code> CSS vars.
@@ -135,7 +135,7 @@ export default function LineChartDocsPage() {
         <h3 className="mt-12 mb-4 text-h3 text-text-default">Config</h3>
         <p className="mb-4 text-small">
           Every chart starts with a <code className="font-mono">ChartConfig</code>{" "}
-          — one entry per series, each pointing at a Cognition token. The
+          -- one entry per series, each pointing at a Cognition token. The
           container turns those into <code className="font-mono">--color-*</code>{" "}
           variables the lines reference.
         </p>
@@ -164,7 +164,7 @@ export default function LineChartDocsPage() {
         </div>
         <p className="mt-2 text-small">
           One series or several, with or without dots. Switch the curve with{" "}
-          <code className="font-mono">type</code> —{" "}
+          <code className="font-mono">type</code> --{" "}
           <code className="font-mono">monotone</code> for smooth,{" "}
           <code className="font-mono">linear</code> for straight, or{" "}
           <code className="font-mono">step</code> for stepped.
@@ -196,10 +196,10 @@ export default function LineChartDocsPage() {
           </div>
         </div>
         <p className="mt-2 text-small">
-          The Recharts pieces — <code className="font-mono">LineChart</code>,{" "}
+          The Recharts pieces -- <code className="font-mono">LineChart</code>,{" "}
           <code className="font-mono">Line</code>,{" "}
           <code className="font-mono">XAxis</code>,{" "}
-          <code className="font-mono">CartesianGrid</code> — are used directly
+          <code className="font-mono">CartesianGrid</code> -- are used directly
           inside <code className="font-mono">ChartContainer</code>.
         </p>
       </section>
@@ -213,9 +213,9 @@ export default function LineChartDocsPage() {
               Don&apos;t
             </div>
             <p className="text-small text-text-default">
-              Don&apos;t hardcode line colors with a hex or raw palette utility —
+              Don&apos;t hardcode line colors with a hex or raw palette utility --
               drive them from the config with token vars so they theme. Don&apos;t
-              use the brand primary or feedback tokens for a data series — those carry
+              use the brand primary or feedback tokens for a data series -- those carry
               meaning (brand, status); use the chart-1…chart-5 tokens, in
               order. And don&apos;t crowd one chart with too many lines.
             </p>
@@ -251,7 +251,7 @@ export default function LineChartDocsPage() {
         <code className="font-mono text-text-default">
           fe-distillery/components/ui/chart.tsx
         </code>{" "}
-        — <code className="font-mono text-text-default">ChartContainer</code>,{" "}
+        -- <code className="font-mono text-text-default">ChartContainer</code>,{" "}
         <code className="font-mono text-text-default">ChartTooltip</code>/
         <code className="font-mono text-text-default">Content</code>,{" "}
         <code className="font-mono text-text-default">ChartLegend</code>/

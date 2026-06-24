@@ -6,7 +6,7 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Toggle",
   description:
-    "Toggle component — a two-state button that can be either on or off. API matches fe-distillery components/ui/toggle.tsx.",
+    "Toggle component -- a two-state button that can be either on or off. API matches fe-distillery components/ui/toggle.tsx.",
 };
 
 const props = [
@@ -119,7 +119,7 @@ export default function ToggleDocsPage() {
       <h1 className="text-h1 text-text-default">Toggle</h1>
       <p className="mt-3 max-w-2xl text-body text-text-default">
         A two-state button that can be either on or off. Use it for a single
-        formatting control — bold, italic, mute — where the pressed state holds
+        formatting control -- bold, italic, mute -- where the pressed state holds
         until the user toggles it back.
       </p>
 
@@ -138,7 +138,7 @@ export default function ToggleDocsPage() {
           </Toggle>
         </div>
         <p className="mt-2 text-small">
-          Rendered with live Cognition tokens — hover and the pressed state (an
+          Rendered with live Cognition tokens -- hover and the pressed state (an
           accent surface with primary text) remap on theme change, no{" "}
           <code className="font-mono">dark:</code> classes. Click a control to
           toggle it.
@@ -263,7 +263,7 @@ export default function ToggleDocsPage() {
             </div>
             <p className="text-small text-text-default">
               Don&apos;t use a Toggle for a setting that needs an explicit on/off
-              label — that&apos;s a <code className="font-mono">Switch</code>. And
+              label -- that&apos;s a <code className="font-mono">Switch</code>. And
               don&apos;t group mutually exclusive options with separate Toggles;
               reach for a toggle group or{" "}
               <code className="font-mono">Tabs</code> so only one stays pressed.
@@ -295,7 +295,7 @@ export default function ToggleDocsPage() {
         <code className="font-mono text-text-default">
           fe-distillery/components/ui/toggle.tsx
         </code>{" "}
-        — <code className="font-mono text-text-default">Toggle</code> and{" "}
+        -- <code className="font-mono text-text-default">Toggle</code> and{" "}
         <code className="font-mono text-text-default">toggleVariants</code> on
         Radix. The raw muted / accent / ring / primary-50 colors are replaced
         with Cognition tokens.

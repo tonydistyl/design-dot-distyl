@@ -5,7 +5,7 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Keyboard Input",
   description:
-    "Keyboard Input (Kbd) — displays textual user input from the keyboard. Proposed canonical component built on the <kbd> element.",
+    "Keyboard Input (Kbd) -- displays textual user input from the keyboard. Proposed canonical component built on the <kbd> element.",
 };
 
 const installCode = `import { Kbd, KbdGroup } from "@/components/ui/kbd";
@@ -26,7 +26,7 @@ export default function KbdPage() {
       <h1 className="text-h1 text-text-default">Keyboard Input</h1>
       <p className="mt-3 max-w-2xl text-body text-text-default">
         Used to display textual user input from the keyboard. Use it for
-        shortcut hints and key references — not for general inline code.
+        shortcut hints and key references -- not for general inline code.
       </p>
 
       <div className="mt-4 rounded-lg border border-border-default bg-background-accent p-4">
@@ -48,7 +48,7 @@ export default function KbdPage() {
           </KbdGroup>
         </div>
         <p className="mt-2 text-small">
-          Rendered with live Cognition tokens — the muted surface and text remap
+          Rendered with live Cognition tokens -- the muted surface and text remap
           on theme change, no <code className="font-mono">dark:</code> classes.
         </p>
       </section>
@@ -100,7 +100,7 @@ export default function KbdPage() {
             </div>
             <div className="divide-y divide-border-default">
               {[
-                { name: "Kbd", desc: "A single key cap — wrap a key name or symbol (⌘, Shift, Enter)." },
+                { name: "Kbd", desc: "A single key cap -- wrap a key name or symbol (⌘, Shift, Enter)." },
                 { name: "KbdGroup", desc: "Groups multiple Kbd keys into one shortcut, with consistent spacing." },
               ].map((p) => (
                 <div
@@ -126,7 +126,7 @@ export default function KbdPage() {
             </div>
             <p className="text-small text-text-default">
               Don&apos;t use <code className="font-mono">Kbd</code> for inline
-              code, file names, or values — that&apos;s a{" "}
+              code, file names, or values -- that&apos;s a{" "}
               <code className="font-mono">&lt;code&gt;</code>. Reserve it for
               actual keystrokes.
             </p>
@@ -159,7 +159,7 @@ export default function KbdPage() {
       </section>
 
       <footer className="mt-16 border-t border-border-default pt-6 text-small">
-        Proposed canonical component — fe-distillery has no{" "}
+        Proposed canonical component -- fe-distillery has no{" "}
         <code className="font-mono text-text-default">kbd</code> primitive yet.
         Built on the semantic{" "}
         <code className="font-mono text-text-default">&lt;kbd&gt;</code> element

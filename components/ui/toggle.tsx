@@ -8,8 +8,8 @@ import { cn } from "@/lib/utils";
 
 // API mirrors fe-distillery/components/ui/toggle.tsx (Toggle + toggleVariants) on
 // Radix. The raw muted / accent / ring / primary-50 colors are mapped to Cognition
-// tokens — the pressed (data-[state=on]) state uses the accent surface + primary
-// text, matching fe-distillery's purple-tinted intent — so it themes via
+// tokens -- the pressed (data-[state=on]) state uses the accent surface + primary
+// text, matching fe-distillery's purple-tinted intent -- so it themes via
 // [data-theme="dark"] with no dark: classes.
 const toggleVariants = cva(
   "inline-flex items-center justify-center gap-2 rounded-md text-sm font-medium transition-colors hover:bg-background-secondary hover:text-text-default focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-border-primary disabled:pointer-events-none disabled:opacity-50 data-[state=on]:bg-background-accent data-[state=on]:text-text-primary [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0",

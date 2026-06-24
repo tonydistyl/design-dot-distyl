@@ -6,7 +6,7 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Label",
   description:
-    "Label component — an accessible label associated with a form control via htmlFor. A form primitive that composes inside Input, Checkbox, and other controls.",
+    "Label component -- an accessible label associated with a form control via htmlFor. A form primitive that composes inside Input, Checkbox, and other controls.",
 };
 
 const props = [
@@ -248,7 +248,7 @@ export default function LabelPage() {
         </div>
         <p className="mt-2 text-small">
           Always pair a Label with a control via{" "}
-          <code className="font-mono">htmlFor</code> — Input, Checkbox, Radio, or
+          <code className="font-mono">htmlFor</code> -- Input, Checkbox, Radio, or
           Select.
         </p>
       </section>

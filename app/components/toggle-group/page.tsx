@@ -13,7 +13,7 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Toggle Group",
   description:
-    "Toggle Group component — a set of toggle buttons in single-select or multi-select mode for modes, view toggles, and filter sets.",
+    "Toggle Group component -- a set of toggle buttons in single-select or multi-select mode for modes, view toggles, and filter sets.",
 };
 
 const props = [

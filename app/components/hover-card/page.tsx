@@ -11,7 +11,7 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Hover Card",
   description:
-    "Hover Card component — supplementary, read-only content that appears on hover over a trigger, without navigation or a click.",
+    "Hover Card component -- supplementary, read-only content that appears on hover over a trigger, without navigation or a click.",
 };
 
 const api = [

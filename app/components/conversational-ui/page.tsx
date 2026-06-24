@@ -13,7 +13,7 @@ import {
 export const metadata: Metadata = {
   title: "Conversational UI",
   description:
-    "The canonical AI conversation surface for Distyl products — ChatShell, MessageBubble, ChatInput, and LoadingBubble composed from Cognition components.",
+    "The canonical AI conversation surface for Distyl products -- ChatShell, MessageBubble, ChatInput, and LoadingBubble composed from Cognition components.",
 };
 
 const props = [
@@ -60,7 +60,7 @@ const parts = [
   },
 ];
 
-const doCode = `// Panel — does not block the canvas
+const doCode = `// Panel -- does not block the canvas
 <div className="w-96 border-l border-border-default">
   <ChatShell
     systemPrompt="You are analyzing Tower pipeline data."
@@ -155,7 +155,7 @@ const messageBubbleCode =
   'import { MessageBubble } from "@/components/ConversationalUI";\n\n' +
   "// User turn\n" +
   '<MessageBubble role="user" content="What are the risk signals?" />\n\n' +
-  "// Assistant turn — parses markdown and code blocks automatically\n" +
+  "// Assistant turn -- parses markdown and code blocks automatically\n" +
   "<MessageBubble\n" +
   '  role="assistant"\n' +
   '  content="Here\'s the query:\\n\\n```typescript\\nentities.filter(e => e.riskScore > 0.7)\\n```"\n' +
@@ -214,7 +214,7 @@ export default function ConversationalUIPage() {
       <h1 className="text-h1 text-text-default">Conversational UI</h1>
       <p className="mt-3 max-w-2xl text-body text-text-default">
         The canonical AI conversation surface for Distyl products. Composed from
-        ChatShell, MessageBubble, ChatInput, and LoadingBubble — each
+        ChatShell, MessageBubble, ChatInput, and LoadingBubble -- each
         independently usable. Not a modal or a drawer. A panel or inline surface
         that supports a full turn-based AI exchange.
       </p>
@@ -223,7 +223,7 @@ export default function ConversationalUIPage() {
         <p className="text-small text-text-default">
           <span className="font-semibold">Distyl-specific.</span> This component
           has no external library counterpart or design-tool source yet. It is
-          the canonical pattern for AI chat surfaces across Distyl products —
+          the canonical pattern for AI chat surfaces across Distyl products --
           Platform, Tower, and future implementations.
         </p>
       </div>
@@ -232,7 +232,7 @@ export default function ConversationalUIPage() {
       <section id="preview" className="scroll-mt-8">
         <h3 className="mt-12 mb-4 text-h3 text-text-default">Preview</h3>
         <p className="mb-3 text-small">
-          This preview is live — it&apos;s running Meno, Cognition&apos;s
+          This preview is live -- it&apos;s running Meno, Cognition&apos;s
           built-in assistant. Ask it anything about tokens, components, or system
           rules.
         </p>
@@ -257,7 +257,7 @@ export default function ConversationalUIPage() {
         <p className="mt-3 text-small">
           The error state is a danger-styled{" "}
           <code className="font-mono">MessageBubble</code> (the{" "}
-          <code className="font-mono">error</code> prop) — alert icon, danger
+          <code className="font-mono">error</code> prop) -- alert icon, danger
           border, and danger surface. The message string is set by the catch
           block in <code className="font-mono">ChatShell</code>.
         </p>
@@ -303,7 +303,7 @@ export default function ConversationalUIPage() {
               <span className="font-mono text-sm text-text-default">
                 {p.name}
               </span>
-              <span className="ml-2 text-sm text-text-subtle">— {p.desc}</span>
+              <span className="ml-2 text-sm text-text-subtle">-- {p.desc}</span>
             </div>
           ))}
         </div>
@@ -349,7 +349,7 @@ export default function ConversationalUIPage() {
           LoadingBubble
         </h4>
         <p className="mb-4 text-sm text-text-subtle">
-          Assistant thinking state. Uses the Distyl Spinner. No props — render it
+          Assistant thinking state. Uses the Distyl Spinner. No props -- render it
           while awaiting a response.
         </p>
         <div className="rounded-lg border border-border-default bg-background-subtle p-6">
@@ -392,8 +392,8 @@ export default function ConversationalUIPage() {
             </div>
             <p className="text-small text-text-default">
               Don&apos;t render ChatShell inside a Dialog or Sheet. It is a panel
-              or inline surface — it does not block the canvas behind it.
-              Don&apos;t hardcode a system prompt in the call site — pass it as
+              or inline surface -- it does not block the canvas behind it.
+              Don&apos;t hardcode a system prompt in the call site -- pass it as
               the systemPrompt prop so each context owns its own behaviour.
             </p>
           </div>
@@ -417,7 +417,7 @@ export default function ConversationalUIPage() {
       </section>
 
       <footer className="mt-16 border-t border-border-default pt-6 text-small">
-        Distyl-specific — no fe-distillery counterpart yet. API route lives at{" "}
+        Distyl-specific -- no fe-distillery counterpart yet. API route lives at{" "}
         <code className="font-mono text-text-default">
           app/api/chat/route.ts
         </code>{" "}

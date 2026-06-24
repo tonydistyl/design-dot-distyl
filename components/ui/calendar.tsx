@@ -7,7 +7,7 @@ import { DayButton, DayPicker } from "react-day-picker";
 import { cn } from "@/lib/utils";
 
 // API mirrors fe-distillery/components/ui/calendar.tsx (DayPicker), targeting
-// react-day-picker v9 — the version this project installs. The documented props
+// react-day-picker v9 -- the version this project installs. The documented props
 // (mode, selected, onSelect, disabled, numberOfMonths) are identical across
 // versions; only the internal classNames structure differs. All raw primary /
 // accent / muted colors are mapped to Cognition tokens and the day cells are

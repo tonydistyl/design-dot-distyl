@@ -5,7 +5,7 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Textarea",
   description:
-    "Textarea component — a multi-line text input. API matches fe-distillery components/ui/textarea.tsx.",
+    "Textarea component -- a multi-line text input. API matches fe-distillery components/ui/textarea.tsx.",
 };
 
 const states = [
@@ -60,7 +60,7 @@ export default function TextareaPage() {
           </div>
         </div>
         <p className="mt-2 text-small">
-          Rendered with live Cognition tokens — surface, border, and focus ring
+          Rendered with live Cognition tokens -- surface, border, and focus ring
           remap on theme change, no <code className="font-mono">dark:</code>{" "}
           classes. It matches the Input field, just multi-line.
         </p>
@@ -136,7 +136,7 @@ export default function TextareaPage() {
               Don&apos;t
             </div>
             <p className="text-small text-text-default">
-              Don&apos;t use a Textarea for a single line of input — that&apos;s
+              Don&apos;t use a Textarea for a single line of input -- that&apos;s
               an Input. And don&apos;t hardcode{" "}
               <code className="font-mono">border-gray-300</code>; the variant is
               token-driven.
@@ -174,7 +174,7 @@ export default function TextareaPage() {
         <code className="font-mono text-text-default">
           fe-distillery/components/ui/textarea.tsx
         </code>{" "}
-        — a single <code className="font-mono text-text-default">Textarea</code>{" "}
+        -- a single <code className="font-mono text-text-default">Textarea</code>{" "}
         spreading{" "}
         <code className="font-mono text-text-default">
           React.ComponentProps&lt;&quot;textarea&quot;&gt;

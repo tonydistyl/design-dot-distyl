@@ -6,17 +6,17 @@ import * as React from "react";
 
 import { cn } from "@/lib/utils";
 
-// Canonical primary sidebar — the core of fe-distillery/components/ui/sidebar.tsx
+// Canonical primary sidebar -- the core of fe-distillery/components/ui/sidebar.tsx
 // (SidebarProvider / Sidebar / Header / Content / Footer / Group / Menu /
 // MenuButton / MenuSub / Trigger / Inset / useSidebar). The full primitive also
 // ships mobile (Sheet), rail, skeleton, badge/action, and inset/floating
-// variants — not reproduced here; this documents the one canonical pattern.
+// variants -- not reproduced here; this documents the one canonical pattern.
 //
 // The source uses bespoke sidebar-* tokens (bg-sidebar, sidebar-accent,
 // sidebar-primary, …) that don't exist in Cognition v1.2, so they're mapped to
 // existing semantic tokens: bg-sidebar → background-subtle, sidebar-accent →
 // background-secondary, sidebar-primary → background-inverse, border → border.
-// No dark: classes — it themes via [data-theme="dark"].
+// No dark: classes -- it themes via [data-theme="dark"].
 
 const SIDEBAR_WIDTH = "16rem";
 const SIDEBAR_WIDTH_ICON = "3rem";

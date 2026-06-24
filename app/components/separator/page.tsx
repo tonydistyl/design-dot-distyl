@@ -5,7 +5,7 @@ import { CodeBlock } from "@/components/CodeBlock";
 export const metadata: Metadata = {
   title: "Separator",
   description:
-    "Separator component — a thin rule that visually or semantically divides sections of content or items.",
+    "Separator component -- a thin rule that visually or semantically divides sections of content or items.",
 };
 
 const props = [

@@ -9,8 +9,8 @@ import { cn } from "@/lib/utils";
 
 // API mirrors fe-distillery/components/ui/radio-group.tsx (Radix RadioGroup +
 // Item + a labeled-option helper) on Radix. The raw primary / ring / muted
-// colors are mapped to Cognition tokens — the control uses the brand primary
-// (it's an interactive selection) — so it themes via [data-theme="dark"] with
+// colors are mapped to Cognition tokens -- the control uses the brand primary
+// (it's an interactive selection) -- so it themes via [data-theme="dark"] with
 // no dark: classes.
 const RadioGroup = React.forwardRef<
   React.ElementRef<typeof RadioGroupPrimitive.Root>,
